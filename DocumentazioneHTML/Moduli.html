@@ -1,0 +1,129 @@
+<!--Un modulo HTML viene utilizzato per raccogliere l'input dell'utente. 
+L'input dell'utente viene spesso inviato a un server per l'elaborazione.-->
+
+<!--L'elemento <form>-->
+<!--L'elemento HTML <form>viene utilizzato per creare un modulo HTML per l'input dell'utente:-->
+<form>
+.
+form elements
+.
+</form>
+<!--L'elemento <input>-->
+<!--L'elemento HTML <input>è l'elemento del modulo più utilizzato.-->
+<!--Un <input>elemento può essere visualizzato in molti modi, a seconda dell'attributo type .-->
+<!--<tipo di input="testo">	Visualizza un campo di immissione di testo su una sola riga
+<tipo di input="radio">	Visualizza un pulsante di scelta (per selezionare una delle tante opzioni)
+<tipo di input="casella di controllo">	Visualizza una casella di controllo (per selezionare zero o più di molte scelte)
+<tipo di input="invia">	Visualizza un pulsante di invio (per inviare il modulo)
+<tipo di input="pulsante">	Visualizza un pulsante cliccabile-->
+
+
+  <!--Campi di testo-->
+  <!--Definisce <input type="text">un campo di input a riga singola per l'immissione di testo.-->
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+  </form>  
+
+  <!--L'elemento <label>-->
+<!--Il <label>tag definisce un'etichetta per molti elementi del modulo.-->
+<!--L' <label>elemento è utile per gli utenti di lettori di schermo, 
+perché lo screen reader leggerà ad alta voce 
+l'etichetta quando l'utente si concentra sull'elemento di input.-->    
+<!--L' <label>elemento è utile anche per gli utenti che hanno difficoltà a cliccare su aree molto piccole 
+(come pulsanti di scelta o caselle di controllo), 
+perché quando l'utente clicca sul testo all'interno dell'elemento <label>, 
+il pulsante di scelta/casella di controllo viene attivato/disattivato.-->
+<!--Per poterli collegare, 
+l' forattributo del <label>tag deve essere uguale all'attributo iddell'elemento .<input>-->
+
+
+<!--Pulsanti di scelta-->
+<!--Definisce <input type="radio">un pulsante di scelta.-->
+<p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+
+<!--Caselle di controllo-->
+<!--Definisce <input type="checkbox">una casella di controllo .-->
+<form>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label>
+  </form>
+
+  <!--Il pulsante Invia-->
+  <!--Definisce <input type="submit">un pulsante per inviare i dati del modulo a un gestore di moduli.-->
+  <!--Il gestore del modulo è in genere un file sul 
+  server con uno script per l'elaborazione dei dati di input.-->
+  <!--Il gestore del modulo è specificato nell'attributo del modulo action .-->
+  <form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+<!--L'attributo Nome per <input>-->
+<!--Si noti che ogni campo di input deve avere un name attributo per essere inviato.
+Se l' nameattributo viene omesso, il valore del campo di input non verrà inviato.-->
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" value="John"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  
+  <!--Attributi del modulo HTML-->
+  <!--L'attributo Azione-->
+  <!--L' action attributo definisce l'azione da eseguire quando il modulo viene inviato.-->
+  <!--Solitamente, i dati del modulo vengono inviati a un file sul server 
+  quando l'utente clicca sul pulsante Invia.-->
+  <form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!--L'attributo target-->
+  <!--L' targetattributo specifica dove visualizzare la risposta ricevuta dopo l'invio del modulo.-->
+  <!--L' targetattributo può avere uno dei seguenti valori:-->
+  <!--Il valore predefinito è _self, ovvero la risposta verrà aperta nella finestra corrente.-->
+  <form action="/action_page.php" target="_blank"></form>
+
+  <!--L'attributo del metodo-->
+  <!--L' methodattributo specifica il metodo HTTP da utilizzare durante l'invio dei dati del modulo.-->
+  <!--I dati del modulo possono essere inviati come variabili URL (con method="get") o come post-transazione HTTP (con method="post").-->
+  <!--Il metodo HTTP predefinito quando si inviano i dati del modulo è GET. -->
+  
+  <!--Questo esempio utilizza il metodo GET durante l'invio dei dati del modulo:-->
+  <form action="/action_page.php" method="get">
+
+<!--Questo esempio utilizza il metodo POST durante l'invio dei dati del modulo:-->
+<form action="/action_page.php" method="post"></form>
+
+
+<!--L'attributo di completamento automatico-->
+<!--L' autocompleteattributo specifica se un modulo deve avere il completamento automatico attivato o disattivato-->
+<!--Quando il completamento automatico è attivo, il browser completa automaticamente 
+i valori in base ai valori immessi in precedenza dall'utente.-->
+<form action="/action_page.php" autocomplete="on">
+</form>
+
+<!--L'attributo Novalidate-->
+<!--L' nova lidateattributo è un attributo booleano.-->
+<form action="/action_page.php" novalidate></form>

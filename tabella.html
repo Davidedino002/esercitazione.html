@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+    <caption>spese mensili gennaio</caption><!--caption aggiunge una descrizione alla tabella-->
+    <colgroup><!--stile comune colonna si possono modificare i (border background width visibility)-->
+    <col>
+    <col style="background-color: aqua;">
+    </colgroup>
+      <tr>
+        <th>Data</th>
+        <!--aggiungiamo i nomi e i campi con th-->
+        <th>Importo</th>
+      </tr>
+      <tr>
+        <td colspan="2">Effettuato il reso</td>
+        <!--espandere le celle su piu' righe con colspan-->
+        <!--<td>10$</td>-->
+      </tr>
+      <tr>
+        <td>02/01</td>
+        <td>34$</td>
+      </tr>
+      <tr>
+        <td rowspan="3">10/01</td> <!--espandere le celle su piu' colonne con rowspan-->
+        <td>89$</td>
+      </tr>
+      <tr>
+        <!--<td>10/01</td>-->
+        <td>89$</td>
+      </tr>
+      <tr>
+       <!--<td>10/01</td>-->
+        <td>89$</td>
+      </tr>
+    </table>
+    
+    <table>
+    <caption>spese mensili settembre</caption>
+    <thead><!--è la testa della tabella dove mettiamo la descrizione della tabella-->
+     <tr>
+    <th>Oggetto</th>
+    <th>Data</th>
+    <th>Luogo</th>
+    <th>Costo</th>
+    </tr>   
+    </thead>
+    <tfoot><!--tfoot mettiamo dei dati all'interno della tabella-->
+    <tr>
+     <td colspan="3">Importo Totale</td>
+     <td>48</td>
+    </tr>
+    </tfoot>
+   <tbody>
+    <tr>
+    <td>Spesa Settimanale</td>
+    <td>01/09</td>
+    <td>Supermercato</td>
+    <td>30</td>
+    </tr>
+    <tr>
+
+    <td><table>
+
+      <tr><td>Ciao</td></tr> <!--Tabelle Innestate-->
+      
+    </table></td>
+
+    <td>12/09</td>
+    <td>Amazon</td>
+    <td>18</td>
+    </tr>
+   </tbody>
+    </table>
+   
+  <!--tbody,tfoot e thead servono a modificare e sezionare la tabella senza andare nel td a modificare riga per riga  -->
+
+  </body>
+</html>

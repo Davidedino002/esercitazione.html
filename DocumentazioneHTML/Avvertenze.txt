@@ -1,0 +1,12 @@
+Note su GET:
+Aggiunge i dati del modulo all’URL, in coppie nome/valore.
+NON utilizzare mai GET per inviare dati sensibili! (i dati del modulo inviati sono visibili nell’URL!)
+La lunghezza di un URL è limitata (2048 caratteri).
+Utile per inviare moduli dove l’utente desidera memorizzare il risultato.
+GET è adatto per dati non sicuri, come le stringhe di query in Google.
+
+Note su POST:
+Aggiunge i dati del modulo all’interno del corpo della richiesta HTTP (i dati del modulo inviati non vengono mostrati nell’URL).
+POST non ha limiti di dimensione e può essere utilizzato per inviare grandi quantità di dati.
+I moduli inviati con POST non possono essere contrassegnati.
+Utilizzare sempre POST se i dati del modulo contengono informazioni sensibili o personali!

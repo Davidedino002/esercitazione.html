@@ -1,0 +1,61 @@
+Cosa sono le Emoji?
+Le emoji sembrano immagini o icone, ma non lo sono.
+Sono lettere (caratteri) dell’insieme di caratteri UTF-8 (Unicode).
+UTF-8 copre quasi tutti i caratteri e simboli del mondo.
+
+Caratteri UTF-8
+Molti caratteri UTF-8 non possono essere digitati su una tastiera, ma possono sempre essere visualizzati utilizzando numeri (chiamati numeri di entità):
+A è 65
+B è 66
+C è 67
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <p>Visualizzerò A B C</p>
+    <p>Visualizzerò &#65; &#66; &#67;</p>
+  </body>
+</html>
+Spiegazione dell’esempio
+L’elemento <meta charset="UTF-8"> definisce l’insieme di caratteri. 
+I caratteri A, B e C sono visualizzati dai numeri 65, 66 e 67.
+Per far capire al browser che stai visualizzando un carattere, 
+devi iniziare il numero di entità con &# e terminarlo con ; (punto e virgola).
+
+Caratteri Emoji
+Le emoji sono anche caratteri dell’alfabeto UTF-8:
+
+😄 è 128516
+😍 è 128525
+💗 è 128151
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Il mio primo Emoji</h1>
+    <p>&#128512;</p>
+  </body>
+</html>
+Poiché le emoji sono caratteri, possono essere copiati, visualizzati e dimensionati proprio come qualsiasi altro carattere in HTML.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Emoji di diverse dimensioni</h1>
+    <p style="font-size:48px">&#128512; &#128516; &#128525; &#128151;</p>
+  </body>
+</html>
+Alcuni simboli Emoji in UTF-8
+😀 &#128512;
+😁 &#128513;
+😂 &#128514;
+😃 &#128515;
+😄 &#128516;
+😅 &#128517;

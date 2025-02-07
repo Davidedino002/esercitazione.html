@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <h2>Simple Form</h2>
+    <form action="#" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+<!--I form sono dei moduli-->
+<form actiom=""method=""><!--con action andiamo a dire a quale pagina mandiamo i dati-->
+<!--method serve ad indicare il modo in cui passiamo i dati-->
+</form>
+<label for="prova">Prova</label><!--la label viene agganciata all'input di nome prova con un titolo-->
+<input type="text" name="prova"><!--crea un campo dove possiamo scrivere del testo input di tipo testo di cui il nome è prova-->
+
+
+<select name="provinciaNascita" multiple><!--name è come un etichetta che ci aiuta a cercare i dati -->
+<option value="">Seleziona</option>
+<option value="MI">MI</option>
+<option value="RM">RM</option>
+<option value="PA">PA</option>
+</select><!--multiple seleziona multipli permette di scegliere piu' campi nella select una select multipla-->
+<textarea></textarea><!--differisce dall'input perchè permette di scrivere molto piu' testo-->
+<button type="button">Ciao</button><!--crea un bottone -->
+<!--fieldset è un wrapper un container-->
+<fieldset>
+<legend>Prova</legend>
+</fieldset>
+<!--Datalist possiamo definirla come un suggerimento ad un input  abbiamo un input dove associamo una datalist-->
+<input list= "Nomi">
+<datalist id="nomi">
+<option value="Marco">
+<option value="Luca">
+<option value="Andrea">
+<option value="Antonio">
+</datalist>
+<!--diversi tipi di input-->
+<input type="text"><!--serve per creare text area-->
+<input type="password"><!--serve per creare password-->
+<input type="submit"><!--inviare il form-->
+<input type="reset"><!--per resettare tutti i campi-->
+<input type="radio"><!--sceglie solo un campo deve fare riferimento -->
+<input type="ceckbox"><!--checkbox quando abbiamo piu' interessi da selezionare -->
+<input type="color"><!--scegliere un colore-->
+<input type="date"><!--scegliere le date-->
+<input type="email"><!--scegliere l'email-->
+<!--proprietà dell'input-->
+<input checked><!--è gia' ceccata-->
+<input disabled><!--è disabilitata-->
+<input readonly><!--se il campo è già pieno ma lo vuoi solo leggere una volta salvato il campo non si puo' piu' cancellare-->
+<input required><!--campo richiesto-->
+<input value><!--valore effettivo del campo -->
+<input multiple><!--ci fa selezionare piu' file-->
+<input placeholder><!-- placeolder è un aiuto che vediamo quando il campo è vuoto-->
+<input maxlength><!--lunghezza massima caratteri input--> 

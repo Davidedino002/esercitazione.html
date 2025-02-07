@@ -1,0 +1,69 @@
+<!--Cosa sono gli elementi semantici?-->
+<!--Un elemento semantico descrive chiaramente 
+il suo significato sia per il browser che per lo sviluppatore.-->
+<!--Esempi di elementi non semantici : <div>e <span>- Non dice nulla sul suo contenuto.-->
+<!--Esempi di elementi semantici<form> : , <table>, e <article>- Definisce chiaramente il suo contenuto.-->
+
+    <!--L' <section>elemento definisce una sezione in un documento.-->
+        <section>
+            <h1>WWF</h1>
+            <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+            </section>
+
+            <!--Elemento HTML <article>-->
+            <!--L' <article>elemento specifica un contenuto indipendente e autosufficiente.-->
+            <article>
+           <h2>Google Chrome</h2>
+             <p>Google Chrome is a web browser developed by Google, released in 2008.
+                Chrome is the world's most popular web browser today!</p>
+            </article>
+
+            <!--Annidare <articolo> in <sezione> o viceversa?-->
+                <!--L' <article> elemento specifica un contenuto indipendente e autosufficiente.-->
+                <!--L' <section>elemento definisce la sezione in un documento.-->
+
+                    <!--Elemento HTML <header>-->
+                     <!--L' <header>elemento rappresenta un contenitore per contenuti introduttivi 
+                        o un insieme di link di navigazione.-->   
+                        <!--Nota: puoi avere più <header>elementi in un documento HTML. Tuttavia, 
+                       <header>non può essere inserito all'interno di un <footer>, 
+                        <address>o di un altro <header>elemento.-->
+                            <article>
+                                <header>
+                                  <h1>What Does WWF Do?</h1>
+                                  <p>WWF's mission:</p>
+                                </header>
+                                <p>WWF's mission is to stop the degradation of our planet's natural environment,
+                                and build a future in which humans live in harmony with nature.</p>
+                              </article>
+
+                              <!--Elemento HTML <footer>-->
+                            <!--È possibile avere più <footer>elementi in un unico documento.-->
+                              <!--L' <footer>elemento definisce un piè di pagina per un
+                                 documento o una sezione.-->
+                                 <footer>
+                                    <p>Author: Hege Refsnes</p>
+                                    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+                                  </footer>
+<!--Nota che NON tutti i link di un documento devono essere all'interno di un <nav>elemento. 
+    L' <nav>elemento è destinato solo ai blocchi principali dei link di navigazione.-->
+
+        <!--Elemento HTML <aside>-->
+         <!--L' <aside>elemento definisce un contenuto diverso da quello in cui è inserito -->
+          <!--Il <aside>contenuto dovrebbe essere indirettamente correlato al contenuto circostante.-->
+            <aside>
+                <h4>Epcot Center</h4>
+                <p>Epcot is a theme park at Walt Disney World Resort 
+                    featuring exciting attractions, international pavilions, 
+                    award-winning fireworks and seasonal special events.</p>
+                </aside>
+
+<!--Elementi HTML <figure> e <figcaption>-->
+<!--Il <figure>tag specifica contenuti autonomi, come illustrazioni, diagrammi, foto, elenchi di codici-->
+<!--Il <figcaption>tag definisce una didascalia per un <figure>elemento. 
+L' <figcaption>elemento può essere posizionato come primo o come ultimo figlio di un <figure>elemento.-->
+<!--L' <img>elemento definisce l'immagine/illustrazione effettiva. -->
+<figure>
+    <img src="pic_trulli.jpg" alt="Trulli">
+    <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+  </figure>

@@ -1,0 +1,59 @@
+Note sul metodo "get":
+
+Questo metodo aggiunge i dati del modulo all'URL in coppie nome/valore
+Questo metodo è utile per l'invio di moduli in cui un utente desidera aggiungere ai preferiti il ​​risultato
+Esiste un limite alla quantità di dati che puoi inserire in un URL (varia a seconda del browser), pertanto non puoi essere sicuro che tutti i dati del modulo verranno trasferiti correttamente
+Non usare mai il metodo "get" per passare informazioni sensibili!
+
+
+Note sul metodo "post":
+
+Questo metodo invia i dati del modulo come una transazione HTTP post
+Gli invii di moduli con il metodo "post" non possono essere aggiunti ai preferiti
+Il metodo "post" è più robusto e sicuro di "get" e "post" non ha limitazioni di dimensione
+
+<form action="/action_page.php" method="get">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit using GET">
+    <input type="submit" formmethod="post" value="Submit using POST">
+  </form>
+
+  <!--L' formtargetattributo input specifica un nome o una parola chiave che indica
+   dove visualizzare la risposta ricevuta dopo l'invio del modulo.
+
+Nota: questo attributo sostituisce l'attributo target dell'elemento <form>.
+
+L' formtargetattributo funziona con i seguenti tipi di input: submit e image.-->
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+  </form>
+
+
+  <!--L' formnovalidateattributo input specifica che un elemento <input> 
+  non deve essere convalidato al momento dell'invio.
+Nota: questo attributo sostituisce l'attributo novalidate dell'elemento <form> .
+L' formnovalidateattributo funziona con i seguenti tipi di input: submit.-->
+<form action="/action_page.php">
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formnovalidate="formnovalidate"
+    value="Submit without validation">
+  </form>
+
+  <!--L' novalidateattributo è un <form>attributo.-->
+    <form action="/action_page.php" novalidate>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      

@@ -1,0 +1,43 @@
+Form​
+<form>: Contiene tutti gli elementi del modulo ed è il punto di partenza per inviare i dati.​
+<input>: Crea vari tipi di campi input. 
+Ha diversi attributi che servono a specificare la sua funzione e migliorarne l’utilizzo.​
+
+type:​
+
+text: campo di testo.​
+
+email: campo per l'email.​
+
+password: campo nascosto per password.​
+
+number: campo per numeri.​
+
+Altri tipi includono: date, url, file, submit.​
+
+​
+
+placeholder: testo visibile prima dell’input​
+
+​
+
+name: che associa un nome chiave all’input​
+
+Bottoni​
+Il tag <button> crea un bottone interattivo a cui può essere assegnata un’azione.​
+Con l’attributo ‘type’ possiamo dargli un “ruolo” 
+(esempio: submit per inviare i dati o reset per resettare i campi del form).​
+il disabled, invece, disabilita il bottone rendendolo “non cliccabile”.​
+È possibile specificare un’azione utilizzando l’attributo “onclick”.​
+
+Radio, Checkbox e Select​
+Il type <radio> permette di selezionare un'opzione tra un gruppo.​
+Mentre il type <checkbox> permette di selezionare più opzioni.​
+
+
+Radio, Checkbox e Select​
+<select>: Crea un menu a tendina.​
+
+<option>: Definisce le opzioni all'interno del <select>.​
+
+selected: Specifica quale opzione è selezionata di default.​

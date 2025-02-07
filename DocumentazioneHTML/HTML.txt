@@ -1,0 +1,24 @@
+HTML (HyperText Markup Language) è il blocco fondamentale del web. Permette di strutturare
+contenuti in modo semantico, rendendoli accessibili agli utenti e ai motori di ricerca. Dalla creazione
+di semplici pagine web a complesse applicazioni, 
+HTML è la base da cui partire per qualsiasi sviluppatore web.
+
+HTML sta per Hyper Text Markup Language
+HTML è il linguaggio di markup standard per la creazione di pagine Web
+HTML descrive la struttura di una pagina Web
+L'HTML è costituito da una serie di elementi
+Gli elementi HTML indicano al browser come visualizzare il contenuto
+Gli elementi HTML etichettano parti di contenuto come "questo è un titolo", 
+"questo è un paragrafo", "questo è un collegamento",
+
+Cos'è HTML Html
+HTML che sta  per hyper text Markup Language è il linguaggio standard per la creazione  delle pagine web.
+è Importante  notare che a differenza di python  o Javascript HTML non è un linguaggio di programmazione 
+Mentre questi ultimi consentono di scrivere logica e creare interazioni. HTML si concentra sulla struttura
+di una pagina. Non esegue comandi ma definisce come le informazioni
+vengono organizzate e visualizzate nel browser
+
+Ma cos'è un linguaggio Markup?
+Un linguaggio di Markup annota un documento  per renderlo comprensibile  a persone e computer, fornendo istruzioni 
+su come visualizzare  e strutturare i contenuti in HTML. Le istruzioni sono rappresentate da tag. Questi  
+tag sono come dei mattoncini  ciascuno con un compito specifico, che indicano al browser come visualizzare un contenuto 
