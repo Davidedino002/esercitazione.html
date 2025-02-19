@@ -1,0 +1,57 @@
+Un HTML iframe viene utilizzato per visualizzare una pagina web all’interno di un’altra pagina web.
+
+Sintassi dell’iframe HTML
+Il tag HTML <iframe> specifica un frame inline.
+
+Un frame inline viene utilizzato per incorporare un altro documento all’interno del documento HTML corrente.
+
+<iframe src="url" title="descrizione"></iframe>
+È una buona pratica includere sempre l’attributo title per l’elemento <iframe>. 
+    Viene utilizzato dagli screen reader per leggere qual è il contenuto dell’iframe.
+
+    Iframe - Imposta altezza e larghezza
+Utilizza gli attributi height e width per specificare le dimensioni dell’iframe.
+
+Per default, l’altezza e la larghezza sono specificate in pixel:
+
+<iframe
+  src="demo_iframe.htm"
+  height="200"
+  width="300"
+  title="Esempio Iframe"></iframe>
+Oppure puoi aggiungere l’attributo style e utilizzare le proprietà CSS height e width:
+
+<iframe
+  src="demo_iframe.htm"
+  style="height:200px;width:300px;"
+  title="Esempio Iframe"></iframe>
+
+  Iframe - Rimuovere il bordo
+Per default, un iframe ha un bordo intorno ad esso.
+
+Per rimuovere il bordo, aggiungi l’attributo style e utilizza la proprietà CSS border:
+
+<iframe
+  src="demo_iframe.htm"
+  style="border:none;"
+  title="Esempio Iframe"></iframe>
+Con CSS, puoi anche cambiare le dimensioni, lo stile e il colore del bordo dell’iframe:
+
+<iframe
+  src="demo_iframe.htm"
+  style="border:2px solid red;"
+  title="Esempio Iframe"></iframe>
+
+  Iframe - Destinazione per un collegamento
+  Un iframe può essere utilizzato come frame di destinazione per un collegamento.
+L' target attributo del link deve fare riferimento all'attributo namedel l'iframe:
+
+<iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+Il tag HTML <iframe>specifica un frame in linea
+  L' src attributo definisce l'URL della pagina da incorporare
+  Includi sempre un titleattributo (per gli screen reader)
+  Gli attributi heighte widthspecificano la dimensione dell'iframe
+  Utilizzare border:none;per rimuovere il bordo attorno all'iframe

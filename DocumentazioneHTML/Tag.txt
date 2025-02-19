@@ -1,0 +1,84 @@
+Tag    
+
+I tag HTML sono elementi fondamentali che definiscono la struttura di una pagina  web. Un tag di base 
+ha una forma semplice : Si apre con una coppia di parentesi angolate (<e>) e include una parola chiave.
+
+Apertura,chiusura e attributi 
+Molti tag hanno una versione di chiusura per segnare la fine  del contenuuto a cui si riferiscono. 
+Ma esistono anche tag che non necessitano  di una chiusura esplicita. Possiamo arricchire i nostri tag
+aggiungendo degli attributi all'interno delle parentesi.
+
+Tipi di Tag
+Tag di struttura del documento
+definiscono la struttura del documento HTML
+Tag normali
+Servono a definire la struttura e il contenuto della pagina web 
+
+Tag Meta 
+Forniscono metadati sulla pagina, utili per i motori di ricerca e per la configurazione del browser.
+
+TagLink 
+Collegano risorse esterne come i fogli di stile CSS.
+
+Tag Script
+Permettono di incorporare codice Javascript per interattività e dinamicità
+
+Tag HTML principali​
+
+Tag di intestazione:​
+
+<h1> - <h6>: definiscono le intestazioni dal più grande (h1) al meno (h6).​
+
+​
+
+Tag di paragrafo:​
+
+<p>: definisce un paragrafo.​
+
+​
+
+Tag di collegamento:​
+
+<a href=’’>: crea un collegamento ipertestuale.​
+
+​
+
+Tag di immagine:​
+
+<img src=’’ alt=’’/>: visualizza un'immagine.​
+
+​
+
+Tag di lista:​
+
+<ul>: lista non ordinata.​
+
+<ol>: lista ordinata.​
+
+<li>: elemento della lista.​​
+
+Tipi di Meta Tag​
+<meta charset="UTF-8">: specifica la codifica dei caratteri.​
+
+​
+
+<meta name="description" content="Descrizione della pagina">:               fornisce una descrizione della pagina.​
+
+​
+
+<meta name="keywords" content="HTML, tag, esempio">:                           definisce le parole chiave della pagina.​
+
+​
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: per il design responsivo.​
+
+Tag Link e Script​
+Esempio Tag Link: <link rel="stylesheet" href="stile.css">​
+
+Questo tipo di tag permette di collegare il documento css chiamato “stile.css”​
+
+	​
+
+Script: <script src="script.js"></script>​
+
+Quest’altro invece, collega un documento scritto in JavaScript chiamato “script.js”. ​

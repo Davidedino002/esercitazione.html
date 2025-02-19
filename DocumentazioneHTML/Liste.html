@@ -1,0 +1,196 @@
+Liste in HTML
+
+Lista non ordinata HTML
+Una lista non ordinata inizia con il tag <ul>. Ogni elemento della lista inizia con il tag <li>.
+
+Gli elementi della lista saranno contrassegnati da punti (piccoli cerchi neri) per impostazione predefinita:
+
+<ul>
+  <li>Caffè</li>
+  <li>Tè</li>
+  <li>Latte</li>
+</ul>
+
+Lista ordinata HTML
+Una lista ordinata inizia con il tag <ol>. Ogni elemento della lista inizia con il tag <li>.
+
+Gli elementi della lista saranno contrassegnati con numeri per impostazione predefinita:
+
+<ol>
+  <li>Caffè</li>
+  <li>Tè</li>
+  <li>Latte</li>
+</ol>
+
+
+
+L’attributo “type” della Lista Ordinata
+L’attributo “type” del tag <ol> definisce il tipo di marcatore degli elementi della lista:
+
+type=“1” Gli elementi della lista saranno numerati con numeri (predefinito)
+type=“A” Gli elementi della lista saranno numerati con lettere maiuscole
+type=“a” Gli elementi della lista saranno numerati con lettere minuscole
+type=“I” Gli elementi della lista saranno numerati con numeri romani maiuscoli
+type=“i” Gli elementi della lista saranno numerati con numeri romani minuscoli
+Numeri:
+
+<ol type="1">
+  <li>Caffè</li>
+  <li>Tè</li>
+  <li>Latte</li>
+</ol>
+Lettere maiuscole:
+
+<ol type="A">
+  <li>Caffè</li>
+  <li>Tè</li>
+  <li>Latte</li>
+</ol>
+Lettere minuscole:
+
+<ol type="a">
+  <li>Caffè</li>
+  <li>Tè</li>
+  <li>Latte</li>
+</ol>
+Numeri romani maiuscoli:
+
+<ol type="I">
+  <li>Caffè</li>
+  <li>Tè</li>
+  <li>Latte</li>
+</ol>
+Numeri romani minuscoli:
+
+<ol type="i">
+  <li>Caffè</li>
+  <li>Tè</li>
+  <li>Latte</li>
+</ol>
+
+Conteggio della lista
+Per impostazione predefinita, una lista ordinata inizia a conteggiare da 1. 
+Se si desidera iniziare il conteggio da un numero specificato, è possibile utilizzare l’attributo “start”:
+
+<ol start="50">
+  <li>Caffè</li>
+  <li>Tè</li>
+  <li>Latte</li>
+</ol>
+
+Liste annidate
+É possibile annidare liste tra di loro, sia <ol> che <ul>. Ecco un esempio:
+
+<ol>
+  <li>Caffè</li>
+  <li>
+    Tè
+    <ol>
+      <li>Tè Nero</li>
+      <li>Tè Verde</li>
+    </ol>
+  </li>
+  <li>Latte</li>
+</ol>
+
+Le liste descrittive in HTML
+Una lista di descrizione è una lista di termini, con una descrizione di ciascun termine.
+Il tag <dl> definisce la lista di descrizione, il tag <strong> definisce il termine (nome)
+e il tag <dd> descrive ciascun termine:
+
+<dl>
+  <strong>Caffè</strong>
+  <dd>- bevanda calda nera</dd>
+  <strong>Latte</strong>
+  <dd>- bevanda fredda bianca</dd>
+</dl>
+
+
+<!--La proprietà CSS list-style-type 
+è utilizzata per definire lo stile del marcatore di elemento di elenco.-->
+
+<!--Esempio - Disco-->
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<!--Cerchio-->
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!--Quadrato-->
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!--Nessuno-->
+<ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!--L' type attributo del <ol>tag definisce il tipo di marcatore dell'elemento-->
+
+  <!--Numeri-->
+  <ol type="1">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+<!--Lettere maiuscole:-->
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!--Lettere minuscole-->
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!--Numeri Romani - Maiuscoli-->
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!--Numeri Romani - Minuscoli-->
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+
+<!--Conteggio della lista di controllo-->
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+
+<!--Utilizzare l'elemento HTML <dl>per definire un elenco di descrizioni
+Utilizzare l'elemento HTML <dt>per definire il termine di descrizione
+Utilizzare l'elemento HTML <dd>per descrivere il termine in un elenco di descrizioni-->
+
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>

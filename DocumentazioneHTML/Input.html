@@ -1,0 +1,441 @@
+Input Type Text
+<input type="text"> definisce un campo di input di testo a riga singola:
+<form>
+  <label for="nome">Nome:</label><br />
+  <input type="text" id="nome" name="nome" /><br />
+  <label for="cognome">Cognome:</label><br />
+  <input type="text" id="cognome" name="cognome" />
+</form>
+
+Input Type Password
+<input type="password"> definisce un campo password:
+
+<form>
+  <label for="username">Nome utente:</label><br />
+  <input type="text" id="username" name="username" /><br />
+  <label for="password">Password:</label><br />
+  <input type="password" id="password" name="password" />
+</form>
+
+
+Input Type Submit
+
+<input type="submit"> definisce un pulsante per inviare i dati del modulo a un gestore del modulo.
+
+Il gestore del modulo è tipicamente una pagina del server con uno script per elaborare i dati di input.
+
+Il gestore del modulo è specificato nell’attributo “action” del modulo:
+
+<form action="/action_page.php">
+  <label for="nome">Nome:</label><br />
+  <input type="text" id="nome" name="nome" value="Luca" /><br />
+  <label for="cognome">Cognome:</label><br />
+  <input type="text" id="cognome" name="cognome" value="Rossi" /><br /><br />
+  <input type="submit" value="Invia" />
+</form>
+Se si omette l’attributo “value” del pulsante di invio, il pulsante avrà un testo predefinito:
+
+<form action="/action_page.php">
+  <label for="nome">Nome:</label><br />
+  <input type="text" id="nome" name="nome" value="Luca" /><br />
+  <label for="cognome">Cognome:</label><br />
+  <input type="text" id="cognome" name="cognome" value="Rossi" /><br /><br />
+  <input type="submit" />
+</form>
+
+Input Type Reset
+<input type="reset"> definisce un pulsante di reset che ripristina tutti i valori del modulo ai loro valori predefiniti:
+
+<form action="/action_page.php">
+  <label for="nome">Nome:</label><br />
+  <input type="text" id="nome" name="nome" value="Luca" /><br />
+  <label for="cognome">Cognome:</label><br />
+  <input type="text" id="cognome" name="cognome" value="Rossi" /><br /><br />
+  <input type="submit" value="Invia" />
+  <input type="reset" />
+</form>
+Se si modificano i valori di input e quindi si fa clic sul pulsante “Reset”, 
+i dati del modulo verranno ripristinati ai valori predefiniti.
+
+Input Type Radio
+<input type="radio"> definisce un pulsante di opzione.
+
+I pulsanti di opzione consentono all’utente di SELEZIONARE SOLO UNA delle opzioni di un numero limitato di scelte:
+
+<p>Scegli il tuo linguaggio Web preferito:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML" />
+  <label for="html">HTML</label><br />
+  <input type="radio" id="css" name="fav_language" value="CSS" />
+  <label for="css">CSS</label><br />
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+  <label for="javascript">JavaScript</label>
+</form>
+
+Input Type Checkbox
+<input type="checkbox"> definisce una casella di controllo.
+Le caselle di controllo consentono all’utente di selezionare ZERO o PIÙ opzioni di un numero limitato di scelte.
+<form>
+  <input type="checkbox" id="veicolo1" name="veicolo1" value="Bicicletta" />
+  <label for="veicolo1"> Ho una bicicletta</label><br />
+  <input type="checkbox" id="veicolo2" name="veicolo2" value="Automobile" />
+  <label for="veicolo2"> Ho una macchina</label><br />
+  <input type="checkbox" id="veicolo3" name="veicolo3" value="Barca" />
+  <label for="veicolo3"> Ho una barca</label>
+</form>
+
+Input Type Button
+<input type="button"> definisce un pulsante:
+
+<input type="button" onclick="alert('Ciao Mondo!')" value="Cliccami!" />
+
+Input Type Color
+<input type="color"> viene utilizzato per i campi di input che dovrebbero contenere un colore.
+
+A seconda del supporto del browser, può comparire un selettore di colori nel campo di input.
+
+<form>
+  <label for="favcolor">Seleziona il tuo colore preferito:</label>
+  <input type="color" id="favcolor" name="favcolor" />
+</form>
+
+Input Type Date
+<input type="date"> viene utilizzato per i campi di input che dovrebbero contenere una data.
+
+A seconda del supporto del browser, può comparire un selettore di date nel campo di input.
+
+<form>
+  <label for="compleanno">Compleanno:</label>
+  <input type="date" id="compleanno" name="compleanno" />
+</form>
+È anche possibile utilizzare gli attributi “min” e “max” per aggiungere restrizioni alle date:
+
+<form>
+  <label for="datemax">Inserisci una data prima del 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31" /><br /><br />
+  <label for="datemin">Inserisci una data dopo il 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02" />
+</form>
+
+Input Type Datetime-local
+<input type="datetime-local"> specifica un campo di input data e ora, senza fuso orario.
+
+A seconda del supporto del browser, può comparire un selettore di date e orario nel campo di input.
+
+<form>
+  <label for="oraCompleanno">Compleanno (data e ora):</label>
+  <input type="datetime-local" id="oraCompleanno" name="oraCompleanno" />
+</form>
+
+Input Type Email
+<input type="email"> viene utilizzato per i campi di input che dovrebbero contenere un indirizzo e-mail.
+
+<form>
+    <label for="email">Inserisci la tua email:</label>
+    <input type="email" id="email" name="email" />
+  </form>
+
+  Input Type Image
+<input type="image"> definisce un’immagine come pulsante di invio.
+
+Il percorso dell’immagine è specificato nell’attributo “src”.
+
+<form>
+  <input type="image" src="img_submit.png" alt="Invia" width="48" height="48" />
+</form>
+
+Input Type File
+<input type="file"> definisce un campo di selezione file e un pulsante “Sfoglia” per il caricamento dei file.
+
+<form>
+  <label for="myfile">Seleziona un file:</label>
+  <input type="file" id="myfile" name="myfile" />
+</form>
+
+Input Type Hidden
+<input type="hidden"> definisce un campo di input nascosto (non visibile all’utente).
+
+Un campo nascosto consente agli sviluppatori Web di includere dati che non possono essere visualizzati o modificati dagli utenti quando viene inviato un modulo.
+
+Spesso un campo nascosto memorizza quale record del database deve essere aggiornato quando viene inviato il modulo.
+
+Sebbene il valore non sia visualizzato all’utente nel contenuto della pagina, 
+è visibile (e può essere modificato) 
+utilizzando gli strumenti per sviluppatori 
+di qualsiasi browser o la funzionalità “Visualizza sorgente”. 
+Non utilizzare input nascosti come forma di sicurezza!
+
+<form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" /><br /><br />
+    <input type="hidden" id="customID" name="customID" value="3487" />
+    <input type="submit" value="Invia" />
+  </form>
+
+  Input Type Month
+<input type="month"> consente all’utente di selezionare un mese e un anno.
+
+A seconda del supporto del browser, può comparire un selettore di date nel campo di input.
+
+<form>
+  <label for="meseCompleanno">Compleanno (mese e anno):</label>
+  <input type="month" id="meseCompleanno" name="meseCompleanno" />
+</form>
+
+Input Type Number
+<input type="number"> definisce un campo di input numerico.
+
+È anche possibile impostare restrizioni su quali numeri sono accettati.
+
+Il seguente esempio mostra un campo di input numerico, in cui è possibile inserire un valore da 1 a 5:
+
+<form>
+  <label for="qta">Quantità (tra 1 e 5):</label>
+  <input type="number" id="qta" name="qta" min="1" max="5" />
+</form>
+
+Input Type Range
+<input type="range"> definisce un controllo per inserire un numero il cui valore esatto non è importante 
+(come un controllo a cursore). Il range predefinito è da 0 a 100. 
+Tuttavia, è possibile impostare restrizioni su quali numeri sono accettati con gli attributi “min”, “max” e “step”:
+
+<form>
+  <label for="vol">Volume (tra 0 e 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50" />
+</form>
+
+Input Type Search
+<input type="search"> è utilizzato per i campi di ricerca (un campo di ricerca si comporta come un normale campo di testo).
+
+<form>
+  <label for="gsearch">Cerca su Google:</label>
+  <input type="search" id="gsearch" name="gsearch" />
+</form>
+
+
+Input Type Tel
+<input type="tel"> è utilizzato per i campi di input che dovrebbero contenere un numero di telefono.
+
+<form>
+  <label for="phone">Inserisci il tuo numero di telefono:</label>
+  <input
+    type="tel"
+    id="phone"
+    name="phone"
+    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+</form>
+
+
+Input Type Time
+<input type="time"> consente all’utente di selezionare un’ora (senza fuso orario).
+
+A seconda del supporto del browser, può comparire un selettore di orario nel campo di input.
+
+<form>
+  <label for="appt">Seleziona un orario:</label>
+  <input type="time" id="appt" name="appt" />
+</form>
+
+Input Type Url
+<input type="url"> è utilizzato per i campi di input che dovrebbero contenere un indirizzo URL.
+
+<form>
+    <label for="homepage">Aggiungi la tua homepage:</label>
+    <input type="url" id="homepage" name="homepage" />
+  </form>
+
+
+
+  Input Type Week
+  <input type="week"> consente all’utente di selezionare una settimana e un anno.
+
+A seconda del supporto del browser, può comparire un selettore di date nel campo di input.
+
+<form>
+  <label for="week">Seleziona una settimana:</label>
+  <input type="week" id="week" name="week" />
+</form>
+
+L’attributo “value”
+L’attributo “value” dell’elemento di input specifica un valore iniziale per il campo di input:
+
+<form>
+  <label for="nome">Nome:</label><br />
+  <input type="text" id="nome" name="nome" value="Luca" /><br />
+  <label for="cognome">Cognome:</label><br />
+  <input type="text" id="cognome" name="cognome" value="Rossi" />
+</form>
+
+
+L’attributo “readonly”
+L’attributo “readonly” dell’elemento di input specifica che il campo di input è di sola lettura.
+
+<form>
+    <label for="nome">Nome:</label><br />
+    <input type="text" id="nome" name="nome" value="Luca" readonly /><br />
+    <label for="cognome">Cognome:</label><br />
+    <input type="text" id="cognome" name="cognome" value="Rossi" />
+  </form>
+
+
+  L’attributo “disabled”
+L’attributo “disabled” dell’elemento di input specifica che il campo di input deve essere disabilitato.
+
+Un campo di input disabilitato non è utilizzabile e non può essere selezionato.
+
+Il valore di un campo di input disabilitato non verrà inviato quando viene inviato il modulo!
+
+<form>
+  <label for="nome">Nome:</label><br />
+  <input type="text" id="nome" name="nome" value="Luca" disabled /><br />
+  <label for="cognome">Cognome:</label><br />
+  <input type="text" id="cognome" name="cognome" value="Rossi" />
+</form>
+
+L’attributo “size”
+L’attributo “size” dell’elemento di input specifica la larghezza visibile, in caratteri, di un campo di input.
+
+<form>
+    <label for="nome">Nome:</label><br />
+    <input type="text" id="nome" name="nome" size="50" /><br />
+    <label for="pin">PIN:</label><br />
+    <input type="text" id="pin" name="pin" size="4" />
+  </form>
+
+  L’attributo “maxlength”
+L’attributo “maxlength” 
+dell’elemento di input specifica il numero massimo di caratteri consentiti in un campo di input.
+
+<form>
+    <label for="nome">Nome:</label><br />
+    <input type="text" id="nome" name="nome" size="50" /><br />
+    <label for="pin">PIN:</label><br />
+    <input type="text" id="pin" name="pin" maxlength="4" size="4" />
+  </form>
+
+
+  Gli attributi “min” e “max”
+Gli attributi “min” e “max” specificano i valori minimo e massimo per un campo di input.
+
+Gli attributi “min” e “max” funzionano con i seguenti tipi di input: number, range, date, 
+datetime-local, month, time e week.
+
+Usa insieme gli attributi “max” e “min” per creare un intervallo di valori legali.
+
+<form>
+  <label for="datemax">Inserisci una data prima del 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31" /><br /><br />
+
+  <label for="datemin">Inserisci una data dopo il 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02" /><br /><br />
+
+  <label for="qta">Quantità (tra 1 e 5):</label>
+  <input type="number" id="qta" name="qta" min="1" max="5" />
+</form>
+
+
+L’attributo “multiple”
+L’attributo “multiple” specifica che all’utente è consentito inserire più di un valore in un campo di input.
+
+<form>
+    <label for="files">Seleziona file:</label>
+    <input type="file" id="files" name="files" multiple />
+  </form>
+
+  L’attributo “pattern”
+L’attributo “pattern” specifica un’espressione regolare con cui viene controllato 
+il valore del campo di input quando il modulo viene inviato.
+
+<form>
+    <label for="codicePaese">Codice paese:</label>
+    <input
+      type="text"
+      id="codicePaese"
+      name="codicePaese"
+      pattern="[A-Za-z]{3}"
+      title="Codice paese di tre lettere" />
+  </form>
+
+
+  L’attributo “placeholder”
+  L’attributo “placeholder” specifica un breve suggerimento che descrive il valore atteso di un campo di input
+  <form>
+    <label for="telefono">Inserisci un numero di telefono:</label>
+    <input
+      type="tel"
+      id="telefono"
+      name="telefono"
+      placeholder="123-45-678"
+      pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+  </form>
+
+
+  L’attributo “required”
+L’attributo “required” specifica che un campo di input deve essere compilato prima di inviare il modulo.
+<form>
+    <label for="username">Nome utente:</label>
+    <input type="text" id="username" name="username" required />
+  </form>
+
+
+  L’attributo “step”
+L’attributo “step” specifica gli intervalli numerici legali per un campo di input.
+
+Questo attributo può essere utilizzato insieme agli attributi 
+“max” e “min” per creare un intervallo di valori legali.
+
+<form>
+    <label for="punti">Punti:</label>
+    <input type="number" id="punti" name="punti" step="3" />
+  </form>
+
+  L’attributo “autofocus”
+L’attributo “autofocus” specifica che un campo di input dovrebbe ottenere automaticamente 
+il focus quando la pagina si carica.
+
+<form>
+  <label for="nome">Nome:</label><br />
+  <input type="text" id="nome" name="nome" autofocus /><br />
+  <label for="cognome">Cognome:</label><br />
+  <input type="text" id="cognome" name="cognome" />
+</form>
+
+Gli attributi “height” e “width”
+Gli attributi “height” e “width” specificano l’altezza e la larghezza di un elemento <input type="image">.
+<form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" /><br /><br />
+    <label for="cognome">Cognome:</label>
+    <input type="text" id="cognome" name="cognome" /><br /><br />
+    <input type="image" src="img_submit.png" alt="Invia" width="48" height="48" />
+  </form>
+
+  L’attributo “list”
+L’attributo “list” si riferisce a un elemento <datalist> 
+    che contiene opzioni predefinite per un elemento <input>.
+
+<form>
+  <input list="browser" />
+  <datalist id="browser">
+    <option value="Internet Explorer"></option>
+    <option value="Firefox"></option>
+    <option value="Chrome"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+  </datalist>
+</form>
+
+L’attributo “autocomplete”
+L’attributo “autocomplete” 
+specifica se un modulo o un campo di input deve avere l’autocompletamento attivo o disattivato.
+
+<form action="/action_page.php" autocomplete="on">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" /><br /><br />
+    <label for="cognome">Cognome:</label>
+    <input type="text" id="cognome" name="cognome" /><br /><br />
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" autocomplete="off" /><br /><br />
+    <input type="submit" value="Invia" />
+  </form>

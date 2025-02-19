@@ -1,0 +1,15 @@
+L’elemento HTML <base>
+L’elemento <base> specifica l’URL base e/o il target per tutti gli URL relativi in una pagina.
+
+Il tag <base> deve avere presente l’attributo href o l’attributo target, o entrambi.
+
+Ci può essere solo un singolo elemento <base> in un documento!
+
+<head>
+  <base href="https://www.codegrind.it/" target="_blank" />
+</head>
+
+<body>
+  <img src="immagini/logo.png" width="24" height="39" alt="Logo Codegrind" />
+  <a href="blog/articolo-a-caso.html">Link ad un articolo</a>
+</body>

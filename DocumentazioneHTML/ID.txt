@@ -1,0 +1,92 @@
+ID in HTML
+L’attributo “id” in HTML viene utilizzato per specificare un identificativo univoco per un elemento HTML.
+Non è possibile avere più di un elemento con lo stesso id in un documento HTML.
+
+Utilizzo dell’attributo “id”
+L’attributo “id” specifica un identificativo univoco per un elemento HTML. 
+Il valore dell’attributo “id” deve essere unico all’interno del documento HTML.
+
+L’attributo “id” viene utilizzato per puntare a una dichiarazione di stile specifica in un foglio di stile(CSS). 
+Viene anche utilizzato da JavaScript per accedere e manipolare l’elemento con l’id specifico.
+La sintassi per l’id è la seguente: scrivi un carattere cancelletto (#), seguito da un nome di id. 
+Quindi, definisci le proprietà CSS all’interno delle parentesi graffe {}.
+Nell’esempio seguente abbiamo un elemento <h1> che punta al nome di id “intestazione”. 
+Questo elemento <h1> avrà lo stile definito nella sezione <style> con il selettore #intestazione:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #intestazione {
+        background-color: yellow;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="intestazione">Titolo bellissimo</h1>
+  </body>
+</html>
+É importante sapere che il nome dell’id è sensibile alle maiuscole e minuscole, 
+inoltre deve contenere almeno un carattere, 
+non può iniziare con un numero e non deve contenere spazi (spazi, tabulazioni, ecc.).
+
+Differenza tra Class e ID
+Un nome di classe può essere utilizzato da più elementi HTML, 
+mentre un nome di id deve essere utilizzato solo da un elemento HTML all’interno della pagina:
+
+<style>
+  /* Stilizza l'elemento con l'id "intestazione" */
+  #intestazione {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }
+
+  /* Stilizza tutti gli elementi con il nome di classe "container" */
+  .container {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+  }
+</style>
+
+<!-- Un elemento con un id unico -->
+<h1 id="intestazione">App</h1>
+
+<!-- Diversi elementi con la stessa classe -->
+<div class="container">
+  <h2>Youtube</h2>
+  <p>App per vedere video.</p>
+</div>
+
+<div class="container">
+  <h2>Whatsapp</h2>
+  <p>App di messaggistica.</p>
+</div>
+
+<div class="container">
+  <h2>Paypal</h2>
+  <p>App per pagamenti e scambio denaro.</p>
+</div>
+
+Bookmark HTML con ID e link
+I bookmark HTML vengono utilizzati per consentire ai lettori di passare a parti specifiche di una pagina web.
+
+I bookmark possono essere utili se la tua pagina è molto lunga.
+
+Per utilizzare un bookmark, devi prima crearlo e quindi aggiungere un link ad esso.
+ Quando il link viene cliccato, la pagina scorrerà fino alla posizione con il bookmark.
+
+Prima, crea un bookmark con l’attributo “id”:
+
+<h2 id="C4">Capitolo 4</h2>
+Poi, aggiungi un link al bookmark (“Salta al Capitolo 4”), all’interno della stessa pagina:
+
+<a href="#C4">Salta al Capitolo 4</a>
+Oppure, aggiungi un link al bookmark (“Salta al Capitolo 4”), da un’altra pagina:
+
+<a href="html_demo.html#C4">Salta al Capitolo 4</a>

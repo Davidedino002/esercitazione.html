@@ -1,0 +1,45 @@
+L'elemento HTML <head>è un contenitore per i seguenti elementi: 
+<title>, <style>, <meta>, <link>, <script>, e <base>.
+
+L'elemento HTML <head>
+L' <head>elemento è un contenitore per metadati (dati sui dati) 
+e viene posizionato tra il <html>tag e il <body>tag .
+I metadati HTML sono dati sul documento HTML. I metadati non vengono visualizzati.
+
+L'elemento HTML <title>
+L' <title>elemento definisce il titolo del documento. 
+Il titolo deve essere solo testo e viene mostrato nella barra del titolo
+ del browser o nella scheda della pagina.
+L' <title>elemento è obbligatorio nei documenti HTML!
+
+Il contenuto del titolo di una pagina è molto importante per l'ottimizzazione dei motori di ricerca (SEO)! 
+Il titolo di una pagina è utilizzato dagli algoritmi dei motori di ricerca per decidere l'ordine 
+quando si elencano le pagine nei risultati di ricerca.
+L' <title>elemento:
+definisce un titolo nella barra degli strumenti del browser
+fornisce un titolo per la pagina quando viene aggiunta ai preferiti
+visualizza un titolo per la pagina nei risultati dei motori di ricerca
+
+L'elemento HTML <link>
+L' <link>elemento definisce la relazione tra il documento corrente e una risorsa esterna.
+Il <link> tag è usato più spesso per collegarsi a fogli di stile esterni:
+
+L'elemento HTML <meta>
+L' <meta>elemento viene in genere utilizzato per specificare il set di caratteri,
+ la descrizione della pagina, 
+ le parole chiave, l'autore del documento e le impostazioni della finestra di visualizzazione.
+I metadati non verranno visualizzati sulla pagina, ma vengono utilizzati dai browser
+
+L'elemento HTML <base>
+L' <base>elemento specifica l'URL di base e/o la destinazione per tutti gli URL relativi in ​​una pagina.
+Il <base>tag deve avere un attributo href o target, oppure entrambi.
+In un documento può esserci un solo <base> elemento!
+
+L' <head>elemento è un contenitore per metadati (dati sui dati)
+L' <head>elemento è posizionato tra il <html>tag e il <body>tag
+L' <title>elemento è obbligatorio e definisce il titolo del documento
+L' <style>elemento viene utilizzato per definire le informazioni di stile per un singolo documento
+Il <link> tag è più spesso utilizzato per collegarsi a fogli di stile esterni
+L' <meta>elemento viene in genere utilizzato per specificare il set di caratteri, la descrizione della pagina, le parole chiave, l'autore del documento e le impostazioni della finestra di visualizzazione
+L' <script>elemento viene utilizzato per definire i JavaScript lato client
+L' <base>elemento specifica l'URL di base e/o la destinazione per tutti gli URL relativi in ​​una pagina

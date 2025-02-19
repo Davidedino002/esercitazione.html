@@ -1,0 +1,17 @@
+IDE sta per Integrated Development Enviroment (Ambiente di sviluppo Integrato) 
+Un IDE è uno strumento software che formnisce un insieme completo di funzionalità 
+per aiutare i programmatori nello sviluppo di applicazioni software.
+Può rappresentare un Editor  di codice 
+compilatore/interprete 
+Debugger
+Gestione progetti
+
+ Perchè usiamo un IDE? 
+ Scrivere codice piu' facilmente l'IDE offre suggerimenti di comportamento automatico e segnalazioni 
+ di errori in tempo reale  
+
+Debug efficente Consente di eseguire il programma passo passo individuando e correggendo errori
+
+Gestione del progetto  Organizza i file e le dipendenze del progetto in modo semplice e chiaro.
+
+Automazione: Compila, esegue e testa il codice con un solo clic.

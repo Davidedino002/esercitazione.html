@@ -1,0 +1,72 @@
+<!--Utilizza l'attributo aria-label per fornire un'etichetta esplicita per un elemento 
+senza utilizzare l'etichetta `label`.-->
+<input type="text" name="nome" aria-label="Nome" />
+
+<!--Utilizza l'attributo role per assegnare un ruolo esplicito a un elemento.-->
+
+<div role="navigation">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Contatti</a></li>
+  </ul>
+</div>
+<!--Metodo due-->
+<div role="navigation">
+    <a href="#">Home</a>
+    <a href="#">Servizi</a>
+    <a href="#">Contatti</a>
+
+
+<!--Utilizza l'attributo aria-disabled per indicare che un elemento è disabilitato.-->
+
+<button aria-disabled="true">Disabilitato</button>
+
+<!--Utilizza l'attributo aria-labelled by per fornire un 
+riferimento all'ID di un elemento che funge da etichetta per un altro elemento.-->
+
+<label for="myInput">Nome:</label>
+<input type="text" id="myInput" name="nome" aria-labelledby="myLabel" />
+
+<!--metodo 2-->
+<h2 id="title">Titolo dell'elemento</h2>
+<div aria-labelledby="title">Contenuto dell'elemento</div>
+
+
+<!--Utilizza l'attributo aria-placeholder 
+per fornire un suggerimento esplicito per l'input dell'utente.-->
+<input type="text" aria-placeholder="Inserisci il tuo nome" />
+
+<!--Utilizza l'attributo aria-invalid per indicare che un campo di input contiene un valore non valido.-->
+<input type="text" aria-invalid="true" value="valore non valido" />
+
+
+<!--Utilizza l'attributo aria-expanded per indicare lo stato di un elemento espandibile.-->
+
+<div aria-expanded="true">
+  <h2>Contenuto espandibile</h2>
+  <p>Testo del contenuto espandibile.</p>
+</div>
+<!--metodo diverso-->
+<button aria-expanded="false">Espandi</button>
+
+
+<!--Utilizza l'attributo aria-selected per indicare lo stato di selezione di un elemento.-->
+<ul>
+    <li aria-selected="true">Elemento 1</li>
+    <li aria-selected="false">Elemento 2</li>
+    <li aria-selected="false">Elemento 3</li>
+  </ul>
+
+
+
+  <!--Utilizza l'attributo aria-hidden per indicare che un elemento è nascosto agli utenti.-->
+  <div aria-hidden="true">
+    <p>Contenuto nascosto.</p>
+  </div>
+<!--metodo diverso-->
+<p aria-hidden="true">Questo testo è nascosto.</p>
+
+
+
+
+

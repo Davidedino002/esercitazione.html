@@ -1,0 +1,58 @@
+L’elemento HTML <audio>
+    Per riprodurre un file audio in HTML, utilizza l’elemento <audio>:
+    
+    <audio controls>
+      <source src="file.ogg" type="audio/ogg" />
+      <source src="file.mp3" type="audio/mpeg" />
+      Il tuo browser non supporta l'elemento audio.
+    </audio>
+
+    Come funziona Audio
+L’attributo “controls” aggiunge i controlli audio, come play, pausa e volume.
+
+L’elemento <source> ti consente di specificare file audio alternativi dai quali il browser può scegliere.
+ Il browser utilizzerà il primo formato riconosciuto.
+
+Il testo tra le tag <audio> e </audio> verrà visualizzato solo nei browser che non supportano l’elemento <audio>.
+
+    HTML <audio> Autoplay
+        Per avviare automaticamente un file audio, utilizza l’attributo “autoplay”:
+        
+        <audio controls autoplay>
+          <source src="file.ogg" type="audio/ogg" />
+          <source src="file.mp3" type="audio/mpeg" />
+          Il tuo browser non supporta l'elemento audio.
+        </audio>
+        Nota: I browser Chromium non consentono l’autoplay nella maggior parte dei casi. Tuttavia, l’autoplay con audio disattivato è sempre consentito.
+        
+        Aggiungi “muted” dopo “autoplay” per far partire automaticamente il file audio (ma disattivato):
+        
+        <audio controls autoplay muted>
+          <source src="file.ogg" type="audio/ogg" />
+          <source src="file.mp3" type="audio/mpeg" />
+          Il tuo browser non supporta l'elemento audio.
+        </audio>
+
+<!--L'elemento HTML <audio>viene utilizzato per riprodurre un file audio su una pagina web.-->
+  <audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+
+<!--L' controls attributo aggiunge controlli audio, come riproduzione, pausa e volume.-->
+<!--L' <source>elemento consente di specificare file audio alternativi tra cui il browser può scegliere. --> 
+<!--Il testo tra i tag <audio>e </audio>verrà visualizzato solo nei browser che non supportano l'<audio>elemento--> 
+ <!--Per avviare automaticamente un file audio, utilizzare l' autoplay attributo:-->       
+ <audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<!--Aggiungi muted dopo autoplayper far sì che il tuo file audio inizi a essere riprodotto automaticamente -->
+<audio controls autoplay muted>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>

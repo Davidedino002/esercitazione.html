@@ -1,0 +1,191 @@
+Attributi HTML
+Tutti gli elementi HTML possono avere attributi
+Gli attributi forniscono informazioni aggiuntive sugli elementi
+Gli attributi sono sempre specificati nel tag di inizio
+Gli attributi solitamente si presentano in coppie nome/valore come: nome="valore"
+L'attributo href
+Il <a>tag definisce un collegamento ipertestuale.
+ L' hrefattributo specifica l'URL della pagina a cui porta il collegamento:
+
+Esempio
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+L'attributo src
+Il <img>tag è utilizzato per incorporare un'immagine in una pagina HTML. L'src
+ attributo specifica il percorso all'immagine da visualizzare:agine da visualizzare:
+
+Esempio
+<img src="img_girl.jpg">         
+Esistono due modi per specificare l'URL nell'attributo src :
+
+1. URL assoluto : link a un'immagine esterna ospitata su un altro sito web. Esempio: src="https://www.w3schools.com/images/img_girl.jpg" .
+
+Note: Le immagini esterne potrebbero essere protette da copyright. Se non ottieni il permesso di utilizzarle, potresti violare le leggi sul copyright. Inoltre, non puoi controllare le immagini esterne; possono essere rimosse o modificate all'improvviso.
+
+2. URL relativo - Link a un'immagine ospitata nel sito web. Qui, l'URL non include il nome di dominio. Se l'URL inizia senza una barra, sarà relativo alla pagina corrente. Esempio: src="img_girl.jpg". Se l'URL inizia con una barra, sarà relativo al dominio. Esempio: src="/images/img_girl.jpg".
+
+Suggerimento: è quasi sempre meglio usare URL relativi. Non si romperanno se cambi dominio.
+
+Gli attributi larghezza e altezza
+Il <img>tag dovrebbe contenere anche gli attributi widthe height, che specificano la larghezza e l'altezza dell'immagine (in pixel):
+
+Esempio
+<img src="img_girl.jpg" width="500" height="600">
+
+L'attributo alt
+L' alt attributo obbligatorio per il <img> tag specifica un testo alternativo per un'immagine, se per qualche motivo l'immagine non può essere visualizzata. Ciò può essere dovuto a una connessione lenta, a un errore nell'attributo src o se l'utente utilizza uno screen reader.
+
+Esempio
+<img src="img_girl.jpg" alt="Girl with a jacket">
+Esempio
+Vediamo cosa succede se proviamo a visualizzare un'immagine che non esiste:
+
+<img src="img_typo.jpg" alt="Girl with a jacket">
+
+
+L'attributo stile
+L' styleattributo viene utilizzato per aggiungere stili a un elemento, come colore, carattere, dimensione.
+
+Esempio
+<p style="color:red;">This is a red paragraph.</p>
+
+L'attributo lang
+Dovresti sempre includere l' langattributo all'interno del <html>tag, 
+per dichiarare la lingua della pagina Web. 
+Questo è pensato per aiutare i motori di ricerca e i browser.
+<!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html>
+
+L'attributo del titolo
+L' title attributo definisce alcune informazioni aggiuntive su un elemento.
+
+Il valore dell'attributo title verrà visualizzato come suggerimento quando passi il mouse sopra l'elemento:
+
+Esempio
+<p title="I'm a tooltip">This is a paragraph.</p>
+
+Virgolette singole o doppie?
+Le virgolette doppie attorno ai valori degli attributi sono le più comuni in HTML, 
+ma possono essere utilizzate anche le virgolette singole.
+
+Gli attributi HTML forniscono informazioni aggiuntive sugli elementi HTML.
+
+Tutti gli elementi HTML possono avere attributi
+ Gli attributi forniscono informazioni aggiuntive sugli elementi 
+ Gli attributi vengono sempre specificati nel tag di apertura 
+ Gli attributi vengono di solito forniti in coppia nome/valore, come: nome=“valore”
+ 
+ L’attributo href
+Il tag <a> definisce un collegamento ipertestuale. L’attributo href specifica l’URL della pagina a cui il collegamento punta:
+
+<a href="https://www.codegrind.it">Visita Codegrind</a>
+
+L’attributo src
+Il tag <img> viene utilizzato per incorporare un’immagine in una pagina HTML. L’attributo src specifica il percorso dell’immagine da visualizzare:
+<img src="immagine_copertina.jpg" />
+
+Gli attributi width e height
+Il tag <img> dovrebbe anche contenere gli attributi width e height, che specificano la larghezza e l’altezza dell’immagine (in pixel):
+
+<img src="immagine_copertina.jpg" width="500" height="600" />
+
+L’attributo alt
+
+L’attributo obbligatorio alt per il tag <img> 
+specifica un testo alternativo per un’immagine, 
+se l’immagine non può essere visualizzata per qualche motivo.
+ Questo può accadere a causa di una connessione lenta, 
+ di un errore nell’attributo src o se l’utente utilizza uno screen reader.
+
+<img src="immagine_copertina.jpg" alt="Ragazza con una giacca" />
+
+L’attributo style
+L’attributo style viene utilizzato per aggiungere stili a un elemento,
+ come il colore, il font, la dimensione e altro ancora.
+
+<p style="color:red;">Questo è un paragrafo rosso.</p>
+
+L’attributo lang
+Dovresti sempre includere l’attributo lang all’interno del tag <html>, 
+per dichiarare la lingua della pagina Web. 
+Questo serve ad aiutare i motori di ricerca e i browser.
+
+Nell’ seguente, si specifica l’inglese come lingua:
+
+<!DOCTYPE html>
+<html lang="it">
+  <body>
+    ...
+  </body>
+</html>
+
+L’attributo title
+L’attributo title definisce ulteriori informazioni su un elemento.
+
+Il valore dell’attributo title verrà visualizzato come suggerimento quando si posiziona il mouse sull’elemento:
+
+<p title="Sono un suggerimento">Questo è un paragrafo.</p>
+
+Usa sempre attributi in minuscolo
+Lo standard HTML non richiede nomi di attributi in minuscolo.
+
+L’attributo title (e tutti gli altri attributi) possono essere scritti con lettere maiuscole o minuscole come title o TITLE.
+
+Tuttavia, raccomandiamo nomi di attributi in minuscolo 
+in HTML e richiede attributi in minuscolo per tipi di documento più rigorosi come XHTML.
+
+Usa sempre valori degli attributi tra virgolette
+Lo standard HTML non richiede virgolette intorno ai valori degli attributi.
+
+Tuttavia, raccomandiamo le virgolette in HTML e richiede virgolette 
+per tipi di documento più rigorosi come XHTML.
+
+
+<!--Attributi del modulo di input HTML *-->
+<!--L' form attributo input specifica la forma <input>a cui appartiene l'elemento.-->
+<form action="/action_page.php" id="form1">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" form="form1">
+
+<!--L'attributo di formazione-->
+<!--L'attributo input formaction specifica l'URL 
+del file che elaborerà l'input quando il modulo viene inviato.-->
+<!--Nota: questo attributo sovrascrive l' action attributo dell'elemento <form>.-->
+<!--L' formactionattributo funziona con i seguenti tipi di input: submit e image.-->
+  <form action="/action_page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+  </form>
+  
+  <!--L'attributo formenctype-->
+  <!--L' formenctype attributo input specifica 
+  come devono essere codificati i dati del modulo quando vengono inviati -->
+  <!--Nota: questo attributo sovrascrive l'attributo enctype dell'elemento <form>.-->
+    <!--L' formenctypeattributo funziona con i seguenti tipi di input: submit e image.-->
+
+    <form action="/action_page_binary.asp" method="post">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <input type="submit" value="Submit">
+      <input type="submit" formenctype="multipart/form-data"
+      value="Submit as Multipart/form-data">
+    </form>
+    <!--L' formmethod attributo input definisce il metodo HTTP per l'invio dei dati del modulo 
+    all'URL dell'azione.
+
+Nota: questo attributo sostituisce l'attributo method dell'elemento <form>.
+
+L' formmethodattributo funziona con i seguenti tipi di input: submit e image.-->
