@@ -1,0 +1,272 @@
+<!--Crea una pagina HTML con un elemento `div` che abbia un colore di sfondo rosso.
+ Applica una transizione CSS al colore di sfondo in modo che cambia gradualmente in blu
+  quando il mouse vi passa sopra.-->
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transition: background-color 2s;
+      }
+      div:hover {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+  </html>
+
+
+<!--Crea una pagina HTML con un elemento di dimensioni 100x100 pixel e di colore verde.
+ Applica una transizione CSS alle dimensioni del div in modo che cambiano gradualmente 
+ a 150x150 pixel quando il mouse vi passa sopra.-->.
+ <!DOCTYPE html>
+ <html>
+    <head>
+      <style>
+        div {
+          width: 100px;
+          height: 100px;
+          background-color: green;
+          transition: width 2s, height 2s;
+        }
+        div:hover {
+          width: 150px;
+          height: 150px;
+        }
+      </style>
+    </head>
+    <body>
+      <div></div>
+    </body>
+ </html>
+
+ <!--Crea una pagina HTML con un elemento di dimensioni 100x100 pixel e di colore verde.
+  Applica una transizione CSS alle dimensioni del div in modo che cambiano gradualmente a 150x150 
+  pixel quando il mouse vi passa sopra.-->
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        div {
+          width: 100px;
+          height: 100px;
+          background-color: green;
+          transition: width 2s, height 2s;
+        }
+        div:hover {
+          width: 150px;
+          height: 150px;
+        }
+      </style>
+    </head>
+    <body>
+      <div></div>
+    </body>
+  </html>
+
+  <!--Crea una pagina HTML con un elemento di colore blu.
+   Applica una transizione CSS al colore di sfondo in modo che cambia gradualmente
+    in rosso quando il div ottiene il focus.-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        div {
+          width: 200px;
+          height: 200px;
+          background-color: blue;
+          transition: background-color 2s;
+        }
+        div:focus {
+          background-color: red;
+        }
+      </style>
+    </head>
+    <body>
+      <div tabindex="0" class="transition"></div>
+    </body>
+    </html>
+
+<!--Crea una pagina HTML con un elemento di dimensioni 150x150 pixel e di colore giallo.
+ Applica una transizione CSS alle dimensioni e al colore di sfondo del div in modo 
+ che cambiano gradualmente a 200x200 pixel e verde quando il mouse vi passa sopra.-->
+ <!DOCTYPE html>
+ <html>
+    <head>
+      <style>
+        div {
+          width: 150px;
+          height: 150px;
+          background-color: yellow;
+          transition: width 2s, height 2s, background-color 2s;
+        }
+        div:hover {
+          width: 200px;
+          height: 200px;
+          background-color: green;
+        }
+      </style>
+    </head>
+    <body>
+      <div></div>
+    </body>
+ </html>
+
+ <!--Crea una pagina HTML con un elemento di colore arancione. 
+ Applica una transizione CSS al colore di sfondo in modo che cambia 
+ gradualmente in viola quando il mouse vi passa sopra.-->
+ <!DOCTYPE html>
+ <html>
+    <head>
+      <style>
+        div {
+          width: 200px;
+          height: 200px;
+          background-color: orange;
+          transition: background-color 2s;
+        }
+        div:hover {
+          background-color: violet;
+        }
+      </style>
+    </head>
+    <body>
+      <div></div>
+    </body>
+ </html>
+
+ <!--Crea una pagina HTML con un elemento di dimensioni 200x100 pixel e di colore magenta. 
+ Applica una transizione CSS alla posizione del div in modo che cambia gradualmente a 
+ 50 pixel verso destra quando il mouse vi passa sopra.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: magenta;
+            transition: left 2s;
+        }
+        div:hover {
+            left: 50px;
+        }
+    </style>
+    <div></div>
+</body>
+</html>
+
+<!--Crea una pagina HTML con un elemento di dimensioni 100x100 pixel e di colore ciano
+ Applica una transizione CSS alla rotazione del div in modo che ruota gradualmente di 45 gradi 
+ quando il mouse vi passa sopra.-->
+ <!DOCTYPE html>
+ <html>
+    <head>
+      <style>
+        div {
+          width: 100px;
+          height: 100px;
+          background-color: cyan;
+          transition: transform 2s;
+        }
+        div:hover {
+          transform: rotate(45deg);
+        }
+      </style>
+    </head>
+    <body>
+      <div></div>
+    </body>
+ </html>
+
+ <!--Crea una pagina HTML con un elemento di dimensioni 150x150 pixel e di colore verde. 
+ Applica una transizione CSS alla dimensione del div in modo che cambia gradualmente
+  a 200x100 pixel quando il mouse vi passa sopra.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            transition: width 2s, height 2s;
+        }
+        div:hover {
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+    <div></div>
+</body>
+</html>
+
+<!--Crea una pagina HTML con un elemento di colore blu. 
+Applica una transizione CSS al colore di sfondo in modo che cambia gradualmente 
+in rosso quando il mouse vi passa sopra e ritorna al blu quando il mouse esce dall'elemento.-->
+ <!DOCTYPE html>
+ <html>
+    <head>
+      <style>
+        div {
+          width: 200px;
+          height: 200px;
+          background-color: blue;
+          transition: background-color 2s;
+        }
+        div:hover {
+          background-color: red;
+        }
+        div:focus {
+          background-color: blue;
+        }
+      </style>
+    </head>
+    <body>
+      <div tabindex="0" class="transition"></div>
+    </body>
+ </html>
+
+<!--Crea una pagina HTML con un elemento di dimensioni 200x200 pixel e di colore giallo.
+ Applica una transizione CSS alle dimensioni del div in modo che cambiano gradualmente a 150x150
+  pixel quando il div ottiene il focus.-->
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        div {
+          width: 200px;
+          height: 200px;
+          background-color: yellow;
+          transition: width 2s, height 2s;
+        }
+        div:hover {
+          width: 150px;
+          height: 150px;
+        }
+        div:focus {
+          width: 150px;
+          height: 150px;
+        }
+      </style>
+    </head>
+    <body>
+      <div tabindex="0" class="transition"></div>
+    </body>
+ </html>

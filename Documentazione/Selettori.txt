@@ -1,0 +1,10 @@
+I selettori CSS vengono utilizzati per "trovare" (o selezionare) gli elementi HTML 
+a cui si desidera applicare uno stile.
+
+Possiamo dividere i selettori CSS in cinque categorie:
+
+Selettori semplici (selezionano gli elementi in base a nome, id, classe)
+Selettori combinatori (selezionano gli elementi in base a una relazione specifica tra loro)
+Selettori di pseudo-classe (selezionano gli elementi in base a un certo stato)
+Selettori di pseudo-elementi (selezionano e assegnano uno stile a una parte di un elemento)
+Selettori di attributi (selezionano gli elementi in base a un attributo o a un valore di attributo)

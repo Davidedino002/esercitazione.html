@@ -1,0 +1,71 @@
+cos'è il CSS 
+il CSS (Cascading Style Sheets) è il linguaggio utilizzato per definire lo stile 
+e la presentazione della pagina web
+Grazie al CSS,possiamo controllare colori,dimensioni, spaziature , layout. 
+Il CSS separa il contenuto dal come viene presentato, rendendo il codice piu' pulito , 
+flessibile e manutenibile. 
+
+Come funziona?​
+ContenutoIl CSS funziona applicando stili a uno o più elementi HTML attraverso regole di stile. 
+Ogni regola CSS è composta da un selettore, che identifica l'elemento HTML da stilizzare, 
+e da una o più dichiarazioni di stile, 
+che contengono le proprietà e i valori che specificano lo stile da applicare.
+
+Tipi di CSS​
+Esistono tre modi principali per applicare CSS a una pagina web. ​
+Il primo è l’inline CSS, dove lo stile viene scritto direttamente nell’elemento HTML tramite l’attributo style.
+ Questo metodo è utile per cambiamenti molto locali, ma non è consigliato per gestire grandi quantità di codice, 
+ poiché rende difficile la manutenzione.​
+
+
+Il secondo metodo è l’internal CSS, dove gli stili vengono definiti all’interno del tag <style> 
+nella sezione <head> di un documento HTML. 
+Questo approccio è utile quando si vogliono applicare stili specifici a una sola pagina.​
+
+​Il metodo più efficiente, soprattutto per siti complessi, è l’external CSS. 
+In questo caso, gli stili sono scritti in un file separato con estensione .css, 
+che viene collegato al documento HTML tramite il tag <link>. 
+Questo permette di riutilizzare gli stessi stili su più pagine e mantenere il codice ben organizzato.​
+
+Testi​
+Il CSS offre numerose proprietà per la formattazione del testo. Ecco le  fondamentali:​
+font-size: Definisce la dimensione del testo.​
+font-family: Sceglie il tipo di carattere (es. Arial, Times New Roman, o font web personalizzati).​
+font-weight: Controlla lo spessore del testo (da leggero a grassetto).​
+letter-spacing: Regola la spaziatura tra le lettere.​
+text-align: Allinea il testo (es. left, right, center).​
+text-decoration: Modifica la decorazione del testo 
+
+Colori​
+In CSS, i  possono essere definiti in vari modi:​
+Valori Esadecimali, ovvero in formato #RRGGBB (sei cifre, precedute da #): #FF5733​
+Formato RGB, ovvero specificando la quantità di rosso, verde e blu: rgb(255, 87, 51).​
+Nomi dei  Standard:  red, blue, green.​
+
+
+Dimensioni​
+Le unità Relative si adattano alla grandezza del contenitore o alla finestra del browser.​
+em: Relativa alla dimensione del font dell'elemento padre.​
+rem: Relativa alla dimensione del font della radice. (<html>)​
+%: Percentuale della dimensione dell'elemento padre.​
+vw: Percentuale della larghezza della finestra del browser (1vw = 1% della larghezza).​
+vh: Percentuale dell'altezza della finestra del browser (1vh = 1% dell'altezza).​
+
+Le Unità Assolute sono fisse e non cambiano a seconda del contesto.​
+px: Pixel, l'unità più comune.​
+cm: Centimetri.​
+mm: Millimetri.​
+
+Gerarchia​
+
+Il concetto di cascata è fondamentale in CSS poichè si riferisce al modo in cui le regole CSS 
+vengono applicate quando più stili influenzano lo stesso elemento.​
+Esiste una gerarchia che determina la priorità delle regole:​
+Stili Inline: Hanno la precedenza su tutti gli altri stili.​
+Stili Interni: Definiti nel tag <style> all'interno della sezione <head> del documento.​
+Stili Esterni: Provenienti da file CSS separati, con la priorità più bassa.​
+
+Quando ci sono regole in conflitto che si applicano a un elemento, 
+il browser risolve il conflitto seguendo questa gerarchia 
+o applicando l'ultima regola definita se le regole sono nello stesso contesto.​
+

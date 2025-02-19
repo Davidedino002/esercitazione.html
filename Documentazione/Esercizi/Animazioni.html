@@ -1,0 +1,256 @@
+<!--Crea una pagina HTML con un elemento che abbia un colore di sfondo rosso.
+ Applica un'animazione CSS al colore di sfondo in modo che cambia gradualmente in blu e poi torna a rosso 
+ in un loop infinito.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Animazione</title>
+     <style>
+         .animation {
+             background-color: red;
+             animation: colorChange 5s infinite;
+         }
+         @keyframes colorChange {
+             0% { background-color: red; }
+             50% { background-color: blue; }
+             100% { background-color: red; }
+         }
+     </style>
+ </head>
+ <body>
+    <div class="animation"></div>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un elemento di dimensioni 100x100 pixel e di colore verde.
+ Applica un'animazione CSS alle dimensioni del div in modo che cambiano gradualmente a 150x150 pixel 
+ e poi tornano a 100x100 pixel in un loop infinito.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Animazione</title>
+     <style>
+         .animation {
+             width: 100px;
+             height: 100px;
+             background-color: green;
+             animation: sizeChange 5s infinite;
+         }
+         @keyframes sizeChange {
+             0% { width: 100px; height: 100px; }
+             50% { width: 150px; height: 150px; }
+             100% { width: 100px; height: 100px; }
+         }
+     </style>
+ </head>
+ <body>
+    <div class="animation"></div>
+ </body>
+ </html>
+
+ <!--Crea una pagina HTML con un elemento di colore blu. 
+ Applica un'animazione CSS al colore di sfondo in modo che cambia gradualmente in rosso e poi torna a blu 
+ in un loop infinito.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Animazione</title>
+     <style>
+         .animation {
+             background-color: blue;
+             animation: colorChange 2s infinite;
+         }
+         @keyframes colorChange {
+             0% { background-color: blue; }
+             50% { background-color: red; }
+             100% { background-color: blue; }
+         }
+     </style>
+ </head>
+ <body>
+    <div class="animation"></div>
+ </body>
+ </html>
+
+ <!--Crea una pagina HTML con un elemento di dimensioni 150x150 pixel e di colore giallo. 
+ Applica un'animazione CSS alle dimensioni e al colore di sfondo del div in modo che cambiano gradualmente 
+ a 200x200 pixel e verde, e poi tornano a 150x150 pixel e giallo, in un loop infinito.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Animazione</title>
+     <style>
+         .animation {
+             width: 150px;
+             height: 150px;
+             background-color: yellow;
+             animation: sizeAndColorChange 5s infinite;
+         }
+         @keyframes sizeAndColorChange {
+             0% { width: 150px; height: 150px; background-color: yellow; }
+             50% { width: 200px; height: 200px; background-color: green; }
+             100% { width: 150px; height: 150px; background-color: yellow; }
+         }
+     </style>
+ </head>
+ <body>
+    <div class="animation"></div>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un elemento di colore arancione. 
+Applica un'animazione CSS al colore di sfondo in modo che cambia gradualmente 
+in viola e poi torna a arancione in un loop infinito.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Animazione</title>
+     <style>
+         .animation {
+             background-color: orange;
+             animation: colorChange 3s infinite;
+         }
+         @keyframes colorChange {
+             0% { background-color: orange; }
+             50% { background-color: violet; }
+             100% { background-color: orange; }
+         }
+     </style>
+ </head>
+ <body>
+    <div class="animation"></div>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un elemento di dimensioni 200x100 pixel e di colore magenta. 
+Applica un'animazione CSS alla posizione del div in modo che si sposta 
+di 50 pixel verso destra quando il mouse vi passa sopra.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Animazione</title>
+     <style>
+      .animation{
+         width: 200px;
+         height: 100px;
+         background-color: magenta;
+      }
+      .animation:hover {
+        animation: moveRight 1s;
+      }
+      @keyframes moveRight {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(50px); }
+      }
+     </style>
+ </head>
+ <body>
+    <div class="animation"></div>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un elemento di dimensioni 100x100 pixel e di colore ciano. 
+Applica un'animazione CSS alla rotazione del div in modo che ruota di 45 gradi quando il mouse vi passa sopra.
+-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Animazione</title>
+     <style>
+      .animation{
+         width: 100px;
+         height: 100px;
+         background-color: cyan;
+         transform-origin: center;
+      }
+      .animation:hover {
+        animation: rotate 1s;
+      }
+      @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(45deg); }
+      }
+     </style>
+ </head>
+ <body>
+    <div class="animation"></div>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un elemento di dimensioni 150x150 pixel e di colore verde.
+ Applica un'animazione CSS alle dimensioni del div in modo che cambiano gradualmente
+  a 200x100 pixel quando il mouse vi passa sopra.-->
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Animazione</title>
+      <style>
+       .animation{
+          width: 150px;
+          height: 150px;
+          background-color: green;
+       }
+       .animation:hover {
+         animation: sizeChange 1s;
+       }
+       @keyframes sizeChange {
+         0% { width: 150px; height: 150px; }
+         100% { width: 200px; height: 100px; }
+       }
+      </style>
+  </head>
+  <body>
+     <div class="animation"></div>
+  </body>
+  </html>
+
+<!--Crea una pagina HTML con un elemento di colore blu. 
+Applica un'animazione CSS al colore di sfondo in modo che cambia 
+gradualmente in rosso e poi torna a blu in un loop infinito.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Animazione</title>
+     <style>
+         .animation {
+             background-color: blue;
+             animation: colorChange 2s infinite;
+         }
+         @keyframes colorChange {
+             0% { background-color: blue; }
+             50% { background-color: red; }
+             100% { background-color: blue; }
+         }
+     </style>
+ </head>
+ <body>
+    <div class="animation"></div>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un elemento di dimensioni 200x200 pixel e di colore giallo.
+ Applica un'animazione CSS alle dimensioni del div in modo che cambiano gradualmente a 150x150 pixel 
+ quando il div ottiene il focus.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Animazione</title>
+     <style>
+         .animation {
+             width: 200px;
+             height: 200px;
+             background-color: yellow;
+             outline: none;
+         }
+         .animation:focus {
+             width: 150px;
+             height: 150px;
+             outline: none;
+         }
+     </style>
+ </head>
+ <body>
+    <div class="animation" tabindex="0"></div>
+ </body>
+ </html>
+

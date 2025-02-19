@@ -1,0 +1,43 @@
+/*Sovraccarico di testo CSS
+La proprietà CSS text-overflow specifica come segnalare all'utente 
+i contenuti in overflow che non vengono visualizzati.*/
+p.test1 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+  
+  p.test2 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+/*La word-wrap proprietà CSS consente di suddividere le parole lunghe 
+e di inserirle nella riga successiva. */
+p {
+    word-wrap: break-word;
+  }
+/*La word-break proprietà CSS specifica le regole di interruzione di riga.*/
+p.test1 {
+    word-break: keep-all;
+  }
+  
+  p.test2 {
+    word-break: break-all;
+  }
+/*La writing-modeproprietà CSS specifica se le righe di testo sono disposte orizzontalmente o verticalmente.*/
+p.test1 {
+    writing-mode: horizontal-tb;
+  }
+  
+  span.test2 {
+    writing-mode: vertical-rl;
+  }
+  
+  p.test2 {
+    writing-mode: vertical-rl;
+  }

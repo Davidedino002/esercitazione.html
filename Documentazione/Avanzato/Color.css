@@ -1,0 +1,130 @@
+/*La parola chiave trasparente
+La transparent parola chiave è usata per rendere trasparente un colore. 
+Spesso è usata per rendere trasparente il colore di sfondo di un elemento.*/
+body {
+    background-image: url("paper.gif");
+  }
+  
+  div {
+    background-color: transparent;
+  }
+
+/*La parola chiave currentcolor
+La currentcolor parola chiave è come una variabile che contiene il valore corrente 
+della proprietà colore di un elemento.*/
+div {
+    color: blue;
+    border: 10px solid currentcolor;
+  }
+
+/*La parola chiave eredita
+La inherit parola chiave specifica che una proprietà deve ereditare il suo valore dal suo elemento padre.
+
+La inherit parola chiave può essere utilizzata per qualsiasi proprietà CSS e su qualsiasi elemento HTML.*/
+div {
+    border: 2px solid red;
+  }
+  
+  span {
+    border: inherit;
+  }
+
+/*Gradienti lineari CSS
+Per creare un gradiente lineare devi definire almeno due stop colore. 
+Gli stop colore sono i colori tra cui vuoi rendere transizioni fluide.
+
+Direzione - Dall'alto verso il basso*/  
+#grad {
+    background-image: linear-gradient(red, yellow);
+  }
+/*Direzione - Da sinistra a destra*/
+#grad {
+    background-image: linear-gradient(to right, red , yellow);
+  }
+
+/*Direzione - Diagonale*/
+#grad {
+    background-image: linear-gradient(to bottom right, red, yellow);
+  }
+
+/*Utilizzo della trasparenza*/
+#grad {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  }
+
+/*Ripetizione di un gradiente lineare*/
+#grad {
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+  }
+
+/*Gradienti radiali CSS
+Un gradiente radiale è definito dal suo centro.
+Per creare una sfumatura radiale è necessario definire almeno due stop di colore.
+Gradiente radiale - Stop colore uniformemente distanziati*/
+#grad {
+    background-image: radial-gradient(red, yellow, green);
+  }
+
+/*Gradiente radiale - Stop di colore con spaziatura diversa*/
+#grad {
+    background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+  }
+/*Imposta forma
+Il parametro shape definisce la forma. 
+Può assumere il valore circle o ellipse. Il valore predefinito è ellipse.*/  
+#grad {
+    background-image: radial-gradient(circle, red, yellow, green);
+  }
+/*Utilizzo di parole chiave di dimensioni diverse
+Il parametro size definisce la dimensione del gradiente. Può assumere quattro valori:
+
+lato più vicino
+lato più lontano
+angolo più vicino
+angolo più lontano*/
+#grad1 {
+    background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+  }
+  
+  #grad2 {
+    background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+  }
+
+  /*Ripetizione di un gradiente radiale
+ La funzione repeating-radial-gradient() viene utilizzata per ripetere i gradienti radiali:*/
+ #grad {
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+  }
+
+/*Gradiente conico: tre colori*/
+#grad {
+    background-image: conic-gradient(red, yellow, green);
+  }
+/*Gradiente conico: cinque colori*/
+#grad {
+    background-image: conic-gradient(red, yellow, green, blue, black);
+  }
+/*Gradiente conico: tre colori e gradi*/
+#grad {
+    background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+  }
+/*Creare grafici a torta*/
+#grad {
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    border-radius: 50%;
+  }
+/*Gradiente conico con angolo specificato*/
+#grad {
+    background-image: conic-gradient(from 90deg, red, yellow, green);
+  }
+/*Gradiente conico con posizione centrale specificata*/
+#grad {
+    background-image: conic-gradient(at 60% 45%, red, yellow, green);
+  }
+  
+/*Ripetizione di un gradiente conico*
+La repeating-conic-gradient()funzione viene utilizzata per ripetere gradienti conici:*/
+#grad {
+  background-image: repeating-conic-gradient(red 10%, yellow 20%);
+  border-radius: 50%;
+}

@@ -1,0 +1,290 @@
+/*Formattazione Testo in CSS
+Colore del Testo
+La proprietà color viene utilizzata per impostare il colore del testo. Il colore è specificato da:
+
+un nome di colore - come “red”
+un valore HEX - come “#ff0000”
+un valore RGB - come “rgb(255,0,0)”
+Guarda i Valori del Colore CSS per una lista completa di possibili valori del colore.
+
+Il colore predefinito del testo per una pagina è definito nel selettore body.*/
+body {
+    color: blue;
+  }
+  
+  h1 {
+    color: green;
+  }
+  
+/*Colore del Testo e Colore di Sfondo*/
+body {
+    background-color: lightgrey;
+    color: blue;
+  }
+  
+  h1 {
+    background-color: black;
+    color: white;
+  }
+  
+  div {
+    background-color: blue;
+    color: white;
+  }
+
+/*Allineamento del Testo
+La proprietà text-align viene utilizzata per impostare l’allineamento orizzontale di un testo.
+
+Un testo può essere allineato a sinistra o a destra, centrato o giustificato.
+
+L’esempio seguente mostra il testo centrato e il testo allineato a sinistra e a destra 
+(l’allineamento a sinistra è predefinito se la direzione del testo è da sinistra a destra 
+e l’allineamento a destra è predefinito se la direzione del testo è da destra a sinistra):*/
+h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: left;
+  }
+  
+  h3 {
+    text-align: right;
+  }
+
+/*Allineamento ultima riga
+La proprietà text-align-last specifica come allineare l"ultima riga di un testo.*/
+p.a {
+    text-align-last: right;
+  }
+  
+  p.b {
+    text-align-last: center;
+  }
+  
+  p.c {
+    text-align-last: justify;
+  }
+
+/*Direzione del Testo
+Le proprietà direction e unicode-bidi possono essere utilizzate 
+per cambiare la direzione del testo di un elemento:*/
+p {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+
+/*Allineamento Verticale
+La proprietà vertical-align imposta l"allineamento verticale di un elemento.*/
+img.a {
+    vertical-align: baseline;
+  }
+  
+  img.b {
+    vertical-align: text-top;
+  }
+  
+  img.c {
+    vertical-align: text-bottom;
+  }
+  
+  img.d {
+    vertical-align: sub;
+  }
+  
+  img.e {
+    vertical-align: super;
+  }
+
+/*Linea di Decorazione Testo
+La proprietà text-decoration-line viene utilizzata per aggiungere una linea di decorazione al testo.
+
+Puoi combinare più di un valore, come overline e underline, 
+per mostrare linee sia sopra che sotto un testo.*/
+
+h1 {
+    text-decoration-line: overline;
+  }
+  
+  h2 {
+    text-decoration-line: line-through;
+  }
+  
+  h3 {
+    text-decoration-line: underline;
+  }
+  
+  p {
+    text-decoration-line: overline underline;
+  }
+
+/*Colore Linea di Decorazione
+La proprietà text-decoration-color 
+viene utilizzata per impostare il colore della linea di decorazione.*/
+h1 {
+    text-decoration-line: overline;
+    text-decoration-color: red;
+  }
+  
+  h2 {
+    text-decoration-line: line-through;
+    text-decoration-color: blue;
+  }
+  
+  h3 {
+    text-decoration-line: underline;
+    text-decoration-color: green;
+  }
+  
+  p {
+    text-decoration-line: overline underline;
+    text-decoration-color: purple;
+  }
+
+/*Stile Linea di Decorazione
+La proprietà text-decoration-style viene utilizzata 
+per impostare lo stile della linea di decorazione.*/
+h1 {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+  }
+  
+  h2 {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+  }
+  
+  h3 {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+  }
+  
+  p.ex1 {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+  }
+  
+  p.ex2 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+  }
+  
+  p.ex3 {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+  }
+
+/*Spessore Linea di Decorazione
+La proprietà text-decoration-thickness viene utilizzata 
+per impostare lo spessore della linea di decorazione.*/ 
+h1 {
+    text-decoration-line: underline;
+    text-decoration-thickness: auto;
+  }
+  
+  h2 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+  }
+  
+  h3 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 25%;
+  }
+  
+  p {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;
+  }
+
+/*Scordiatoia Text-Decoration
+La proprietà text-decoration è una proprietà abbreviata per:
+
+text-decoration-line (obbligatorio)
+text-decoration-color (opzionale)
+text-decoration-style (opzionale)
+text-decoration-thickness (opzionale)*/
+h1 {
+    text-decoration: underline;
+  }
+  
+  h2 {
+    text-decoration: underline red;
+  }
+  
+  h3 {
+    text-decoration: underline red double;
+  }
+  
+  p {
+    text-decoration: underline red double 5px;
+  }
+
+/*Trasformazione del Testo
+La proprietà text-transform viene utilizzata per specificare lettere maiuscole e minuscole in un testo.
+Può essere utilizzata per convertire tutto in lettere maiuscole 
+o minuscole o per rendere maiuscola la prima lettera di ogni parola:*/
+p.maiuscolo {
+    text-transform: uppercase;
+  }
+  
+  p.minuscolo {
+    text-transform: lowercase;
+  }
+  
+  p.capitalize {
+    text-transform: capitalize;
+  }
+
+/*Indentazione del Testo
+La proprietà text-indent viene utilizzata per specificare l’indentazione della prima riga di un testo:*/
+p {
+    text-indent: 50px;
+  }
+
+/*Spaziatura delle Lettere
+La proprietà letter-spacing viene utilizzata 
+per specificare lo spazio tra i caratteri in un testo.*/
+h1 {
+    letter-spacing: 5px;
+  }
+  
+  h2 {
+    letter-spacing: -2px;
+  }
+
+/*Altezza delle Righe
+La proprietà line-height viene utilizzata per specificare lo spazio tra le righe:*/
+
+p.piccolo {
+    line-height: 0.8;
+  }
+  
+  p.grande {
+    line-height: 1.8;
+  }
+
+/*Spaziatura delle Parole
+La proprietà word-spacing viene utilizzata per specificare lo spazio tra le parole in un testo.*/
+p.uno {
+    word-spacing: 10px;
+  }
+  
+  p.due {
+    word-spacing: -2px;
+  }
+
+/*Spazio Bianco
+La proprietà white-space specifica come gestire gli spazi bianchi all’interno di un elemento.*/
+p {
+    white-space: nowrap;
+}
+
+/*Ombra del Testo
+La proprietà text-shadow aggiunge un’ombra al testo.*/
+h1 {
+    text-shadow: 2px 2px;
+  }

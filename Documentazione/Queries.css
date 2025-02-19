@@ -1,0 +1,19 @@
+/*​​Media Queries​
+Le Media Queries sono una tecnica essenziale per creare layout responsive, 
+ovvero pagine web che si adattano a diverse dimensioni di schermo.​
+Grazie alle media queries, è possibile applicare stili specifici in base a caratteristiche del dispositivo, 
+come la larghezza dello schermo, l'orientamento o la risoluzione.​
+Media Queries verificano la condizione del dispositivo e applicano 
+regole di stile personalizzate solo quando la condizione è vera. ​
+Questo permette di adattare facilmente il layout di una pagina ai vari dispositivi.*/
+
+@media(max-width: 768px){
+.container{
+    flex-direction: column;
+    padding: 10px;
+    }
+    .item{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

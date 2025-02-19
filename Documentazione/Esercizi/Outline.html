@@ -1,0 +1,220 @@
+<!--Crea una pagina HTML con un paragrafo all'interno. 
+Usa il CSS per aggiungere un contorno rosso di 2px al paragrafo.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Paragrafo</title>
+     <style>
+         p {
+            border: 2px solid red;
+         }
+ </style>
+ </head>
+ <body>
+     <p>Questo è un paragrafo con un contorno rosso.</p>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un link all'interno. 
+Usa il CSS per aggiungere un contorno tratteggiato blu di 1px al link al passaggio del mouse.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link</title>
+     <style>
+        a {
+          outline: 1px dashed blue;
+          padding: 5px 10px;
+          color: black;
+          text-decoration: none;
+        }
+      </style>
+ </head>
+ <body>
+     <a href="#">Link con contorno tratteggiato</a>
+ </body>
+ </html>
+
+ <!--Crea una pagina HTML con un div all'interno. 
+ Usa il CSS per aggiungere un contorno verde di 3px al div e un margine interno di 20px.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Div</title>
+     <style>
+         div {
+            border: 3px solid green;
+            margin: 20px;
+         }
+         /*Correzione*/
+         div {
+        outline: 3px solid green;
+        padding: 20px;
+        margin: 30px;
+      }
+ </style>
+ </head>
+ <body>
+     <div>Contenuto del div</div>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con una lista non ordinata (ul) contenente alcuni elementi di lista (li). 
+Usa il CSS per aggiungere un contorno arrotondato blu di 2px agli elementi di lista.--> 
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Liste</title>
+        <style>
+            ul {
+                border-radius: 5px;
+            }
+            ul li {
+                border: 2px solid blue;
+                padding: 10px;
+            }
+            /*Correzione
+             li {
+        outline: 2px solid blue;
+        border-radius: 10px;
+        padding: 5px;
+        list-style-type: none;
+      }*/
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+    </body>
+    </html>
+
+<!--Crea una pagina HTML con un titolo all'interno. 
+Usa il CSS per aggiungere un contorno tratteggiato nero di 1px al titolo.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Titolo</title>
+     <style>
+         h1 {
+            border: 1px dashed black;
+         }
+ </style>
+ </head>
+ <body>
+     <h1>Questo è un titolo con un contorno tratteggiato nero.</h1>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un link all'interno. 
+Usa il CSS per aggiungere un contorno rosso di 2px al link quando è attivo (stato "active").-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link</title>
+     <style>
+        a {
+          outline: none;
+          padding: 5px 10px;
+          color: black;
+          text-decoration: none;
+        }
+        a:active {
+          border: 2px solid red;
+        }
+       
+ </style>
+ </head>
+ <body>
+     <a href="#">Link con contorno rosso quando attivo</a>
+ </body>
+ </html>
+
+
+<!--Crea una pagina HTML con un titolo all'interno. 
+Usa il CSS per aggiungere un contorno verde di 2px intorno al titolo.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Titolo</title>
+     <style>
+         h1 {
+            border: 2px solid green;
+         }
+ </style>
+ </head>
+ <body>
+     <h1>Questo è un titolo con un contorno verde.</h1>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con una sezione divisa in due colonne (usando due div). 
+Usa il CSS per aggiungere un contorno tratteggiato nero di 1px per ciascuna colonna.-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esercizio 7</title>
+    <style>
+      .colonna {
+        height: 200px;
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        outline: 1px dashed black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="colonna"></div>
+    <div class="colonna"></div>
+  </body>
+</html>
+
+<!--Crea una pagina HTML con un div all'interno. 
+Usa il CSS per aggiungere un contorno rosso di 3px al div e un margine esterno di 30px.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Div</title>
+     <style>
+         div {
+            border: 3px solid red;
+            padding: 20px;
+            margin: 30px; /*Correzione*/
+         }
+ </style>
+ </head>
+ <body>
+     <div>Contenuto del div</div>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con una lista ordinata (ol) contenente alcuni elementi di lista (li). 
+Usa il CSS per aggiungere un contorno blu di 2px e uno sfondo grigio chiaro agli elementi di lista.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Liste</title>
+     <style>
+         ol {
+            border: 2px solid blue;
+            background-color: lightgray;
+            padding: 10px;
+         }
+         ol li {
+            border: 2px solid blue;
+            padding: 10px;
+         }
+ </style>
+ </head>
+ <body>
+     <ol>
+         <li>Elemento 1</li>
+         <li>Elemento 2</li>
+         <li>Elemento 3</li>
+     </ol>
+ </body>
+ </html>

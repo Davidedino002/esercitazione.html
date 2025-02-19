@@ -1,0 +1,103 @@
+/*Un Outline è una linea che viene disegnata intorno agli elementi, FUORI dai bordi,
+ per far risaltare l’elemento.
+
+CSS ha le seguenti proprietà di contorno:
+
+outline-style (stile contorno)
+outline-color (colore contorno)
+outline-width (larghezza contorno)
+outline-offset (offset contorno)
+outline (contorno)*/
+
+/*CSS Larghezza del Outline
+La proprietà outline-width specifica la larghezza del contorno e può avere uno dei seguenti valori:
+
+thin (tipicamente 1px)
+medium (tipicamente 3px)
+thick (tipicamente 5px)
+una dimensione specifica (in px, pt, cm, em, ecc)*/
+p.uno {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thin;
+  }
+  
+  p.due {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: medium;
+  }
+  
+  p.tre {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thick;
+  }
+  
+  p.quattro {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 4px;
+  }
+  /*CSS Colore del Outline
+  La proprietà outline-color viene utilizzata per impostare il colore del contorno.
+  Il colore può essere impostato tramite:
+
+nome: specifica un nome di colore, come “red”
+HEX: specifica un valore HEX, come “#ff0000”
+RGB: specifica un valore RGB, come “rgb(255,0,0)”
+HSL: specifica un valore HSL, come “hsl(0, 100%, 50%)”
+invert: esegue un’inversione di colore 
+(assicura che il contorno sia visibile, indipendentemente dallo sfondo del colore)*/
+p.uno {
+    border: 2px solid black;
+    outline-style: solid;
+    outline-color: red;
+  }
+  
+  p.due {
+    border: 2px solid black;
+    outline-style: dotted;
+    outline-color: blue;
+  }
+  
+  p.tre {
+    border: 2px solid black;
+    outline-style: outset;
+    outline-color: grey;
+  }
+  /*Outline CSS Scorciatoia
+  La proprietà outline è una proprietà abbreviata 
+  per impostare le seguenti proprietà di contorno individuali:
+
+outline-width (larghezza contorno)
+outline-style (stile contorno, obbligatorio)
+outline-color (colore contorno)
+La proprietà outline viene specificata come uno, due o tre valori dalla lista sopra.
+ L’ordine dei valori non ha importanza.*/
+ p.uno {
+    outline: dashed;
+  }
+  p.due {
+    outline: dotted red;
+  }
+  p.tre {
+    outline: 5px solid yellow;
+  }
+  p.quattro {
+    outline: thick ridge pink;
+  }
+  
+/*Outline CSS - Proprietà Offset
+La proprietà outline-offset aggiunge spazio tra un contorno e il bordo di un elemento.
+ Lo spazio tra un elemento e il suo contorno è trasparente.*/
+ p {
+    margin: 30px;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+  }

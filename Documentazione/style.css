@@ -1,0 +1,70 @@
+/*Stile Generale*/
+body {
+    background-color: red;
+    font-size: large;
+}
+h1,h2,h3,h4,h5,h6{
+  color: black;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin-bottom: 10px;
+}
+/*Utilities*/
+.error{
+    color: red;
+}
+.warning{
+    color: yellow;
+}
+.success{
+    color: green;
+}
+.info{
+    color: blue;
+}
+/*Layout*/
+.header{
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+.navbar{
+ color:black;   
+}
+.main-container{
+    padding: 20px;
+}
+.side-nav{
+    background-color: #f8f9fa;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    width: 200px;
+}
+.footer{
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+.banner{
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+/*Stile prodotti*/
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-immage{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.product-description{
+    margin-left: 20px;
+}

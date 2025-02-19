@@ -1,0 +1,72 @@
+Il Box Model è un concetto fondamentale in CSS che descrive come gli elementi HTML sono rappresentati 
+e dimensionati. 
+Ogni elemento è un "box" che contiene:​
+
+Content: Il contenuto dell'elemento (testo, immagini, ecc.).​
+Padding: Lo spazio tra il contenuto e il bordo.​
+Border: Il contorno dell'elemento.​
+Margin: Lo spazio esterno all'elemento, che separa l'elemento da altri.​
+Quando definisci la larghezza (width) o l'altezza (height) di un elemento,
+ queste proprietà si applicano solo al contenuto e non includono padding, border o margin.
+ 
+ 
+ Ecco le differenze tra l’applicazione del Box Model su elementi Block ed elementi Inline.​
+Gli elementi di tipo block occupano l'intera larghezza disponibile e iniziano su una nuova riga.      
+Il Box Model si applica facilmente a questi elementi, 
+e proprietà come width, height, padding, e margin sono direttamente influenti.​
+Gli elementi di tipo inline non possono avere proprietà come width o height, 
+ma puoi comunque applicare padding, border, e margin a sinistra e destra. ​
+
+
+Box-sizing​
+La proprietà box-sizing cambia il modo in cui il browser calcola le dimensioni di un elemento.​
+Ricordiamo che la width e height di un elemento non includono padding e bordi. ​
+Utilizzando box-sizing: border-box, puoi fare in modo che il padding e 
+il bordo siano inclusi nelle dimensioni totali dell'elemento.​
+Questo rende più facile gestire le dimensioni degli elementi, soprattutto in layout complessi.​
+
+
+Display: flex​
+Display Flex è una potente proprietà CSS che crea layout flessibili e dinamici, 
+adattando automaticamente gli elementi in base allo spazio disponibile. 
+Flexbox è progettato per distribuire gli elementi all'interno di un contenitore in modo intuitivo, 
+gestendo meglio l'allineamento e la distribuzione rispetto ai metodi tradizionali come il float o il position.
+Si applica la proprietà ad un contenitore, i cui figli diventano in automatico “flex items”. ​
+I flex Items si dispongono automaticamente lungo un asse principale e si adattano allo spazio disponibile.​​
+Grazie a questa proprietà noi possiamo controllare:​
+L’allineamento degli elementi (sia orizzontale che verticale)​
+La distribuzione dello spazio del contenitore​
+La gestione del ridimensionamento in base allo spazio disponibile​
+
+
+Display: flex​
+Le proprietà principali di Flexbox sono:​
+flex-direction: Definisce l'asse principale su cui disporre gli elementi.  
+Può essere row (orizzontale) o column (verticale).​
+justify-content: Allinea gli elementi lungo l'asse principale.                                       
+Può avere, ad esempio come valori, centrato o distribuito.​
+align-items: Allinea gli elementi lungo l'asse trasversale. ​
+flex-wrap: Permette di far andare gli elementi su più righe se non c'è spazio sufficiente in una sola.​
+​
+Il modello CSS Box
+Il box model CSS è essenzialmente un box che avvolge ogni elemento HTML. 
+È composto da: contenuto, padding, bordi e margini.
+Contenuto - Il contenuto della casella, in cui compaiono testo e immagini
+Padding - Cancella un'area attorno al contenuto. Il padding è trasparente
+Bordo - Un bordo che circonda l'imbottitura e il contenuto
+Margine - Cancella un'area esterna al bordo. Il margine è trasparente
+Il modello box ci consente di aggiungere un bordo attorno agli elementi 
+e di definire lo spazio tra gli stessi. 
+
+In CSS, il termine “modello a scatola” (box model) è utilizzato quando si parla di design e layout.
+Il modello a scatola CSS è essenzialmente una scatola che avvolge ogni elemento HTML. 
+È composto da: margini, bordi, padding e il contenuto effettivo.
+Contenuto - Il contenuto della scatola, dove appare il testo e le immagini.
+Padding - Crea uno spazio intorno al contenuto. Il padding è trasparente.
+Bordo - Un bordo che circonda il padding e il contenuto.
+Margine - Crea uno spazio all’esterno del bordo. Il margine è trasparente. 
+Il modello a scatola ci permette di aggiungere un bordo intorno agli elementi 
+e di definire lo spazio tra gli elementi.
+
+
+​

@@ -1,0 +1,28 @@
+La displayproprietà è la proprietà CSS più importante per il controllo del layout.
+La proprietà di visualizzazione
+La display proprietà viene utilizzata per specificare come viene visualizzato un elemento su una pagina web.
+Ogni elemento HTML ha un valore di visualizzazione predefinito, a seconda del tipo di elemento. 
+Il valore di visualizzazione predefinito per la maggior parte degli elementi è blocko inline.
+La display proprietà viene utilizzata per modificare il comportamento di visualizzazione 
+predefinito degli elementi HTML.
+Elementi a livello di blocco
+Un elemento a livello di blocco inizia SEMPRE su una nuova riga e occupa l'intera larghezza disponibile 
+
+li {
+  display: inline;
+}
+
+span {
+  display: block;
+}
+
+h1.hidden {
+  visibility: hidden;
+}
+
+h1.hidden {
+  display: none;
+}
+h1.hidden {
+  display: none;
+}

@@ -1,0 +1,61 @@
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+/*Paginazione attiva e hoverable*/
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  
+/*Pulsanti attivi e passanti arrotondati
+Aggiungi la border-radiusproprietà se desideri un pulsante "attivo" e "hover" arrotondato:*/
+.pagination a {
+    border-radius: 5px;
+  }
+  
+  .pagination a.active {
+    border-radius: 5px;
+  }
+/*Aggiungere la transitionproprietà ai link della pagina per creare 
+un effetto di transizione al passaggio del mouse:*/
+.pagination a {
+    transition: background-color .3s;
+  }
+/*Utilizzare la borderproprietà per aggiungere bordi alla paginazione:*/
+.pagination a {
+    border: 1px solid #ddd; /* Gray */
+  }
+
+/*Bordi Arrotondati per la pigmentazione*/
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+/*Spazio tra i collegamenti
+aggiungi la marginproprietà se non vuoi raggruppare i collegamenti delle pagine:*/
+.pagination a {
+    margin: 0 4px; 
+  }
+  
+/*Modifica la dimensione della paginazione con la font-size proprietà:*/
+.pagination a {
+    font-size: 22px;
+  }
+
+  

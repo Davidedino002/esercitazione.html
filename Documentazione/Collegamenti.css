@@ -1,0 +1,86 @@
+/*È possibile formattare i collegamenti con qualsiasi proprietà CSS*/
+a {
+    color: hotpink;
+  }
+  /*Inoltre, i link possono avere stili diversi a seconda dello stato in cui si trovano.
+
+I quattro stati dei collegamenti sono:
+
+a:link- un collegamento normale, non visitato
+a:visited- un collegamento che l'utente ha visitato
+a:hover- un collegamento quando l'utente ci passa sopra con il mouse
+a:active- un collegamento nel momento in cui viene cliccato*/
+
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+  /*Quando si imposta lo stile per più stati di collegamento, ci sono alcune regole di ordine:
+
+a:hover DEVE venire dopo a:link e a:visited
+a:active DEVE venire dopo a:hover
+*/
+
+/*La text-decoration proprietà viene utilizzata principalmente per rimuovere le sottolineature dai link:*/
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+/*La background-color proprietà può essere utilizzata per specificare un colore di sfondo per i collegamenti:*/
+a:link {
+    background-color: yellow;
+  }
+  
+  a:visited {
+    background-color: cyan;
+  }
+  
+  a:hover {
+    background-color: lightgreen;
+  }
+  
+  a:active {
+    background-color: hotpink;
+  } 
+
+  /*Pulsanti di collegamento*/
+  a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }

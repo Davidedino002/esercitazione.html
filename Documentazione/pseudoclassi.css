@@ -1,0 +1,169 @@
+/*Le pseudo-classi consentono di applicare stili a un elemento in base al suo stato o alla sua posizione. 
+Alcuni esempi comuni includono:​*/
+
+/*:hover: Attiva uno stile quando l'utente passa il mouse sopra l'elemento.​*/
+/*:focus: Applica uno stile a un elemento quando riceve il focus, 
+ad esempio quando l'utente clicca su un campo di input o naviga tramite la tastiera.​*/
+
+/*Gli pseudo-elementi permettono di aggiungere e stilizzare contenuti speciali senza modificare l'HTML. 
+Tra i più utilizzati ci sono:​
+::before: Inserisce contenuto prima del contenuto di un elemento.​
+::after: Inserisce contenuto dopo il contenuto di un elemento.​
+​*/
+
+/*Pseudoclasse :hover*/
+
+button:hover {
+   background-color: red;
+}
+
+/*Pseudoelemento ::before*/
+h1::before {
+content: "Nota";
+font-weight: bold;
+}
+
+/*:root*/
+/*Il selettore :root è una pseudo-classe speciale che si riferisce all'elemento più “alto” del documento, 
+solitamente l'<html>. ​
+Le sue dichiarazioni sono spesso quindi ereditate dall’intero documento CSS, 
+ed è per questo che è spesso utilizzato per definire variabili CSS globali.​*/
+
+:root {
+--main-color: blue;
+}
+
+body {
+background-color: var(--color-primary);
+}
+
+/*Cosa sono le pseudo-classi?
+Una pseudo-classe viene utilizzata per definire uno stato speciale di un elemento.
+
+Ad esempio, può essere utilizzato per:
+
+Definisci lo stile di un elemento quando un utente sposta il mouse su di esso
+Imposta uno stile diverso per i link visitati e non visitati
+Applica lo stile a un elemento quando viene messo a fuoco
+Stile elementi modulo validi/non validi/obbligatori/facoltativi
+
+La sintassi delle pseudo-classi:*/
+/*selector:pseudo-class {
+   property: value;
+ }*/
+
+ /* unvisited link */
+a:link {
+   color: #FF0000;
+ }
+ 
+ /* visited link */
+ a:visited {
+   color: #00FF00;
+ }
+ 
+ /* mouse over link */
+ a:hover {
+   color: #FF00FF;
+ }
+ 
+ /* selected link */
+ a:active {
+   color: #0000FF;
+ }
+
+ /*Pseudo-classi e classi HTML
+ Le pseudo-classi possono essere combinate con le classi HTML:
+Quando passi il mouse sopra il collegamento nell'esempio, cambierà colore:*/
+a.highlight:hover {
+   color: #ff0000;
+ }
+
+ /*Passa il mouse su <div>*/
+ div:hover {
+   background-color: blue;
+ }
+ 
+/*Suggerimento semplice con passaggio del mouse*/
+p {
+   display: none;
+   background-color: yellow;
+   padding: 20px;
+ }
+ 
+ div:hover p {
+   display: block;
+ }
+
+
+/*CSS - La pseudo-classe :first-child*/
+/*La :first-child pseudo-classe corrisponde a un elemento specificato 
+che è il primo figlio di un altro elemento.*/
+p:first-child {
+   color: blue;
+ }
+
+/*Abbina il primo elemento <i> in tutti gli elementi <p>*/
+p i:first-child {
+   color: blue;
+ }
+
+/*Abbina tutti gli elementi <i> in tutti i primi elementi figlio <p>*/
+p:first-child i {
+   color: blue;
+ }
+
+ /*Pseudo-classi per i link*/
+ /* link non visitato */
+a:link {
+  color: #ff0000;
+}
+
+/* link visitato */
+a:visited {
+  color: #00ff00;
+}
+
+/* passaggio del mouse sul link */
+a:hover {
+  color: #ff00ff;
+}
+
+/* link selezionato */
+a:active {
+  color: #0000ff;
+}
+
+/*Pseudo-classi e classi HTML
+Le pseudo-classi possono essere combinate con le classi HTML:
+
+Quando passi il mouse sopra il link nell’esempio, cambierà colore:*/
+a.prova:hover {
+  color: #212121;
+}
+
+/*Hover su un elemento*/
+p:hover {
+  background-color: red;
+}
+
+/*La pseudo-classe :first-child
+La pseudo-classe :first-child corrisponde a un elemento 
+specificato che è il primo figlio di un altro elemento.*/
+p:first-child {
+  color: blue;
+}
+
+/*Esistono altre pseudo classi simili come:
+
+:last-child
+:nth-child
+:first-of-type
+:last-of-type
+:nth-of-type*/
+
+/*La pseudo-classe :lang
+La pseudo-classe :lang consente di definire regole speciali per lingue diverse.*/
+q:lang(it) {
+  quotes: "~""~";
+}

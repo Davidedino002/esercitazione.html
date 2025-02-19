@@ -1,0 +1,272 @@
+/*Che cos'è CSS Flexbox?
+Flexbox è l'abbreviazione di modulo Flexible Box Layout.
+Flexbox è un metodo di layout per disporre gli elementi in righe o colonne.
+Flexbox semplifica la progettazione di una struttura di layout flessibile e reattiva, 
+senza utilizzare elementi flottanti o di posizionamento.
+
+Modulo di layout della casella flessibile CSS
+Blocco, per sezioni in una pagina web
+In linea, per il testo
+Tabella, per dati di tabella bidimensionali
+Posizionato, per la posizione esplicita di un elemento
+
+Componenti CSS Flexbox
+Un flexbox è sempre composto da:
+
+un contenitore flessibile - l'elemento <div> padre (contenitore)
+Flex Items - gli elementi all'interno del contenitore <div>
+
+
+Un contenitore flessibile con tre elementi flessibili
+Il contenitore flessibile diventa flessibile impostando la display proprietà su flex.
+
+
+Il contenitore CSS Flex
+Il contenitore flessibile diventa flessibile impostando la displayproprietà su flex:*/
+.flex-container {
+    display: flex;
+  }
+
+/*La proprietà CSS flex-direction
+La flex-directionproprietà specifica la direzione
+ di visualizzazione degli elementi flex nel contenitore flex.
+
+La flex-direction proprietà può avere uno dei seguenti valori:
+
+row
+column
+row-reverse
+column-reverse
+Il rowvalore è quello predefinito e visualizza gli elementi flessibili orizzontalmente*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+/*Il columnvalore visualizza gli elementi flessibili verticalmente*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+/*Il row-reversevalore visualizza gli elementi flessibili orizzontalmente*/
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+/*Il column-reverse valore visualizza gli elementi flessibili verticalmente*/
+.flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+/*La proprietà CSS flex-wrap
+La flex-wrap proprietà specifica se gli elementi flessibili 
+devono essere inseriti o meno, se non c'è abbastanza spazio per loro su una riga flessibile.
+
+La flex-wrap proprietà può avere uno dei seguenti valori:
+
+nowrap
+wrap
+wrap-reverse
+Il nowrapvalore specifica che gli elementi flessibili non verranno avvolti */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+/*Il wrapvalore specifica che gli elementi flessibili verranno spostati se necessario*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+/*Il wrap-reversevalore specifica che gli elementi 
+flessibili verranno riavvolti, se necessario, in ordine inverso*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+/*La proprietà CSS flex-flow
+La flex-flow proprietà è una proprietà abbreviata 
+per impostare entrambe le proprietà flex-directione flex-wrap.*/
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+/*La proprietà CSS justify-content
+La justify-contentproprietà viene utilizzata per allineare gli elementi 
+flessibili quando non utilizzano tutto lo spazio disponibile sull'asse principale
+La justify-contentproprietà può avere uno dei seguenti valori:
+
+center
+flex-start
+flex-end
+space-around
+space-between
+space-evenly*/
+
+/*Il centervalore posiziona gli elementi flessibili al centro del contenitore:*/
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+/*Il flex-startvalore posiziona gli elementi flessibili all'inizio del contenitore*/
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+/*Il flex-endvalore posiziona gli elementi flessibili alla fine del contenitore*/
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+/*Il space-aroundvalore visualizza gli elementi flessibili con spazio attorno a loro*/
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+/*Il space-betweenvalore visualizza gli elementi flessibili con uno spazio tra di loro:*/
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+/*Il space-evenly valore visualizza gli elementi flessibili con uguale spazio attorno a loro*/
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+/*La proprietà CSS align-items
+La align-items proprietà viene utilizzata per allineare gli elementi 
+flessibili quando non utilizzano tutto lo spazio disponibile sull'asse trasversale
+La align-itemsproprietà può avere uno dei seguenti valori:
+
+center
+flex-start
+flex-end
+stretch
+baseline
+normal
+Negli esempi seguenti utilizziamo un contenitore alto 200 pixel, 
+per dimostrare meglio la align-items proprietà
+Il centervalore posiziona gli elementi flessibili al centro del contenitore:*/  
+.flex-container {
+    display: flex;
+    height: 200px;
+    align-items: center;
+  }
+
+/*Il flex-startvalore posiziona gli elementi flessibili nella parte superiore del contenitore*/
+.flex-container {
+    display: flex;
+    height: 200px;
+    align-items: flex-start;
+  }
+
+/*Il flex-end valore posiziona gli elementi flessibili nella parte inferiore del contenitore*/
+.flex-container {
+    display: flex;
+    height: 200px;
+    align-items: flex-end;
+  }
+
+/*Il stretchvalore estende gli elementi flessibili per riempire il contenitore*/
+.flex-container {
+    display: flex;
+    height: 200px;
+    align-items: stretch;
+  }
+
+/*Il baselinevalore posiziona gli elementi flessibili sulla linea di base del contenitore*/
+.flex-container {
+    display: flex;
+    height: 200px;
+    align-items: baseline;
+  }
+
+/*La proprietà CSS align-content
+La align-contentproprietà viene utilizzata per allineare le linee flessibili.
+
+La align-contentproprietà è simile a align-items, 
+ma invece di allineare gli elementi flessibili, allinea le linee flessibili.
+
+La align-contentproprietà può avere uno dei seguenti valori:
+
+center
+stretch
+flex-start
+flex-end
+space-around
+space-between
+space-evenly
+
+Con center, le linee flessibili vengono imballate verso il centro del contenitore:*/
+.flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+/*Con stretch, le linee flessibili si allungano per occupare lo spazio rimanente del contenitore */
+.flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+
+/*Con flex-start, le linee flessibili vengono imballate verso l'inizio del contenitore*/
+.flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+/*Con flex-end, le linee flessibili vengono imballate verso la fine del contenitore*/
+.flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+
+/*Con space-between, lo spazio tra le linee flessibili è uguale, 
+ma il primo elemento è a filo con il bordo iniziale del contenitore e 
+l'ultimo elemento è a filo con il bordo finale del contenitore:*/
+.flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+/*Con space-around, lo spazio tra le linee flessibili è uguale, 
+ma lo spazio prima del primo elemento e dopo l'ultimo elemento è
+ impostato sulla metà dello spazio tra le linee flessibili*/
+ .flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+/*Con space-evenly, le linee flessibili sono distribuite uniformemente nel contenitore flessibile*/
+.flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
+
+

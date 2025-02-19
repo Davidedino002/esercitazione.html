@@ -1,0 +1,32 @@
+/*Questa !important regola in CSS viene utilizzata 
+per dare più importanza del normale a una proprietà/valore.*/
+/*Infatti, se si utilizza la !importantregola, questa sovrascriverà 
+TUTTE le precedenti regole di stile per quella specifica proprietà su quell'elemento!*/
+#myid {
+    background-color: blue;
+  }
+  
+  .myclass {
+    background-color: gray;
+  }
+  
+  p {
+    background-color: red !important;
+  }
+
+
+/*L'unico modo per sovrascrivere una 
+!important regola è includere un'altra !important regola in una dichiarazione con la stessa*/
+#myid {
+    background-color: blue !important;
+  }
+  
+  .myclass {
+    background-color: gray !important;
+  }
+  
+  p {
+    background-color: red !important;
+  }
+
+  

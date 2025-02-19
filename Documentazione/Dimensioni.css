@@ -1,0 +1,36 @@
+/*Le proprietà CSS di altezza (height) e larghezza (width) vengono utilizzate 
+per impostare l’altezza e la larghezza di un elemento.
+La proprietà CSS max-width viene utilizzata per impostare la larghezza massima di un elemento.
+
+Impostare altezza e larghezza
+Le proprietà di altezza e larghezza vengono utilizzate per impostare l’altezza e la larghezza di un elemento.
+Le proprietà di altezza e larghezza non includono il padding, 
+i bordi o i margini. Impostano l’altezza/larghezza dell’area all’interno del padding, 
+del bordo e del margine dell’elemento.
+
+Valori di altezza e larghezza
+e proprietà di altezza e larghezza possono avere i seguenti valori:
+
+auto - Questo è il valore predefinito. Il browser calcola l’altezza e la larghezza
+length - Definisce l’altezza/larghezza in px, cm, ecc.
+% - Definisce l’altezza/larghezza in percentuale rispetto al blocco contenitore
+initial - Imposta l’altezza/larghezza al suo valore predefinito
+inherit - L’altezza/larghezza sarà ereditata dal valore del genitore*/
+div {
+    height: 200px;
+    width: 50%;
+    background-color: salmon;
+  }
+
+/*Impostare max-width
+La proprietà max-width viene utilizzata per impostare la larghezza massima di un elemento.
+La max-width può essere specificata in valori di lunghezza, come px, cm, %, 
+oppure impostata a none quindi senza larghezza massima.
+Se per qualche motivo si utilizzano sia la proprietà width 
+che la proprietà max-width sullo stesso elemento e il valore della 
+proprietà width è maggiore del valore della proprietà max-width, verrà utilizzata la proprietà max-width.*/
+div {
+    max-width: 500px;
+    height: 100px;
+    background-color: salmon;
+  }

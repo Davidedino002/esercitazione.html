@@ -1,0 +1,202 @@
+<!--Crea una pagina HTML con un link all'interno di un paragrafo. 
+Usa il CSS per cambiare il colore del testo del link quando il link è attivo (cliccato).-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link</title>
+     <style>
+         a:active {
+             color: red;
+         }
+     </style>
+ </head>
+ <body>
+     <p><a href="#">Click me!</a></p>
+ </body>
+ </html>
+ 
+<!--Crea una pagina HTML con una lista non ordinata (ul) contenente alcuni elementi di lista (li). 
+Usa il CSS per cambiare il colore dei link della lista quando il mouse ci passa sopra (utilizza l'hover).-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link List</title>
+     <style>
+         ul li a:hover {
+             color: blue;
+         }
+     </style>
+ </head>
+ <body>
+     <ul>
+         <li><a href="#">Link 1</a></li>
+         <li><a href="#">Link 2</a></li>
+         <li><a href="#">Link 3</a></li>
+     </ul>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un link all'interno di un paragrafo.
+ Usa il CSS per cambiare il colore del testo del link quando il mouse ci passa sopra 
+ (hover), e ripristina il colore quando il link è stato visitato.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link</title>
+     <style>
+         a:hover {
+             color: blue;
+         }
+         a:visited:hover {
+             color: green;
+         }
+     </style>
+ </head>
+ <body>
+     <p><a href="#">Click me!</a></p>
+ </body>
+ </html>
+
+ <!--Crea una pagina HTML con un link all'interno di un paragrafo. Usa il CSS per 
+ cambiare il colore del testo del link quando il link è in stato di focus 
+ (è selezionato con la tastiera).-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link</title>
+     <style>
+         a:focus {
+             color: red;
+         }
+     </style>
+ </head>
+ <body>
+     <p><a href="#">Click me!</a></p>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con una lista ordinata (ol) contenente alcuni elementi di lista (li). 
+Usa il CSS per cambiare 
+lo stile dei link della lista quando il link ha il focus (è selezionato con la tastiera).-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link List</title>
+     <style>
+         ol li a:focus {
+             font-weight: bold;
+             text-decoration: underline;
+         }
+     </style>
+ </head>
+ <body>
+     <ol>
+         <li><a href="#">Link 1</a></li>
+         <li><a href="#">Link 2</a></li>
+         <li><a href="#">Link 3</a></li>
+     </ol>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un link all'interno di un paragrafo.
+ Usa il CSS per cambiare il colore del testo del link quando il link è stato visitato.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link</title>
+     <style>
+         a:visited {
+             color: green;
+         }
+     </style>
+ </head>
+ <body>
+     <p><a href="#">Click me!</a></p>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con una lista non ordinata (ul) contenente alcuni elementi di lista (li). 
+Usa il CSS per cambiare lo stile dei link della lista quando il link è stato visitato.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link List</title>
+     <style>
+         ul li a:visited {
+            color: orange;
+            text-decoration: line-through;
+         }
+     </style>
+ </head>
+ <body>
+     <ul>
+         <li><a href="#">Link 1</a></li>
+         <li><a href="#">Link 2</a></li>
+         <li><a href="#">Link 3</a></li>
+     </ul>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un link all'interno di un paragrafo. 
+Usa il CSS per cambiare lo stile dei link quando il link è stato visitato 
+e quando il mouse ci passa sopra (utilizza l'hover).-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link</title>
+     <style>
+         a:visited:hover {
+             text-decoration: underline;
+         }
+     </style>
+ </head>
+ <body>
+     <p><a href="#">Click me!</a></p>
+ </body>
+ </html>
+
+ <!--Crea una pagina HTML con una lista ordinata (ol) contenente alcuni elementi di lista (li). 
+ Usa il CSS per cambiare il colore dei link della lista quando 
+ il link è in stato di focus (è selezionato con la tastiera).-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link List</title>
+     <style>
+         ol li a:focus {
+             color: blue;
+             font-weight: bold;
+         }
+     </style>
+ </head>
+ <body>
+     <ol>
+         <li><a href="#">Link 1</a></li>
+         <li><a href="#">Link 2</a></li>
+         <li><a href="#">Link 3</a></li>
+     </ol>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un link all'interno di un paragrafo. 
+Usa il CSS per cambiare lo stile dei link quando il link è in stato di focus 
+(è selezionato con la tastiera) e quando il mouse ci passa sopra (utilizza l'hover).-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esercizio 10</title>
+    <style>
+      a:focus,
+      a:hover {
+        color: #ff0066;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Questo è un <a href="#">link</a> che diventa rosa con sottolineato quando
+      è in stato di focus e quando il mouse ci passa sopra.
+    </p>
+  </body>
+</html>

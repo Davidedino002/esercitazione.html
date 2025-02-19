@@ -1,0 +1,116 @@
+/*Layout griglia CSS
+Il modulo Grid Layout offre un sistema di layout basato su griglia, con righe e colonne.
+Il modulo Grid Layout consente agli sviluppatori di creare facilmente layout web complessi.
+Il modulo Grid Layout semplifica la progettazione di una struttura di layout reattiva, 
+senza utilizzare float o posizionamento.
+Le proprietà della griglia CSS sono supportate da tutti i browser moderni.
+Griglia contro Flexbox
+Il layout a griglia CSS dovrebbe essere utilizzato per layout bidimensionali, con righe E colonne.
+Il layout CSS Flexbox dovrebbe essere utilizzato per layout monodimensionali, con righe O colonne.
+Proprietà griglia di visualizzazione
+Un elemento HTML diventa un contenitore di griglia quando la sua display
+proprietà è impostata su grido inline-grid.*/
+.container {
+    display: grid;
+  }
+  .container {
+    display: inline-grid;
+  }
+/*È possibile regolare la dimensione dello spazio utilizzando una delle seguenti proprietà:
+column-gap
+row-gap
+gap
+
+La proprietà column-gap
+La column-gap proprietà specifica lo spazio tra le colonne in una griglia.*/
+.container {
+    display: grid;
+    column-gap: 50px;
+  }
+  
+/*La proprietà row-gap
+La row-gap proprietà specifica lo spazio tra le righe in una griglia.*/
+.container {
+    display: grid;
+    row-gap: 50px;
+  }
+ 
+  /** La gapproprietà è una proprietà abbreviata per row-gape column-gap:**/
+  .container {
+    display: grid;
+    gap: 50px 100px;
+  }
+
+/*Contenitore griglia
+Un layout a griglia è costituito da un elemento padre
+ (il contenitore della griglia) e da uno o più elementi figlio (elementi della griglia).
+Un elemento HTML diventa un contenitore di griglia quando la sua display 
+proprietà è impostata su grido inline-grid. 
+Tracce della griglia
+Le righe e le colonne di una griglia
+ sono definite con grid-template-rows e le grid-template-columns
+ proprietà (o con la sigla grido grid-template proprietà).
+Questi definiscono le tracce della griglia. 
+Una traccia della griglia 
+è lo spazio tra due linee della griglia.
+
+La proprietà grid-template-columns
+La grid-template-columns 
+proprietà definisce il numero di colonne nel layout della griglia e 
+può definire la larghezza di ciascuna colonna.
+Il valore è un elenco separato da spazi, in cui ogni valore 
+definisce la larghezza della rispettiva colonna.
+Se si desidera che il layout della griglia contenga 4 colonne, 
+specificare la larghezza delle 4 colonne oppure "auto" 
+se tutte le colonne devono avere la stessa larghezza.*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+/*La grid-template-columnsproprietà può essere utilizzata anche per specificare 
+la dimensione esatta (larghezza) delle colonne, 
+oppure una combinazione di dimensione fissa e automatica.*/  
+.grid-container {
+    display: grid;
+    grid-template-columns: 80px 200px auto 40px;
+  }
+
+/*La proprietà grid-template-rows
+La grid-template-rows proprietà definisce l'altezza di ogni riga.*/
+.grid-container {
+    display: grid;
+    grid-template-rows: 80px 200px;
+  }
+
+/*La proprietà justify-content
+La justify-content proprietà viene utilizzata 
+per allineare l'intera griglia all'interno del contenitore.
+Nota:justify-content affinché la proprietà abbia effetto, 
+la larghezza totale della griglia deve essere inferiore alla larghezza del contenitore .*/
+.grid-container {
+    display: grid;
+    justify-content: space-evenly;
+  }
+
+/*La proprietà align-content
+La align-contentproprietà viene utilizzata 
+per allineare verticalmente l'intera griglia all'interno del contenitore.
+align-content affinché la proprietà abbia effetto, 
+l'altezza totale della griglia deve essere inferiore all'altezza del contenitore .*/
+.grid-container {
+    display: grid;
+    height: 400px;
+    align-content: center;
+  }
+
+/*La proprietà place-content
+La place-content proprietà è una forma abbreviata di 
+proprietà align-contente justify-content proprietà.
+place-content affinché la proprietà abbia effetto, 
+l'altezza e la larghezza totali della griglia devono essere inferiori 
+all'altezza e alla larghezza del contenitore*/
+.grid-container {
+    display: grid;
+    height: 400px;
+    place-content: center center;
+  }

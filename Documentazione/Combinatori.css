@@ -1,0 +1,176 @@
+/*Combinatori CSS
+Un combinatore è qualcosa che spiega la relazione tra i selettori.
+Un selettore CSS può contenere più di un selettore semplice. Tra i selettori semplici, 
+possiamo includere un combinatore.
+
+Ci sono quattro diversi combinatori in CSS:
+
+Combinatore discendente (spazio)
+Combinatore di figli (>)
+Combinatore fratello successivo (+)
+Combinatore di fratelli successivi (~)*/
+
+
+/*Combinatore discendente*/
+/*Il combinatore discendente corrisponde a tutti gli elementi che sono discendenti 
+di un elemento specificato.*/
+div p {
+    background-color: yellow;
+  }
+
+/*Il combinatore figlio seleziona tutti gli elementi che sono figli di un elemento specificato.*/
+div > p {
+    background-color: yellow;
+  }
+
+/*Prossimo Combinatore di Fratelli (+)*/
+/*Il combinatore di elementi fratelli successivo viene utilizzato per selezionare 
+un elemento che si trova direttamente dopo un altro elemento specifico.
+Gli elementi fratelli devono avere lo stesso elemento padre e "adiacente" significa 
+"immediatamente successivo".*/
+div + p {
+    background-color: yellow;
+  }
+
+/*Combinatore dei fratelli successivi (~)
+Il combinatore dei fratelli successivi seleziona tutti gli elementi 
+che sono fratelli successivi di un elemento specificato.*/
+div ~ p {
+    background-color: yellow;
+  }
+/*Un selettore CSS può contenere più di un selettore semplice. Tra i selettori semplici, possiamo includere un combinatore.
+
+Ci sono quattro diversi tipi di combinatori in CSS:
+
+Selettore discendente (spazio)
+Selettore figlio (>)
+Selettore fratello adiacente (+)
+Selettore fratello generale (~)
+
+Selettore Discendente
+Il selettore discendente corrisponde 
+a tutti gli elementi che sono discendenti di un elemento specificato.*/
+div p {
+  background-color: yellow;
+}
+
+/*Selettore Figlio (>)
+
+Formattazione Testo
+Link
+Liste
+Tabelle
+Pseudo Classi
+Pseudo Elementi
+Layout e Posizionamento
+Display
+Position
+Z-index
+Float
+Clearfix
+Overflow
+Flexbox
+Grid
+Multi-Colonna
+Align e Justify
+Stili Avanzati
+Opacità
+Trasformazioni
+Transizioni
+Animazioni
+Clip e Masking
+Filtri CSS
+Variabili
+Responsive Design
+Media Query
+Breakpoints
+Design Fluido
+Accessibilità CSS
+Performance e Ottimizzazione
+Performance CSS
+Caricamento Asincrono dei CSS
+Minificazione e Compressione
+Preprocessori CSS (SASS, LESS)
+Proprietà CSS di Riferimento
+background
+background-color
+background-image
+background-repeat
+background-position
+background-size
+border
+border-radius
+box-shadow
+color
+display
+flex
+flex-direction
+flex-wrap
+justify-content
+align-items
+font
+font-size
+font-weight
+grid
+grid-template-columns
+grid-template-rows
+height
+width
+margin
+padding
+position
+top
+left
+right
+bottom
+z-index
+overflow
+text-align
+text-decoration
+transform
+transition
+visibility
+white-space
+word-wrap
+letter-spacing
+line-height
+vertical-align
+Combinatori CSS
+Codegrind Team
+•
+Jul 22 2023
+Un selettore CSS può contenere più di un selettore semplice. Tra i selettori semplici, possiamo includere un combinatore.
+
+Ci sono quattro diversi tipi di combinatori in CSS:
+
+Selettore discendente (spazio)
+Selettore figlio (>)
+Selettore fratello adiacente (+)
+Selettore fratello generale (~)
+Selettore Discendente
+Il selettore discendente corrisponde a tutti gli elementi che sono discendenti di un elemento specificato.
+
+L’esempio seguente seleziona tutti gli elementi <p> all’interno degli elementi <div>:
+
+div p {
+  background-color: yellow;
+}
+Selettore Figlio (>)
+Il selettore figlio seleziona tutti gli elementi che sono figli di un elemento specificato.*/
+div > p {
+  background-color: yellow;
+}
+/*Selettore Fratello Adiacente (+)
+Il selettore fratello adiacente è utilizzato per selezionare 
+un elemento che segue direttamente un altro elemento specifico.
+Gli elementi fratelli devono avere lo stesso elemento padre e “adiacente”
+ significa “immediatamente successivo”.*/
+ div + p {
+  background-color: yellow;
+}
+/*Selettore Fratello Generale (~)
+Il selettore fratello generale 
+seleziona tutti gli elementi che sono fratelli successivi di un elemento specificato.*/
+div ~ p {
+  background-color: yellow;
+}

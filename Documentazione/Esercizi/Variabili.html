@@ -1,0 +1,248 @@
+<!--Crea una variabile CSS per il colore di sfondo di un div 
+e utilizzala per impostare il colore di sfondo del div.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        background-color: blue;
+        }
+        
+      div {
+
+        background-color: var(--background-color);
+      }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
+<!--Crea una variabile CSS per il colore del testo di un paragrafo e
+ utilizzala per impostare il colore del testo del paragrafo.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         p {
+         color: red;
+         }
+         p {
+        color: var(--color);
+      }
+     </style>
+ </head>
+ <body>
+     <p>This is a paragraph.</p>
+ </body>
+ </html>
+
+<!--Crea una variabile CSS per la dimensione del font di un paragrafo 
+e utilizzala per impostare la dimensione del font del paragrafo.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         p {
+         font-size: 20px;
+         }
+         p {
+        font-size: var(--dimensione-font);
+      }
+     </style>
+ </head>
+ <body>
+     <p>This is a paragraph.</p>
+ </body>
+ </html>
+
+<!--Crea una variabile CSS per la larghezza e
+ l'altezza di un div e utilizzale per impostare la larghezza e l'altezza del div.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         div {
+         width: 200px;
+         height: 100px;
+         }
+         
+      div {
+        width: var(--larghezza-div);
+        height: var(--altezza-div);
+      }
+     </style>
+ </head>
+ <body>
+     <div></div>
+ </body>
+ </html>
+
+<!--Crea una variabile CSS per il colore di sfondo e la dimensione 
+del font di un paragrafo e utilizzale per impostare lo stile del paragrafo.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         p {
+         background-color: blue;
+         font-size: 20px;
+         }
+         p {
+        background-color: var(--colore-sfondo);
+        font-size: var(--dimensione-font);
+      }
+     </style>
+ </head>
+ <body>
+     <p>This is a paragraph.</p>
+ </body>
+ </html>
+
+<!--Crea una variabile CSS per il colore di sfondo e il colore del testo di un elemento
+ `a` e utilizzale per impostare lo stile del link.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         a {
+         background-color: blue;
+         color: white;
+         }
+         a {
+        background-color: var(--colore-sfondo);
+        color: var(--colore-testo);
+      }
+     </style>
+ </head>
+ <body>
+     <a href="#">Link</a>
+ </body>
+ </html>
+
+<!--Crea una variabile CSS per la larghezza del bordo di un elemento `div` 
+e utilizzala per impostare lo stile del bordo.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         div {
+         border: 1px solid black;
+         }
+         div {
+        border-width: var(--larghezza-bordo);
+      }
+     </style>
+ </head>
+ <body>
+     <div></div>
+ </body>
+ </html>
+
+<!--Crea una variabile CSS per il margine e il padding di un elemento `p`
+ e utilizzale per impostare lo spazio intorno al paragrafo.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         p {
+         margin: 10px;
+         padding: 5px;
+         }
+         p {
+        margin: var(--margine);
+        padding: var(--padding);
+      }
+     </style>
+ </head>
+ <body>
+     <p>This is a paragraph.</p>
+ </body>
+ </html>
+
+<!--Crea una variabile CSS per il colore di sfondo 
+e la dimensione del font di un paragrafo all'interno di un div e utilizzale 
+per impostare lo stile del div e del paragrafo.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         div {
+         background-color: blue;
+         font-size: 20px;
+         }
+         p {
+         color: white;
+         }
+         div {
+        background-color: var(--colore-sfondo);
+        font-size: var(--dimensione-font);
+      }
+         p {
+        color: var(--colore-testo);
+      }
+     </style>
+ </head>
+ <body>
+     <div>
+         <p>This is a paragraph.</p>
+     </div>
+ </body>
+ </html>
+
+<!--Crea una variabile CSS per il colore di sfondo di un link quando viene
+ fatto clic su di esso e utilizzala per impostare lo stile del link cliccato.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+        background-color: blue;
+        color: white;
+        }
+        a:hover {
+        background-color: red;
+        }
+        a:active {
+        background-color: green;
+        }
+        a {
+        background-color: var(--colore-sfondo-link);
+      }
+    </style>
+</head>
+<body>
+    <a href="#">Clicca qui</a>
+</body>
+</html>

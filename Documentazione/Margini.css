@@ -1,0 +1,154 @@
+/*I margini vengono utilizzati per creare spazio attorno agli elementi, 
+al di fuori di qualsiasi bordo definito*/
+
+/*Margine - Lati Singoli*/
+/*CSS ha proprietà per specificare il margine per ogni lato di un elemento:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+Tutte le proprietà del margine possono avere i seguenti valori:
+
+auto - il browser calcola il margine
+lunghezza - specifica un margine in px, pt, cm, ecc.
+% - specifica un margine in % della larghezza dell'elemento contenitore
+inherit - specifica che il margine deve essere ereditato dall'elemento padre*/
+
+p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+  }
+
+  /*Margine - Proprietà abbreviata*/
+  /*Per abbreviare il codice, è possibile specificare tutte le proprietà dei margini in un'unica proprietà.
+
+La margin proprietà è una proprietà abbreviata per le seguenti proprietà di margine individuali:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+Ecco come funziona:
+
+Se la marginproprietà ha quattro valori:
+
+margine: 25px 50px 75px 100px;
+il margine superiore è 25px
+il margine destro è 50px
+il margine inferiore è 75px
+il margine sinistro è 100px*/
+p {
+    margin: 25px 50px 75px 100px;
+  }
+  /*Se la marginproprietà ha tre valori:
+
+margine: 25px 50px 75px;
+il margine superiore è 25px
+i margini destro e sinistro sono 50px
+il margine inferiore è 75px*/
+
+p {
+    margin: 25px 50px 75px;
+  }
+  /*Se la marginproprietà ha due valori:
+
+margine: 25px 50px;
+i margini superiore e inferiore sono 25px
+i margini destro e sinistro sono 50px*/
+
+p {
+    margin: 25px 50px;
+  }
+/*Se la marginproprietà ha un valore:
+
+margine: 25px;
+tutti e quattro i margini sono 25px*/  
+p {
+    margin: 25px;
+  }
+  /*Il valore automatico*/
+  /*È possibile impostare la proprietà margin per autocentrare
+   orizzontalmente l'elemento all'interno del suo contenitore*/
+   /*L'elemento occuperà quindi la larghezza specificata e lo spazio
+    rimanente verrà suddiviso equamente tra il margine sinistro e quello destro.*/
+
+    div {
+        width: 300px;
+        margin: auto;
+        border: 1px solid red;
+      }
+
+      /*Il valore ereditato*/
+      div {
+        border: 1px solid red;
+        margin-left: 100px;
+      }
+      
+      p.ex1 {
+        margin-left: inherit;
+      }
+
+      /*Crollo del margine*/
+      h1 {
+        margin: 0 0 50px 0;
+      }
+      
+      h2 {
+        margin: 20px 0 0 0;
+      }
+
+/*Le proprietà CSS del margine vengono utilizzate per creare spazio intorno agli elementi, 
+al di fuori di qualsiasi bordo definito.
+
+Margine - Lati Singoli
+margin-top (margine superiore)
+margin-right (margine destro)
+margin-bottom (margine inferiore)
+margin-left (margine sinistro)
+Tutte le proprietà del margine possono avere i seguenti valori:
+
+auto - il browser calcola il margine
+length - specifica un margine in px, pt, cm, ecc.
+% - specifica un margine in % della larghezza dell’elemento contenitore
+inherit - specifica che il margine dovrebbe essere ereditato dall’elemento genitore*/     
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+/*Margine - Proprietà Abbreviata
+Per accorciare il codice, è possibile specificare tutte le proprietà del margine in una sola proprietà.
+
+La proprietà del margine è una proprietà abbreviata per le seguenti proprietà del margine individuali:
+
+margin-top (margine superiore)
+margin-right (margine destro)
+margin-bottom (margine inferiore)
+margin-left (margine sinistro) 
+
+
+Il Valore auto
+Puoi impostare la proprietà del margine su auto per centrare orizzontalmente 
+l’elemento all’interno del suo contenitore.
+L’elemento occuperà quindi 
+la larghezza specificata e lo spazio rimanente sarà diviso equamente tra i margini sinistro e destro.*/
+div {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+
+/*Il Valore inherit*/
+div {
+  border: 1px solid red;
+  margin-left: 100px;
+}
+
+p.prova1 {
+  margin-left: inherit;
+}

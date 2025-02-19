@@ -1,0 +1,70 @@
+/*I quattro stati dei collegamenti sono:
+
+a:link - un collegamento normale e non visitato
+a:visited - un collegamento che l’utente ha visitato
+a:hover - un collegamento quando l’utente ci passa sopra col mouse
+a:active - un collegamento nel momento in cui viene cliccato*/
+
+/* collegamento non visitato */
+a:link {
+    color: red;
+  }
+  
+  /* collegamento visitato */
+  a:visited {
+    color: green;
+  }
+  
+  /* passaggio del mouse sul collegamento */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* collegamento selezionato */
+  a:active {
+    color: blue;
+  }
+  
+/*Quando si imposta lo stile per diversi stati dei collegamenti, ci sono alcune regole sull’ordine:
+
+a:hover DEVE venire dopo a:link e a:visited
+a:active DEVE venire dopo a:hover
+
+Decorazione del Testo
+La proprietà text-decoration viene principalmente
+ utilizzata per rimuovere le sottolineature dai collegamenti:*/
+
+ a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+/*Colore di Sfondo
+La proprietà background-color può essere utilizzata 
+per specificare un colore di sfondo per i collegamenti:*/
+a:link {
+    background-color: yellow;
+  }
+  
+  a:visited {
+    background-color: cyan;
+  }
+  
+  a:hover {
+    background-color: lightgreen;
+  }
+  
+  a:active {
+    background-color: hotpink;
+  }

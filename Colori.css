@@ -1,0 +1,25 @@
+/*Valori Esadecimali (#RRGGBB)
+Questo formato esprime un colore tramite il contributo di tre componenti principali: 
+rosso ®, verde (G) e blu (B), ognuno dei quali ha un valore da 00 a FF.*/
+/**color: #ff5733;**/ /* Colore Rosso Vivo */
+
+/*Valori RGB*/
+/**color: rgb(255, 87, 51);**/ /* Colore Rosso Vivo */
+
+/*Valori RGBA*/
+/**background-color: rgba(0, 128, 0, 0.3);**/ /* Verde con Opacità */
+
+
+/*Valori HSL
+Questo formato rappresenta il colore in termini di tonalità (H), saturazione (S) e luminosità (L), 
+con valori rispettivamente da 0 a 360, da 0% a 100% e da 0% a 100%.*/
+/**background-color: hsl(120, 100%, 50%);**/
+
+/*Colori Predefiniti*/
+/**color: blue; /* Colore Blu */
+
+
+/*Colori con Opacità
+Tutti i formati di colori sopra elencati possono essere utilizzati con valori di opacità.*/
+/**background-color: rgba(255, 0, 0, 0.5);**/ /* Rosso Semi-Trasparente */
+

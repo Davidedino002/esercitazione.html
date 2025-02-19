@@ -1,0 +1,93 @@
+/*Trasformazioni CSS 2D
+Le trasformazioni CSS consentono di spostare, ruotare, ridimensionare e inclinare gli elementi.
+
+Funzioni di trasformazione CSS 2D
+Con la transformproprietà CSS è possibile utilizzare le seguenti funzioni di trasformazione 2D:
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix()
+
+La funzione translate()
+La translate()funzione sposta un elemento dalla sua posizione corrente*/
+div {
+    transform: translate(50px, 100px);
+  }
+
+/*La funzione rotate()
+La rotate()funzione ruota un elemento in senso orario o antiorario secondo un grado dato.*/  
+div {
+    transform: rotate(20deg);
+  }
+  div {
+    transform: rotate(-20deg);
+  }
+
+  /*La scale()funzione aumenta o diminuisce la dimensione di un elemento*/
+  div {
+    transform: scale(2, 3);
+  }
+
+/*La funzione scaleX()
+La scaleX() funzione aumenta o diminuisce la larghezza di un elemento.*/
+div {
+    transform: scaleX(2);
+  }
+
+/*La funzione scaleY()
+La scaleY()funzione aumenta o diminuisce l'altezza di un elemento.*/
+div {
+    transform: scaleY(3);
+  }
+/*La funzione skewX()
+La skewX()funzione inclina un elemento lungo l'asse X dell'angolo specificato.*/
+div {
+    transform: skewX(20deg);
+  }
+/*La funzione skewY()
+La skewY()funzione inclina un elemento lungo l'asse Y dell'angolo specificato.*/
+div {
+    transform: skewY(20deg);
+  }
+/*La funzione skew()
+La skew()funzione inclina un elemento lungo gli assi X e Y secondo gli angoli specificati.*/ 
+div {
+    transform: skew(20deg, 10deg);
+  }
+  
+/*La funzione matrix()
+La matrix()funzione combina tutte le funzioni di trasformazione 2D in una.*/
+div {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+  }
+
+/*Trasformazioni CSS 3D
+CSS supporta anche le trasformazioni 3D.
+Con la transformproprietà CSS è possibile utilizzare le seguenti funzioni di trasformazione 3D:
+rotateX()
+rotateY()
+rotateZ()
+
+La funzione rotateX()
+La rotateX()funzione ruota un elemento attorno al suo asse X di un dato grado:*/
+#myDiv {
+  transform: rotateX(150deg);
+}
+/*La funzione rotateY()
+La rotateY()funzione ruota un elemento attorno al suo asse Y di un dato grado:*/
+#myDiv {
+    transform: rotateY(150deg);
+  }
+  /*La funzione rotateZ()
+  La rotateZ()funzione ruota un elemento attorno al suo asse Z di un dato grado:*/
+  #myDiv {
+    transform: rotateZ(90deg);
+  }
+
+
+

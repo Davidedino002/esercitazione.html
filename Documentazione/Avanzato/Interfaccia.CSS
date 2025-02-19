@@ -1,0 +1,23 @@
+/*Ridimensionamento CSS
+La resize proprietà specifica se (e come) un elemento deve essere ridimensionabile dall'utente.
+ */
+ div {
+    resize: horizontal;
+    overflow: auto;
+  }
+/*Spostamento contorno CSS
+La outline-offset
+proprietà aggiunge spazio tra un contorno e il bordo o il margine di un elemento.*/  
+div.ex1 {
+    margin: 20px;
+    border: 1px solid black;
+    outline: 4px solid red;
+    outline-offset: 15px;
+  }
+  
+  div.ex2 {
+    margin: 10px;
+    border: 1px solid black;
+    outline: 5px dashed blue;
+    outline-offset: 5px;
+  }

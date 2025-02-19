@@ -1,0 +1,14 @@
+/*La z-indexproprietà specifica l'ordine di impilamento di un elemento.*/
+
+/*La proprietà z-index
+Quando gli elementi vengono posizionati, possono sovrapporsi ad altri elementi.
+La z-index proprietà specifica l'ordine di impilamento di un elemento 
+(quale elemento deve essere posizionato davanti o dietro gli altri).
+Un elemento può avere un ordine di pila positivo o negativo:*/
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+  

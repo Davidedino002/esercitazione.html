@@ -1,0 +1,74 @@
+<!--Gli elementi figlio diretti di un contenitore flessibile diventano 
+automaticamente elementi flessibili.-->
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+
+<!--La proprietà dell'ordine
+La order proprietà specifica l'ordine degli elementi flex all'interno del contenitore flex.-->
+<div class="flex-container">
+    <div style="order: 3">1</div>
+    <div style="order: 2">2</div>
+    <div style="order: 4">3</div>
+    <div style="order: 1">4</div>
+  </div>
+
+<!--La proprietà flex-grow
+La flex-grow proprietà specifica di quanto crescerà
+ un elemento flessibile rispetto al resto degli elementi flessibili.-->
+ <div class="flex-container">
+    <div style="flex-grow: 1">1</div>
+    <div style="flex-grow: 1">2</div>
+    <div style="flex-grow: 8">3</div>
+  </div>
+
+<!--La proprietà flex-shrink
+La flex-shrinkproprietà specifica di quanto un elemento
+ flessibile si ridurrà rispetto al resto degli elementi flessibili-->
+ <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div style="flex-shrink: 0">3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+  </div>
+  
+<!--La proprietà flex-basis
+La flex-basisproprietà specifica la lunghezza iniziale di un elemento flessibile.-->  
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div style="flex-basis: 200px">3</div>
+    <div>4</div>
+  </div>
+
+<!--La proprietà flex
+La flexproprietà è una proprietà abbreviata per le proprietà flex-grow, flex-shrink, e flex-basis.-->
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div style="flex: 0 0 200px">3</div>
+    <div>4</div>
+  </div>
+  
+<!--La proprietà align-self
+La align-self proprietà specifica l'allineamento dell'elemento selezionato 
+all'interno del contenitore flessibile.
+La align-self proprietà sostituisce 
+l'allineamento predefinito impostato dalla align-itemsproprietà del contenitore.-->  
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div style="align-self: center">3</div>
+    <div>4</div>
+  </div>
+
+  
