@@ -1,0 +1,77 @@
+/*Diversi marcatori di elementi di elenco
+La list-style-type proprietà specifica il tipo di marcatore della voce di elenco.*/
+
+ul.a {
+    list-style-type: circle;
+  }
+  
+  ul.b {
+    list-style-type: square;
+  }
+  
+  ol.c {
+    list-style-type: upper-roman;
+  }
+  
+  ol.d {
+    list-style-type: lower-alpha;
+  }
+
+  /*Un'immagine come marcatore dell'elemento dell'elenco*/
+  /*La list-style-imageproprietà specifica un'immagine come marcatore dell'elemento dell'elenco:*/
+  ul {
+    list-style-image: url('sqpurple.gif');
+  }
+/*Posizionare i marcatori degli elementi dell'elenco
+La list-style-positionproprietà specifica la posizione dei marcatori delle voci di elenco*/  
+ul.a {
+    list-style-position: outside;
+  }
+  
+  ul.b {
+    list-style-position: inside;
+  }
+  /*Rimuovi impostazioni predefinite*/
+  /*La list-style-type:none proprietà può anche essere usata per rimuovere i marcatori*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+    
+  /*Elenco - Proprietà abbreviata*/
+  /*La list-styleproprietà è una proprietà abbreviata.
+   Viene utilizzata per impostare tutte le proprietà dell'elenco in una dichiarazione:*/
+   ul {
+    list-style: square inside url("sqpurple.gif");
+  }
+
+/*Quando si utilizza la proprietà abbreviata, l'ordine dei valori della proprietà è:
+
+list-style-type(se viene specificato un list-style-image, il valore di questa proprietà verrà visualizzato se per qualche motivo l'immagine non può essere visualizzata)
+list-style-position(specifica se i marcatori delle voci di elenco devono apparire all'interno o all'esterno del flusso di contenuti)
+list-style-image(specifica un'immagine come marcatore della voce di elenco)*/
+
+/*Elenco di stili con colori*/
+ol {
+    background: #ff9999;
+    padding: 20px;
+  }
+  
+  ul {
+    background: #3399ff;
+    padding: 20px;
+  }
+  
+  ol li {
+    background: #ffe5e5;
+    color: darkred;
+    padding: 5px;
+    margin-left: 35px;
+  }
+  
+  ul li {
+    background: #cce5ff;
+    color: darkblue;
+    margin: 5px;
+  }

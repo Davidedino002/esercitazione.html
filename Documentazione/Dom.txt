@@ -1,0 +1,69 @@
+Il DOM (Document Object Model) è una rappresentazione strutturata del documento HTML,
+ dove ogni elemento è un nodo in un albero gerarchico. ​
+Quando un browser carica una pagina HTML, 
+ costruisce il DOM per rappresentare la struttura 
+ del documento per rappresentare gli stili associati a quella struttura.​
+I selettori CSS applicano gli stili ai vari elementi HTML seguendo questa struttura ad albero.  ​
+
+
+Nel DOM gli stili CSS sono ereditati dai nodi genitori. 
+Questo significa che se un genitore ha uno stile definito, i suoi figli possono ereditarlo automaticamente.​
+Ad esempio, se imposti un colore sul <body>, i nodi figli (come <p>, <div>, ecc.) 
+ereditano quel colore, a meno che non venga sovrascritto da una regola più specifica.​
+Ovviamente si parla solo di proprietà come il colore o font, mentre altre proprietà,
+ come il margin o border, non vengono ereditate.​
+ Per essere più precisi possiamo utilizzare i “selettori di parentela” 
+ che sfruttano la struttura del DOM per stilizzare gli elementi in base 
+ al loro legame di parentela (e gerarchiche).​
+
+
+Ereditarietà e Cascata in CSS
+In CSS, ereditarietà e cascata sono due concetti fondamentali che determinano 
+come gli stili vengono applicati agli elementi HTML. 
+Questi concetti sono alla base del funzionamento dei fogli di stile, 
+influenzando la priorità e l’applicazione delle regole CSS. 
+Comprendere l’ereditarietà e la cascata ti permetterà di creare stili più efficienti e prevedibili. 
+In questa guida, esploreremo come funzionano l’ereditarietà e la cascata in CSS, 
+con esempi pratici e best practices per gestire correttamente gli stili nelle tue pagine web.
+
+1. Cos’è l’Ereditarietà in CSS?
+L’ereditarietà in CSS si riferisce al comportamento 
+per cui alcuni stili applicati a un elemento vengono ereditati dai suoi figli. 
+Non tutte le proprietà CSS sono ereditabili, ma quelle che lo sono influenzano gli elementi discendenti,
+ a meno che non siano sovrascritte da specifiche dichiarazioni CSS.
+
+ 1.1. Proprietà Ereditabili
+ Le proprietà CSS ereditabili riguardano principalmente la tipografia e il testo. 
+ Alcuni esempi includono:
+color
+font-family
+font-size
+line-height
+text-align
+visibility
+
+1.2. Proprietà Non Ereditabili
+Molte altre proprietà CSS, come width, height, margin, padding, e border, 
+non sono ereditabili per impostazione predefinita.
+
+2. Cos’è la Cascata in CSS?
+La cascata in CSS si riferisce al processo mediante il quale il browser determina 
+quali stili applicare quando ci sono più regole CSS che si applicano allo stesso elemento. 
+La cascata tiene conto di tre fattori principali: 
+origine dello stile, specificità e ordine di dichiarazione.
+
+2.1. Origine dello Stile
+Gli stili possono provenire da diverse fonti:
+
+Stili dell’utente: Impostati dall’utente nelle impostazioni del browser.
+Stili del sito: Definiti nei fogli di stile del sito web.
+Stili predefiniti del browser: Gli stili di default applicati dal browser se non diversamente specificato.
+
+
+2.2. Specificità
+La specificità si basa su un sistema di punteggio che determina quale regola CSS 
+ha la priorità quando più regole si applicano allo stesso elemento.
+Selettore ID: Ha la specificità più alta (ad esempio, #header).
+Selettore di classe e pseudo-classe: Hanno una specificità inferiore 
+rispetto agli ID, ma superiore rispetto agli elementi (ad esempio, .container, :hover).
+Selettore di tipo e pseudo-elemento: Hanno la specificità più bassa (ad esempio, div, p, ::after).

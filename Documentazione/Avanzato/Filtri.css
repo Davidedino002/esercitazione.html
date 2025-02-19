@@ -1,0 +1,217 @@
+/*Filtri CSS
+La proprietà CSS filterviene utilizzata per aggiungere effetti visivi 
+(come sfocatura e saturazione) agli elementi.
+All'interno della proprietà filtro è possibile utilizzare le seguenti funzioni CSS:
+blur()
+brightness()
+contrast()
+drop-shadow()
+grayscale()
+hue-rotate()
+invert()
+opacity()
+saturate()
+sepia()
+
+La funzione CSS blur()
+La blur()funzione filtro applica un effetto sfocato a un elemento.*/
+#img1 {
+  filter: blur(2px);
+}
+#img2 {
+  filter: blur(6px);
+}
+
+/*La funzione CSS brightness()
+La brightness()funzione filtro regola la luminosità di un elemento.
+I valori superiori al 100% forniranno risultati più luminosi
+I valori inferiori al 100% forniranno risultati più scuri
+0% renderà l'immagine completamente nera
+Il 100% è l'impostazione predefinita e rappresenta l'immagine originale*/
+#img1 {
+    filter: brightness(150%);
+  }
+  
+  #img2 {
+    filter: brightness(50%);
+  }
+
+/*La funzione CSS contrast()
+La contrast()funzione filtro regola il contrasto di un elemento.
+
+I valori superiori al 100% aumentano il contrasto
+I valori inferiori al 100% diminuiscono il contrasto
+0% renderà l'immagine completamente grigia
+Il 100% è l'impostazione predefinita e rappresenta l'immagine originale*/  
+#img1 {
+    filter: contrast(150%);
+  }
+  
+  #img2 {
+    filter: contrast(50%);
+  }
+/*La funzione CSS drop-shadow()
+La drop-shadow()funzione filtro applica un effetto ombra a un'immagine.*/
+#img1 {
+    filter: drop-shadow(8px 8px 10px gray);
+  }
+  
+  #img2 {
+    filter: drop-shadow(10px 10px 7px lightblue);
+  }
+/*La funzione CSS grayscale()
+La grayscale()funzione filtro converte un'immagine in scala di grigi.*/
+#img1 {
+    filter: grayscale(1);
+  }
+  
+  #img2 {
+    filter: grayscale(60%);
+  }
+  
+  #img3 {
+    filter: grayscale(0.4);
+  }
+  
+/*La funzione CSS hue-rotate()
+La hue-rotate()funzione filtro applica una rotazione del colore a un elemento.
+Questa funzione applica una rotazione della tonalità all'immagine. 
+Il valore definisce il numero di gradi attorno al cerchio di colore di cui l'immagine verrà regolata. 
+Una rotazione positiva della tonalità aumenta il valore della tonalità, 
+mentre una rotazione negativa diminuisce il valore della tonalità. 
+0 gradi rappresenta l'immagine originale.*/
+#img1 {
+  filter: hue-rotate(200deg);
+}
+
+#img2 {
+  filter: hue-rotate(90deg);
+}
+
+#img3 {
+  filter: hue-rotate(-90deg);
+}
+/*La funzione CSS invert()
+La invert()funzione filtro inverte il colore di un'immagine.*/
+#img1 {
+    filter: invert(0.3);
+  }
+  
+  #img2 {
+    filter: invert(70%);
+  }
+  
+  #img3 {
+    filter: invert(100%);
+  }
+
+/*La funzione CSS opacity()
+La opacity()funzione filtro applica un effetto di opacità a un elemento.*/
+#img1 {
+    filter: opacity(80%);
+  }
+  
+  #img2 {
+    filter: opacity(50%);
+  }
+  
+  #img3 {
+    filter: opacity(0.2);
+  }
+/*La funzione CSS saturate()
+La saturate()funzione filtro regola la saturazione (intensità del colore) di un elemento.*/  
+#img1 {
+    filter: saturate(0);
+  }
+  
+  #img2 {
+    filter: saturate(100%);
+  }
+  
+  #img3 {
+    filter: saturate(200%);
+  }
+/*La funzione CSS sepia()
+La sepia()funzione filtro converte un'immagine in seppia (un colore più caldo, tendente al marrone/giallo).*/
+#img1 {
+    filter: sepia(1);
+  }
+  
+  #img2 {
+    filter: sepia(60%);
+  }
+  
+  #img3 {
+    filter: sepia(0.4);
+  }
+/*Forme Immagini
+La proprietà CSS clip-path
+La clip-pathproprietà consente di ritagliare un elemento in una forma di base.
+
+La funzione CSS circle()
+La circle()funzione definisce un cerchio con un raggio e una posizione.
+La circle()funzione viene utilizzata all'interno della clip-path proprietà.*/
+img {
+    clip-path: circle(50%);
+  }
+
+/*La proprietà CSS shape-outside
+La shape-outsideproprietà consente di definire una forma per l'inserimento del contenuto in linea.
+La circle()funzione viene utilizzata anche all'interno della shape-outside proprietà.*/
+img {
+    float: left;
+    clip-path: circle(40%);
+    shape-outside: circle(45%);
+  }
+/*La funzione CSS ellipse()
+La ellipse()funzione definisce un'ellisse con due raggi x e y.
+La ellipse()funzione viene utilizzata all'interno 
+della proprietà clip-path e della proprietà shape-outside .*/
+img {
+    clip-path: ellipse(50% 35%);
+  }
+/*La proprietà shape-outside e ellipse()*/  
+img {
+    float: left;
+    clip-path: ellipse(40% 50%);
+    shape-outside: ellipse(45% 50%);
+  }
+
+/*La funzione CSS polygon()
+La polygon()funzione definisce un poligono.
+La polygon()funzione contiene punti che definiscono il poligono. 
+Può essere un valore di lunghezza o percentuale. */
+
+
+/*3. Best Practices per l’Uso dei Filtri
+3.1. Utilizzo Moderato
+I filtri possono essere molto potenti, 
+ma un uso eccessivo può sovraccaricare visivamente il design e ridurre la leggibilità.
+ Usa i filtri con moderazione per migliorare l’esperienza utente senza distrarre.
+ 
+ 3.2. Performance
+Alcuni filtri, in particolare quelli più complessi come blur() e hue-rotate(), 
+possono influire sulle performance, soprattutto su dispositivi meno potenti. 
+Testa le prestazioni del tuo sito su diversi dispositivi e considera di applicare 
+i filtri solo su elementi chiave.
+
+3.3. Accessibilità
+Assicurati che l’uso dei filtri non comprometta l’accessibilità. 
+Ad esempio, filtri che riducono troppo il contrasto o la luminosità 
+possono rendere difficile la lettura del testo o la visualizzazione di immagini per alcuni utenti.*/
+
+
+/*3.4. Uso Consistente
+Mantieni un uso coerente dei filtri all’interno del sito per evitare confusione visiva. 
+Utilizza filtri simili per immagini dello stesso tipo o per creare un’estetica uniforme.
+
+3.5. Animazioni con Filtri
+Puoi utilizzare i filtri in combinazione con le animazioni CSS per creare effetti di transizione. 
+Ad esempio, puoi animare un effetto blur() o grayscale() per ottenere un’interazione fluida e coinvolgente.*/
+.animated-filter {
+  transition: filter 0.5s ease-in-out;
+}
+
+.animated-filter:hover {
+  filter: blur(5px) brightness(80%);
+}

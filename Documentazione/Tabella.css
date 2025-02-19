@@ -1,0 +1,86 @@
+/*Bordi delle Tabelle
+Per specificare i bordi delle tabelle in CSS, utilizza la proprietà border.*/
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+/*Tavola a Larghezza Intera
+La tabella sopra potrebbe sembrare piccola in alcuni casi. 
+Se hai bisogno di una tabella che dovrebbe occupare l’intero schermo (larghezza intera), aggiungi width*/
+table {
+    width: 100%;
+  }
+
+/*Bordi Doppi*/
+table {
+    border-collapse: collapse;
+  }
+
+/*Larghezza e Altezza della Tabella
+La larghezza e l’altezza di una tabella sono definite dalle proprietà width e height.*/
+table {
+    width: 100%;
+  }
+  
+  th {
+    height: 70px;
+  }
+/*Per creare una tabella che dovrebbe occupare 
+solo metà della pagina, utilizza width: 50%:*/
+table {
+    width: 50%;
+  }
+
+/*Allineamento Orizzontale
+La proprietà text-align imposta l’allineamento orizzontale */
+td {
+    text-align: center;
+  }
+
+/*Per allineare a sinistra i contenuti, forza l’allineamento degli elementi
+ <th> a sinistra, con la proprietà text-align: left:*/
+ th {
+    text-align: left;
+  }
+
+/*Allineamento Verticale*/
+td {
+    height: 50px;
+    vertical-align: bottom;
+  }
+
+/*Padding della Tabella
+Per controllare lo spazio tra il bordo e il contenuto in una tabella,
+ utilizza la proprietà padding sugli elementi*/  
+ th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+/*Divisori Orizzontali
+Aggiungi la proprietà border-bottom*/
+th,
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+/*Tabella con Effetto Hover
+Utilizza il selettore :hover su <tr> per evidenziare le righe della tabella al passaggio del mouse:*/
+tr:hover {
+    background-color: coral;
+  }
+
+/*Tabelle a Righe Strisce
+Per ottenere tabelle a righe alternate (strisce zebra), utilizza il selettore nth-child() 
+e aggiungi un colore di sfondo a tutte le righe della tabella pari */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /*Colore della Tabella*/
+  th {
+    background-color: #04aa6d;
+    color: white;
+  }

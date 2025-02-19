@@ -1,0 +1,20 @@
+/*Selettori discendenti: Selezionano tutti gli elementi figli di un altro elemento.​*/
+/*div p { color: green;}​*/
+/*Qui, tutti i paragrafi (<p>) che sono discendenti di un <div> avranno il testo verde.*/
+
+
+/*Selettori figli diretti: Selezionano solo i figli diretti di un elemento.​*/
+/*div > p { color: red;}​*/
+/*Questo stile si applica solo ai <p> che sono figli diretti di un <div>, 
+ignorando i nipoti o altri discendenti più lontani.​*/
+
+
+/*Selettori di fratelli immediati: Selezionano un elemento che è fratello immediato di un altro.​*/
+/*h2 + p { font-weight: bold;}​*/
+/*Qui, qualsiasi <p> che segue immediatamente un <h2> avrà il testo in grassetto.​*/
+
+
+
+/*Selettori di fratelli generali: Selezionano tutti gli elementi fratelli che seguono un altro elemento.​*/
+/*h2 ~ p { color: purple;}*
+Tutti i paragrafi che sono fratelli di un <h2>, ma non necessariamente immediati, saranno colorati di viola.​*/

@@ -1,0 +1,95 @@
+/*Rispetto a display: inline, la differenza principale è che display: 
+inline-block consente di impostare una larghezza e un'altezza sull'elemento.
+Inoltre, con display: inline-block, i margini/spaziature superiore e inferiore vengono rispettati, 
+mentre con display: inline no.
+Rispetto a display: block, la differenza principale è che display:
+ inline-blocknon aggiunge un'interruzione di riga dopo l'elemento, 
+ quindi l'elemento può essere posizionato accanto ad altri elementi.*/
+ span.a {
+    display: inline; /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+  }
+  
+  span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+  }
+  
+  span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+  }
+/*Utilizzo di inline-block per creare collegamenti di navigazione
+Un uso comune di display: inline-block è visualizzare gli elementi dell'elenco 
+orizzontalmente anziché verticalmente. */  
+.nav {
+    background-color: yellow;
+    list-style-type: none;
+    text-align: center; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

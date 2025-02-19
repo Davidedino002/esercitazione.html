@@ -1,0 +1,58 @@
+/*È possibile utilizzare la border-radiusproprietà per creare immagini arrotondate*/
+img {
+    border-radius: 8px;
+  }
+/*Utilizzare la borderproprietà per creare immagini in miniatura.*/
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  
+/*Immagini reattive*/
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/*Centrare un'immagine orizzontalmente in due modi
+1. Utilizzo del margine: automatico
+Un modo per centrare un'immagine orizzontalmente su una pagina è usare margin: auto.
+Poiché l'elemento <img> è un elemento in linea
+(e margin: auto non ha alcun effetto sugli elementi in linea), 
+ dobbiamo anche convertire l'immagine in un elemento blocco, con display: block.*/
+ img {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+/*2. Utilizzo di display: flex
+Un altro modo per centrare un'immagine orizzontalmente su una pagina è usare display: flex.
+display: flex
+justify-content: center(centra l'immagine orizzontalmente nel contenitore div)
+Quindi, impostiamo a widthper l'immagine. La larghezza dell'immagine deve essere 
+inferiore alla larghezza della pagina.*/  
+div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  img {
+    width: 50%;
+  }
+/*Centrare un'immagine verticalmente
+display: flex viene utilizzato anche per centrare verticalmente un'immagine su una pagina.*/
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    border: 1px solid black;
+  }
+  
+  img {
+    width: 50%;
+    height: 50%;
+  }
+  

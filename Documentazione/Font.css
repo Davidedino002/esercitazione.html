@@ -1,0 +1,90 @@
+/*Famiglie di Font Generiche
+In CSS ci sono cinque famiglie di font generiche:
+
+I font serif hanno un piccolo tratto sugli spigoli di ciascuna lettera. Creano un senso di formalità ed eleganza.
+I font sans-serif hanno linee pulite (nessun piccolo tratto collegato). Creano un aspetto moderno e minimalista.
+I font monospace: qui tutte le lettere hanno la stessa larghezza fissa. Creano un aspetto meccanico.
+I font corsivi imitano la scrittura umana.
+I font fantasy sono font decorativi/giocosi. 
+Tutti i diversi nomi dei font appartengono a una delle famiglie di font generiche.
+
+Font Generico	Nomi di Font
+Serif	Times New Roman
+Georgia
+Garamond
+Sans-serif	Arial
+Verdana
+Helvetica
+Monospace	Courier New
+Lucida Console
+Monaco
+Corsivo	Brush Script MT
+Lucida Handwriting
+Fantasy	Copperplate
+Papyrus
+
+La Proprietà CSS font-family
+In CSS, utilizziamo la proprietà font-family per specificare il font di un testo.
+
+Se il nome del font è composto da più di una parola, deve essere racchiuso tra virgolette, 
+ad esempio: “Times New Roman”.
+La proprietà font-family dovrebbe contenere diversi nomi di font come sistema “fallback”, 
+per garantire la massima compatibilità tra browser/sistemi operativi. 
+Inizia con il font desiderato e termina con una famiglia generica 
+(per consentire al browser di scegliere un font simile nella famiglia generica,
+se non sono disponibili altri font). 
+I nomi dei font dovrebbero essere separati da virgole.*/
+h1 {
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  p {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+/*Stile del Font
+La proprietà font-style viene utilizzata principalmente per specificare il testo in corsivo.
+
+Questa proprietà ha tre valori:
+
+normal - Il testo viene mostrato normalmente
+italic - Il testo viene mostrato in corsivo
+oblique - Il testo è “inclinato”*/
+p.normale {
+    font-style: normal;
+  }
+  
+  p.corsivo {
+    font-style: italic;
+  }
+  
+  p.obliquo {
+    font-style: oblique;
+  }
+
+/*Grassetto del Font
+La proprietà font-weight specifica lo spessore di un font:*/
+p.normale {
+    font-weight: normal;
+  }
+  
+  p.spesso {
+    font-weight: bold;
+  }
+
+/*Variante del Font
+La proprietà font-variant specifica se un testo dovrebbe essere visualizzato in un font in maiuscolo.
+In un font in maiuscolo, tutte le lettere minuscole vengono convertite in lettere maiuscole.
+Tuttavia, le lettere maiuscole convertite appaiono in una dimensione del font più piccola
+rispetto alle lettere maiuscole originali nel testo.*/
+p.normale {
+    font-variant: normal;
+  }
+  
+  p.piccolo {
+    font-variant: small-caps;
+  }

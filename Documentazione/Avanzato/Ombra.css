@@ -1,0 +1,51 @@
+/*La text-shadowproprietà CSS applica l'ombra al testo.*/
+h1 {
+    text-shadow: 2px 2px;
+  }
+/*Ombre multiple*/
+h1 {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  }
+/*Proprietà CSS box-shadow
+La proprietà CSS box-shadowviene utilizzata per applicare una o più ombre a un elemento.
+
+Specificare un'ombra orizzontale e verticale*/
+div {
+    box-shadow: 10px 10px;
+  }
+
+/*Specificare un colore per l'ombra
+Il colorparametro definisce il colore dell'ombra.*/
+div {
+    box-shadow: 10px 10px lightblue;
+  }
+
+/*Aggiungi un effetto sfocato all'ombra
+Il blur parametro definisce il raggio di sfocatura. Più alto è il numero, più sfocata sarà l'ombra.*/ 
+div {
+    box-shadow: 10px 10px 5px lightblue;
+  }
+
+/*Imposta il raggio di diffusione dell'ombra
+Il spreadparametro definisce il raggio di diffusione. 
+Un valore positivo aumenta la dimensione dell'ombra, un valore negativo la diminuisce.*/
+div {
+    box-shadow: 10px 10px 5px 12px lightblue;
+  }
+/*Imposta il parametro inserito
+Il inset parametro modifica l'ombra da un'ombra esterna (inizio) a un'ombra interna.*/
+div {
+    box-shadow: 10px 10px 5px lightblue inset;
+  }
+/*Aggiungi più ombre
+Un elemento può anche avere più ombre:*/
+div {
+    box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+  }
+/*Carte
+Puoi anche usare la box-shadow proprietà per creare carte simili alla carta:*/
+div.card {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }

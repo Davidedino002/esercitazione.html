@@ -1,0 +1,63 @@
+div {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+/*Larghezza e Altezza di un Elemento
+Per impostare correttamente la larghezza e l’altezza di un elemento in tutti i browser, 
+è necessario capire come funziona il modello a scatola.
+Quando si impostano le proprietà di larghezza e altezza di un elemento con CSS,
+ si sta in realtà impostando la larghezza e l’altezza dell’area del contenuto.
+  Per calcolare le dimensioni complete di un elemento, 
+  è necessario aggiungere anche padding, bordi e margini.*/
+  div {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+  }
+
+/*Unità di Misura in CSS*/
+h1 {
+    font-size: 60px;
+  }
+  
+  p {
+    font-size: 25px;
+    line-height: 50px;
+  }
+/*Non può essserci uno spazio bianco tra il numero e l’unità di misura
+Se il valore è 0, l’unità può essere omessa.
+Per alcune proprietà CSS, sono consentite lunghezze negative.
+Ci sono due tipi di unità di lunghezza: assolute e relative.
+
+Unità di Lunghezza Assolute
+Le unità di lunghezza assolute sono fisse e una lunghezza espressa
+ in una qualsiasi di queste unità apparirà esattamente di quella dimensione.
+Le unità di lunghezza assolute non sono consigliate per l’uso su schermo,
+ poiché le dimensioni dello schermo variano molto. 
+ Tuttavia, possono essere utilizzate se il mezzo di output è noto, come nel layout di stampa.
+ I pixel (px) sono relativi al dispositivo di visualizzazione. 
+ Per i dispositivi a bassa densità di pixel, 1px corrisponde a un pixel (punto) del display. 
+ Per stampanti e schermi ad alta risoluzione, 1px implica più pixel del dispositivo.
+ 
+ Unità di Lunghezza Relative
+ Le unità di lunghezza relative specificano una lunghezza rispetto a un’altra proprietà di lunghezza. 
+ Le unità di lunghezza relative si adattano meglio tra diversi mezzi di rendering.
+ 
+Unità	Descrizione
+em	Relativo alle dimensioni del carattere dell’elemento
+ex	Relativo all’altezza “x” del carattere corrente
+rem	Relativo alle dimensioni del font dell’elemento radice
+vw	Relativo all’1% della larghezza della finestra di visualizzazione
+vh	Relativo all’1% dell’altezza della finestra di visualizzazione
+vmin	Relativo all’1% della dimensione più piccola della finestra di visualizzazione
+vmax	Relativo all’1% della dimensione più grande della finestra di visualizzazione
+%	Relativo all’elemento genitore
+
+
+Unità	Descrizione
+cm	centimetri
+mm	millimetri
+px	pixel*/

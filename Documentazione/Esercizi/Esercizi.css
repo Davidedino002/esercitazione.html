@@ -1,0 +1,19 @@
+
+/*Inserisci CSS a scelta nel tag `style`*/
+
+/*  <style>
+      p {
+        color: red;
+      }
+        
+      
+      Collega un file CSS esterno
+       <link rel="stylesheet" href="style.css" />
+       
+       
+       Inserisci del CSS inline
+         <p>Questo è un <span style="color: green;">testo colorato</span>.</p>
+         
+         
+         Dai uno sfondo ad un paragrafo dal tag style e cambia colore del testo inline
+          <p style="color: blue;">Questo testo sarà rosso.</p>*/

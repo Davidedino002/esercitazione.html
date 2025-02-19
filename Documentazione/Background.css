@@ -1,0 +1,71 @@
+/*Colore di Sfondo
+La proprietà background-color specifica il colore dello sfondo di un elemento.*/
+body {
+    background-color: lightblue;
+  }
+
+/*Puoi impostare il colore di sfondo per qualsiasi elemento HTML:*/
+h1 {
+    background-color: green;
+  }
+  
+  div {
+    background-color: lightblue;
+  }
+  
+  p {
+    background-color: yellow;
+  }
+
+/*Trasparenza*/
+div {
+    background-color: green;
+    opacity: 0.3;
+  }
+/*Quando si utilizza la proprietà opacity per aggiungere trasparenza allo sfondo di un elemento, 
+tutti i suoi elementi figli erediteranno la stessa trasparenza. */
+
+  div {
+    background: rgba(0, 128, 0, 0.3) /* Sfondo verde con opacità al 30% */;
+  }
+
+/*Immagine di Sfondo
+La proprietà background-image 
+specifica un’immagine da utilizzare come sfondo di un elemento.*/
+body {
+    background-image: url("immagine.jpg");
+  }
+
+/*Ripetere lo sfondo
+Per default, la proprietà background-image ripete un’immagine sia in orizzontale che in verticale.*/
+body {
+    background-image: url("sfondo-gradiente.png");
+  }
+/*Se l’immagine sopra è ripetuta solo in orizzontale (background-repeat: repeat-x;), 
+lo sfondo avrà un aspetto migliore:*/
+body {
+    background-image: url("sfondo-gradiente.png");
+    background-repeat: repeat-x;
+  }
+
+  /*Non ripetere lo sfondo*/
+  body {
+    background-image: url("immagine.png");
+    background-repeat: no-repeat;
+  }
+/*Posizione dello sfondo
+La proprietà background-position viene utilizzata per specificare la posizione dell’immagine di sfondo.*/
+body {
+    background-image: url("immagine.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+/*Comportamento sullo Scroll
+La proprietà background-attachment 
+specifica se l’immagine di sfondo dovrebbe scorrere o rimanere fissa*/
+body {
+    background-image: url("immagine.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+  }

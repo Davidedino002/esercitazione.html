@@ -1,0 +1,57 @@
+/*Le proprietà CSS di padding vengono utilizzate 
+per creare spazio intorno al contenuto di un elemento, all’interno di qualsiasi bordo definito.
+Con CSS, hai il pieno controllo sul padding. 
+Ci sono proprietà per impostare il padding per ciascun lato di un elemento 
+(superiore, destro, inferiore e sinistro).*/
+
+/*Padding - Lati Singoli
+CSS ha proprietà per specificare il padding per ciascun lato di un elemento:
+
+padding-top (padding superiore)
+
+padding-right (padding destro)
+
+padding-bottom (padding inferiore)
+
+padding-left (padding sinistro) Tutte le proprietà di padding possono avere i seguenti valori:
+
+length - specifica un padding in px, pt, cm, ecc.
+
+% - specifica un padding in % della larghezza dell’elemento contenitore
+
+inherit - specifica che il padding dovrebbe essere ereditato dall’elemento
+ genitore ⚠ I valori negativi non sono consentiti.*/
+ div {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
+
+/*Padding - Proprietà Abbreviata
+Per accorciare il codice, è possibile specificare tutte le proprietà di padding in una sola proprietà.
+
+La proprietà del padding è una proprietà abbreviata per le seguenti proprietà del padding individuali:
+
+padding-top (padding superiore)
+padding-right (padding destro)
+padding-bottom (padding inferiore)
+padding-left (padding sinistro)
+
+
+Padding e Larghezza dell’Elemento
+La proprietà CSS width specifica la larghezza dell’area di contenuto dell’elemento. 
+L’area di contenuto è la porzione all’interno del padding, del bordo e del margine di un elemento
+ (il box model).
+Quindi, se un elemento ha una larghezza specificata, 
+il padding aggiunto a quell’elemento verrà aggiunto alla larghezza totale dell’elemento. 
+Questo è spesso un risultato indesiderato.*/
+div {
+    width: 300px;
+    padding: 25px;
+  }
+  div {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+  }

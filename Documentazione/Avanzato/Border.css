@@ -1,0 +1,48 @@
+/*CSS angoli arrotondati
+Con la border-radiusproprietà CSS è possibile conferire a qualsiasi elemento "angoli arrotondati".
+
+Proprietà CSS border-radius
+La border-radiusproprietà CSS definisce il raggio degli angoli di un elemento.*/
+#rcorners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
+/*CSS border-radius - Specifica ogni angolo
+La border-radiusproprietà può avere da uno a quattro valori. */
+#rcorners1 {
+    border-radius: 15px 50px 30px 5px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
+
+/*Immagini di bordo CSS
+Con la border-imageproprietà CSS è possibile impostare 
+un'immagine da utilizzare come bordo attorno a un elemento.
+
+Proprietà CSS border-image
+La border-imageproprietà CSS consente di specificare 
+un'immagine da utilizzare al posto del normale bordo attorno a un elemento.
+
+La proprietà è composta da tre parti:
+
+L'immagine da usare come bordo
+Dove tagliare l'immagine
+Definisci se le sezioni centrali devono essere ripetute o allungate
+La border-image proprietà prende l'immagine e la divide in nove sezioni
+Nota: affinché border-imagefunzioni, l'elemento deve avere anche la border proprietà impostata!*/  
+#borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30 round;
+  }
+  #borderimg1 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 50 round;
+  }
+  

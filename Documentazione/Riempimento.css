@@ -1,0 +1,144 @@
+/*Il padding viene utilizzato per creare spazio attorno al contenuto di un elemento,
+ all'interno di eventuali bordi definiti.*/
+
+ /*Riempimento CSS
+ Le proprietà CSS padding vengono utilizzate per generare spazio attorno al contenuto di un elemento, 
+ all'interno di eventuali bordi definiti.
+ Con CSS, hai il pieno controllo sul padding. 
+ Ci sono proprietà per impostare il padding per ogni lato di un elemento
+ 
+ Imbottitura - Lati Singoli
+ CSS ha proprietà per specificare la spaziatura per ogni lato di un elemento:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+Tutte le proprietà di padding possono avere i seguenti valori:
+
+lunghezza - specifica un'imbottitura in px, pt, cm, ecc.
+% - specifica un padding in % della larghezza dell'elemento contenitore
+inherit - specifica che il padding deve essere ereditato dall'elemento padre*/
+
+div {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
+
+  /*Padding - Proprietà abbreviata*/
+
+/*Per abbreviare il codice, è possibile specificare tutte le proprietà di padding in un'unica proprietà.
+
+La padding proprietà è una proprietà abbreviata per le seguenti proprietà di riempimento individuali:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+Se la paddingproprietà ha quattro valori:
+
+imbottitura: 25px 50px 75px 100px;
+la spaziatura superiore è 25px
+la spaziatura a destra è 50px
+l'imbottitura inferiore è 75px
+la spaziatura a sinistra è 100px*/
+
+div {
+    padding: 25px 50px 75px 100px;
+  }
+
+  /*Se la paddingproprietà ha tre valori:
+
+imbottitura: 25px 50px 75px;
+la spaziatura superiore è 25px
+le imbottiture destra e sinistra sono 50px
+l'imbottitura inferiore è 75px*/
+
+div {
+    padding: 25px 50px 75px;
+  }
+
+  /*Se la paddingproprietà ha due valori:
+
+imbottitura: 25px 50px;
+le imbottiture superiore e inferiore sono 25px
+le imbottiture destra e sinistra sono 50px*/
+
+div {
+    padding: 25px 50px;
+  }
+
+  /*Se la paddingproprietà ha un valore:
+
+imbottitura: 25px;
+tutte e quattro le imbottiture sono 25px*/
+
+div {
+    padding: 25px;
+  }
+
+/*Imbottitura e larghezza dell'elemento
+La proprietà CSS widthspecifica la larghezza dell'area del contenuto dell'elemento*/
+div {
+    width: 300px;
+    padding: 25px;
+  }
+/*Utilizzare la proprietà box-sizing per mantenere la larghezza a 300px, 
+indipendentemente dalla quantità di padding*/
+  div {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+
+  /*Altezza, larghezza e larghezza massima CSS*/
+  /*Il CSS height e width le proprietà vengono utilizzati 
+  per impostare l'altezza e la larghezza di un elemento.
+  La proprietà CSS max-widthviene utilizzata per impostare la larghezza massima di un elemento.
+  
+  CSS Impostazione altezza e larghezza
+  Le proprietà heighte widthvengono utilizzate per impostare l'altezza e la larghezza di un elemento.*/
+  /*Le proprietà altezza e larghezza non includono padding, bordi o margini. 
+  Impostano l'altezza/larghezza dell'area all'interno del padding, del bordo e del margine dell'elemento.
+  
+  Valori CSS altezza e larghezza*/
+/*Le proprietà height e width possono avere i seguenti valori:
+
+auto- Questo è predefinito. Il browser calcola l'altezza e la larghezza
+length- Definisce l'altezza/larghezza in px, cm, ecc.
+%- Definisce l'altezza/larghezza in percentuale del blocco contenitore
+initial- Imposta l'altezza/larghezza al valore predefinito
+inherit- L'altezza/larghezza verrà ereditata dal valore padre
+*/
+div {
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+  }
+  div {
+    height: 100px;
+    width: 500px;
+    background-color: powderblue;
+  }
+  /*Impostazione della larghezza massima*/
+  /*La max-width proprietà viene utilizzata per impostare la larghezza massima di un elemento.
+  Può max-widthessere specificato in valori di lunghezza , come px, cm, ecc., o in percentuale (%) 
+  del blocco contenitore, oppure impostato su nessuno 
+  Il problema con quanto <div>sopra si verifica quando la finestra del browser è più piccola 
+  della larghezza dell'elemento (500px). 
+  Il browser aggiunge quindi una barra di scorrimento orizzontale alla pagina.
+  In questa situazione, l'utilizzo max-widthd i invece migliorerà la gestione 
+  delle finestre di piccole dimensioni da parte del browser.
+  se per qualche motivo si utilizzano sia la width
+  proprietà che la max-width proprietà sullo stesso elemento e 
+  il valore della width proprietà è maggiore della max-width proprietà stessa, 
+  la max-widthproprietà verrà utilizzata (e la widthproprietà verrà ignorata).*/
+  div {
+    max-width: 500px;
+    height: 100px;
+    background-color: powderblue;
+  }

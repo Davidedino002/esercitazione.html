@@ -1,0 +1,86 @@
+/*La position proprietà specifica il tipo di metodo di posizionamento utilizzato per un elemento
+ (statico, relativo, fisso, assoluto o sticky).
+ La posizione Proprietà
+ 
+ La position proprietà specifica il tipo di metodo di posizionamento utilizzato per un elemento.
+
+Ci sono cinque diversi valori di posizione:
+
+static
+relative
+fixed
+absolute
+sticky
+Gli elementi vengono quindi posizionati usando le proprietà top, bottom, left e right. 
+Tuttavia, queste proprietà non funzioneranno a meno che la position proprietà non venga impostata prima. 
+Funzionano anche in modo diverso a seconda del valore di posizione.*/
+
+/*posizione: statica;*/
+/*Per impostazione predefinita, gli elementi HTML sono posizionati in modo statico.
+Gli elementi posizionati staticamente non sono influenzati dalle proprietà top, bottom, left e right.
+Un elemento con position: static;non è posizionato in alcun modo speciale; 
+è sempre posizionato secondo il normale flusso della pagina*/
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+  }
+
+
+  /*posizione: relativa;
+  Un elemento con position: relative; è posizionato rispetto alla sua posizione normale.
+Impostando le proprietà top, right, bottom e left di un elemento posizionato in modo relativo, 
+questo verrà regolato lontano dalla sua posizione normale. 
+Gli altri contenuti non verranno regolati per adattarsi a qualsiasi spazio lasciato dall'elemento.*/
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+/*posizione: fissa;
+Un elemento con position: fixed;è posizionato relativamente alla viewport, 
+il che significa che rimane sempre nello stesso posto anche se si scorre la pagina. 
+Le proprietà top, right, bottom e left sono utilizzate per posizionare l'elemento.
+Un elemento fisso non lascia uno spazio vuoto nella pagina in cui normalmente si troverebbe.*/
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+/*posizione: assoluta;
+Un elemento con position: absolute;è posizionato rispetto all'antenato più vicino 
+Tuttavia, se un elemento posizionato in modo assoluto non ha antenati posizionati, 
+utilizza il corpo del documento e si sposta insieme allo scorrimento della pagina.*/
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+
+/*position sticky
+Un elemento con position: sticky;viene posizionato in base alla posizione di scorrimento dell'utente.
+Un elemento sticky commuta tra relative e fixed, a seconda della posizione di scorrimento. 
+È posizionato in modo relativo finché non viene incontrata una determinata posizione 
+di offset nella viewport, quindi "si blocca" in posizione
+Nota: è necessario specificare almeno uno tra top, righto bottom affinché left
+il posizionamento fisso funzioni.*/
+
+div.sticky {
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}

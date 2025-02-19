@@ -1,0 +1,38 @@
+/*Le media query servono per adattare il codice di stile 
+in base al tipo di dispositivo su cui verrà mostrata la pagina
+
+Le media query possono essere utilizzate per verificare molte cose, come ad esempio:
+
+larghezza e altezza del viewport
+larghezza e altezza del dispositivo
+orientamento landscape
+risoluzione
+
+Sintassi delle Media Query
+Una media query consiste in un tipo di media e può contenere una o più espressioni, 
+che si risolvono in vero o falso*/
+@media screen and (min-width: 480px) {
+    body {
+      background-color: salmon;
+    }
+  }
+  @media screen and (min-width: 684px) {
+    body {
+      background-color: green;
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    body {
+      background-color: red;
+    }
+  }
+  /*Il risultato della query è vero se il tipo di media specificato corrisponde al tipo di dispositivo 
+  su cui viene visualizzato il documento e tutte le espressioni nella media query sono vere. 
+  Quando una media query è vera, il relativo foglio di stile o le regole di stile vengono applicate, 
+  seguendo le normali regole di cascata.
+  
+  Tipi di Media Query
+all (predefinito) - Usato per tutti i dispositivi di tipo media
+print - Usato per le stampanti
+screen - Usato per schermi di computer, tablet, smartphone, ecc.
+speech - Usato per lettori dello schermo che “leggono” la pagina ad alta voce*/

@@ -1,0 +1,210 @@
+<!--Crea una pagina HTML con un paragrafo.
+ Utilizza un pseudo-elemento CSS per aggiungere un puntino alla fine del testo del paragrafo.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Paragrafo</title>
+     <style>
+         p::after {
+             content: ".";
+             color: black;
+             font-size: 1em;
+         }
+ </style>
+ </head>
+ <body>
+     <p>Questo è un paragrafo con un puntino alla fine.</p>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un titolo. 
+Utilizza un pseudo-elemento CSS per aggiungere una riga al di sotto del titolo.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Titolo</title>
+     <style>
+         h1::before {
+            content: "";
+        display: block;
+        border-bottom: 1px solid black;
+         }
+ </style>
+ </head>
+ <body>
+     <h1>Questo è un titolo con una riga al di sotto.</h1>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con una lista non ordinata contenente diversi elementi. 
+Utilizza un pseudo-elemento CSS per aggiungere delle virgole tra gli elementi della lista.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Elenco</title>
+     <style>
+        li:not(:last-child)::after {
+          content: ", ";
+        }
+      </style><!--Correzione-->
+ </head>
+ <body>
+     <ul>
+         <li>Elemento 1</li>
+         <li>Elemento 2</li>
+         <li>Elemento 3</li>
+     </ul>
+ </body>
+ </html>
+
+ <!--Crea una pagina HTML con un paragrafo. Utilizza un pseudo-elemento CSS per aggiungere 
+ un'icona di freccia destra all'inizio del testo del paragrafo.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Paragrafo</title>
+     <style>
+        p::before {
+          content: "\2192";
+          margin-right: 5px;/*Correzione*/
+        }  
+      </style>
+ </head>
+ <body>
+     <p>Questo è un paragrafo con una freccia destra all'inizio.</p>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un link. 
+Utilizza un pseudo-elemento CSS per aggiungere un'icona di link esterno all'inizio del link.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link</title>
+     <style>
+        a::before {
+          content: "\21A9"; 
+          margin-right: 5px;
+        }
+      </style>
+ </head>
+ <body>
+     <a href="https://www.google.com/">Google</a>
+ </body>
+ </html>
+
+ <!--Crea una pagina HTML con un paragrafo. 
+ Utilizza un pseudo-elemento CSS per aggiungere 
+ una linea verticale di separazione tra il testo del paragrafo.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Paragrafo</title>
+     <style>
+        p::after {
+            content: "";
+        display: inline-block;
+        width: 1px;
+        height: 1em;
+        background-color: black;
+        margin-left: 5px;
+        vertical-align: middle;
+        }
+      </style>
+ </head>
+ <body>
+     <p>Questo è un paragrafo con una linea verticale di separazione.</p>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con un paragrafo. 
+Utilizza un pseudo-elemento CSS per aggiungere uno sfondo colorato al testo del paragrafo.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Paragrafo</title>
+     <style>
+          p::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: yellow;
+        position: absolute;
+        z-index: -1;
+      }
+      </style>
+ </head>
+ <body>
+     <p>Questo è un paragrafo con uno sfondo colorato.</p>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con una lista non ordinata contenente diversi elementi. 
+Utilizza un pseudo-elemento CSS per aggiungere delle 
+virgole e un punto esclamativo alla fine della lista.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Elenco</title>
+     <style>
+        ul::after {
+          content: ", ";
+        }
+  
+        li:last-child::after {
+          content: "!";
+        }
+      </style>
+ </head>
+ <body>
+     <ul>
+         <li>Elemento 1</li>
+         <li>Elemento 2</li>
+         <li>Elemento 3</li>
+     </ul>
+ </body>
+ </html>
+
+ <!--Crea una pagina HTML con un link. 
+ Utilizza un pseudo-elemento CSS per aggiungere un'icona di link esterno alla fine del link.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Link</title>
+     <style>
+        a::after {
+          content: "\21A9"; 
+        }
+      </style>
+ </head>
+ <body>
+     <a href="https://www.google.com/">Google</a>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con una lista non ordinata contenente diversi elementi. 
+Utilizza un pseudo-elemento CSS per aggiungere delle parentesi 
+graffe intorno a ogni elemento della lista.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Elenco</title>
+     <style>
+        ul::before {
+          content: "{";
+        }
+  
+        ul::after {
+          content: "}";
+        }
+      </style>
+ </head>
+ <body>
+     <ul>
+         <li>Elemento 1</li>
+         <li>Elemento 2</li>
+         <li>Elemento 3</li>
+     </ul>
+ </body>
+ </html>

@@ -1,0 +1,219 @@
+<!--Crea una pagina HTML con una lista non ordinata contenente diversi elementi.
+ Applica una regola CSS in modo che il primo elemento
+  della lista abbia un colore di sfondo rosso.-->
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <style>
+      li:first-child {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ul>
+  </body>
+  </html>
+
+<!--Crea una pagina HTML con una lista ordinata contenente diversi elementi. 
+Applica una regola CSS in modo che l'ultimo elemento della lista abbia un colore di sfondo blu.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    li:last-child {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <ol>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+  </ol>
+</body>
+</html>
+
+<!--Crea una pagina HTML con una lista non ordinata contenente diversi elementi. 
+Applica una regola CSS in modo che il secondo 
+elemento della lista abbia un colore di sfondo verde.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    li:nth-child(2) {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+  </ul>
+</body>
+</html>
+
+<!--Crea una pagina HTML con una lista non ordinata contenente diversi elementi. 
+Applica una regola CSS in modo che l'ultimo elemento della lista abbia un colore di sfondo arancione.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    li:last-child {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+  </ul>
+</body>
+</html>
+
+<!--Crea una pagina HTML con un paragrafo e un elemento `span` all'interno del paragrafo.
+ Applica una regola CSS in modo che il primo elemento `span` 
+ all'interno del paragrafo abbia un colore di sfondo giallo.-->
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <style>
+      p span {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Questo è un <span>paragrafo</span> con un elemento span.</p>
+  </body>
+  </html>
+
+<!--Crea una pagina HTML con un paragrafo e un elemento `span` all'interno del paragrafo. 
+Applica una regola CSS in modo che l'ultimo elemento `span` 
+all'interno del paragrafo abbia un colore di sfondo viola.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    p span:last-child {
+      background-color: violet;
+    }
+  </style>
+</head>
+<body>
+  <p>Questo è un <span>paragrafo</span> con un elemento span.</p>
+</body>
+</html>
+
+
+<!--Crea una pagina HTML con una lista ordinata contenente diversi elementi. 
+Applica una regola CSS in modo che ogni terzo elemento della lista abbia un colore di sfondo azzurro.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    li:nth-child(3n+1) {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <ol>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+    <li>Elemento 6</li>
+    <li>Elemento 7</li>
+    <li>Elemento 8</li>
+    <li>Elemento 9</li>
+  </ol>
+</body>
+</html>
+
+<!--Crea una pagina HTML con una lista ordinata contenente diversi elementi. 
+Applica una regola CSS in modo che ogni quarto elemento della lista abbia un colore di sfondo rosa.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    li:nth-child(4n+1) {
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <ol>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+    <li>Elemento 6</li>
+    <li>Elemento 7</li>
+    <li>Elemento 8</li>
+    <li>Elemento 9</li>
+  </ol>
+</body>
+</html>
+
+<!--Crea una pagina HTML con una lista non ordinata contenente diversi elementi. 
+Applica una regola CSS in modo che il secondo elemento li di tipo "cerchio" 
+abbia un colore di sfondo verde.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        li[type="circle"]:nth-of-type(2) {
+          background-color: green;
+        }
+      </style>
+</head>
+<body>
+  <ul>
+    <li class="cerchio">Elemento 1</li>
+    <li>Elemento 2</li>
+    <li class="cerchio">Elemento 3</li>
+    <li>Elemento 4</li>
+  </ul>
+</body>
+</html>
+
+<!--Crea una pagina HTML con un paragrafo e un elemento `span` all'interno del paragrafo. 
+Applica una regola CSS in modo che il primo elemento `span` di tipo "evidenzia" 
+abbia un colore di sfondo giallo.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    p span[class="evidenzia"]:first-child {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <p>Questo è un <span class="evidenzia">paragrafo</span> con un elemento span.</p>
+</body>
+</html>

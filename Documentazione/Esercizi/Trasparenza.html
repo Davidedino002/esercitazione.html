@@ -1,0 +1,331 @@
+<!--Crea una pagina HTML con un div all'interno. 
+Usa il CSS per impostare l'opacità del div al 50%, rendendolo semi-trasparente.-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <title>Opacity</title>
+    <style>
+        div {
+            opacity: 0.5;
+        }
+ </style>
+ </head>
+ <body>
+    <div>
+        Questo è un div semi-trasparente.
+    </div>
+ </body>
+ </html>
+
+<!--Crea una pagina HTML con una lista non ordinata (ul) contenente alcuni elementi di lista (li). 
+Usa il CSS per impostare l'opacità degli elementi di lista al 70%.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opacity</title>
+    <style>
+        ul li {
+            opacity: 0.7;
+        }
+ </style>
+</head>
+<body>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+</body>
+</html>
+
+<!--Crea una pagina HTML con un'immagine all'interno di un div. 
+Usa il CSS per impostare l'opacità dell'immagine al 80%.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opacity</title>
+    <style>
+        img {
+            opacity: 0.8;
+        }
+ </style>
+</head>
+<body>
+    <div>
+        <img src="immagine.jpg" alt="Immagine">
+    </div>
+</body>
+</html>
+
+<!--Crea una pagina HTML con due div all'interno.
+ Usa il CSS per impostare l'opacità del primo div al 60% e del secondo div al 30%.-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Opacity</title>
+        <style>
+            div:first-child {
+                opacity: 0.6;
+            }
+            div:last-child {
+                opacity: 0.3;
+            }
+        </style>
+    </head>
+    <body>
+        <div>Primo div</div>
+        <div>Secondo div</div>
+    </body>
+    </html>
+
+<!--CORREZIONE-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esercizio 4</title>
+    <style>
+      #div1 {
+        opacity: 0.6;
+        background-color: lightblue;
+        width: 200px;
+        height: 100px;
+      }
+
+      #div2 {
+        opacity: 0.3;
+        background-color: lightgreen;
+        width: 200px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">Questo div ha un'opacità del 60%.</div>
+    <div id="div2">Questo div ha un'opacità del 30%.</div>
+  </body>
+</html>
+
+
+<!--Crea una pagina HTML con un link all'interno di un paragrafo. 
+Usa il CSS per impostare l'opacità del link al 40%.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opacity</title>
+    <style>
+        a {
+            opacity: 0.4;
+        }
+ </style>
+</head>
+<body>
+    <p><a href="https://www.google.com/">Google</a></p>
+</body>
+</html>
+
+<!--Crea una pagina HTML con un div all'interno. 
+Usa il CSS per impostare l'opacità del div al 90% quando il mouse ci passa sopra (utilizza l'hover).-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opacity</title>
+    <style>
+        div {
+            opacity: 0.9;
+        }
+
+        div:hover {
+            opacity: 1;
+        }
+ </style>
+</head>
+<body>
+    <div>
+        Questo è un div con opacità al 90% quando il mouse passa sopra.
+    </div>
+</body>
+</html>
+<!--Correzione-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esercizio 6</title>
+    <style>
+      div {
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+
+      div:hover {
+        opacity: 0.9;
+        background-color: lightblue;
+        width: 200px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Passa il mouse sopra di me per vedere l'effetto.</div>
+  </body>
+</html>
+
+<!--Crea una pagina HTML con una lista ordinata (ol) contenente alcuni
+ elementi di lista (li). Usa il CSS per impostare l'opacità degli elementi 
+di lista al 80% quando il mouse ci passa sopra (utilizza l'hover).-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opacity</title>
+    <style>
+        ol li {
+            opacity: 0.8;
+        }
+       li:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+</body>
+</html>
+
+<!--Correzione.-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esercizio 7</title>
+    <style>
+      li {
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+
+      li:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ol>
+  </body>
+</html>
+
+<!--Crea una pagina HTML con un'immagine all'interno di un div. 
+Usa il CSS per impostare l'opacità dell'immagine al 
+70% quando il mouse ci passa sopra (utilizza l'hover).-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opacity</title>
+    <style>
+        img {
+            opacity: 0.7;
+        }
+
+        img:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="immagine.jpg" alt="Immagine">
+    </div>
+</body>
+</html>
+
+<!--Crea una pagina HTML con un link all'interno di un paragrafo. Usa il CSS per impostare 
+l'opacità del link al 50% quando il mouse ci passa sopra (utilizza l'hover).-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opacity</title>
+    <style>
+        a {
+            opacity: 0.5;
+        }
+
+        a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="https://www.google.com/">Google</a></p>
+</body>
+</html>
+
+<!--Crea una pagina HTML con tre div all'interno. 
+Usa il CSS per impostare l'opacità del primo div al 60% quando il mouse ci passa sopra, 
+del secondo div al 40% e del terzo div al 20%.-->
+<!--Correzione-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esercizio 10</title>
+    <style>
+      #div1 {
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+
+      #div1:hover {
+        opacity: 0.6;
+        background-color: lightblue;
+        width: 200px;
+        height: 100px;
+      }
+
+      #div2 {
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+
+      #div2:hover {
+        opacity: 0.4;
+        background-color: lightgreen;
+        width: 200px;
+        height: 100px;
+      }
+
+      #div3 {
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+
+      #div3:hover {
+        opacity: 0.2;
+        background-color: lightpink;
+        width: 200px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      Questo div ha un'opacità del 60% quando il mouse ci passa sopra.
+    </div>
+    <div id="div2">
+      Questo div ha un'opacità del 40% quando il mouse ci passa sopra.
+    </div>
+    <div id="div3">
+      Questo div ha un'opacità del 20% quando il mouse ci passa sopra.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+/*La opacityproprietà specifica l'opacità/trasparenza di un elemento.*/
+img {
+    opacity: 0.5;
+  }
+/*La opacity proprietà viene spesso utilizzata insieme al :hover selettore 
+per modificare l'opacità al passaggio del mouse*/
+img {
+    opacity: 0.5;
+  }
+  
+  img:hover {
+    opacity: 1.0;
+  }
+
+/*Quando si usa la opacityproprietà per aggiungere trasparenza allo sfondo di un elemento,
+ tutti i suoi elementi figlio ereditano la stessa trasparenza*/
+ div {
+    opacity: 0.3;
+  }
+
+/*La proprietà opacity specifica l’opacità/trasparenza di un elemento.*/
+/*Immagine Trasparente
+La proprietà opacity può assumere un valore compreso 
+tra 0,0 e 1,0. Più basso è il valore, più trasparente sarà l’elemento.*/  
+img {
+  opacity: 0, 5;
+}
+
+/*Effetto di Hover Trasparente
+La proprietà opacity è spesso utilizzata 
+insieme al selettore :hover per cambiare l’opacità al passaggio del mouse:*/
+img {
+  opacity: 0, 5;
+}
+
+img:hover {
+  opacity: 1, 0;
+}
+
+
+/*Box Trasparente
+Quando si utilizza la proprietà opacity per aggiungere trasparenza allo sfondo di un elemento, 
+tutti i suoi elementi figlio ereditano la stessa trasparenza.*/
+div {
+  opacity: 0, 3;
+}
+
+
+/*Trasparenza utilizzando RGBA*/
+div {
+  background: rgba(76, 175, 80, 0.3); /* Sfondo verde con opacità al 30% */
+}
